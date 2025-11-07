@@ -1,0 +1,12 @@
+option "booking_method" "LIFO"
+2019-01-01 open Assets:Invest XYZ
+2019-01-01 open Equity:Opening USD
+2019-01-02 * "Buy1"
+  Assets:Invest 5 XYZ {100 USD}
+  Equity:Opening -500 USD
+2019-01-03 * "Buy2"
+  Assets:Invest 5 XYZ {200 USD}
+  Equity:Opening -1000 USD
+2019-01-04 * "Sell"
+  Assets:Invest -5 XYZ
+  Equity:Opening 700 USD

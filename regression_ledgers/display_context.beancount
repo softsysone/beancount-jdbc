@@ -1,0 +1,6 @@
+option "render_commas" "TRUE"
+option "display_precision" "USD:0.01"
+2019-01-01 open Assets:Cash USD
+2019-01-02 * "Deposit"
+  Assets:Cash 12345.678 USD
+  Equity:Opening -12345.678 USD
