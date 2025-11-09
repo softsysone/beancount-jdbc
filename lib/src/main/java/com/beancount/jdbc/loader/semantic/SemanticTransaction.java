@@ -15,6 +15,7 @@ public final class SemanticTransaction {
     private final List<String> links;
     private final List<SemanticMetadataEntry> metadata;
     private final List<SemanticPosting> postings;
+    private final List<String> comments;
     private final SourceLocation location;
 
     public SemanticTransaction(
@@ -27,6 +28,7 @@ public final class SemanticTransaction {
             List<String> links,
             List<SemanticMetadataEntry> metadata,
             List<SemanticPosting> postings,
+            List<String> comments,
             SourceLocation location) {
         this.date = Objects.requireNonNull(date, "date");
         this.directiveType = Objects.requireNonNull(directiveType, "directiveType");
@@ -37,6 +39,7 @@ public final class SemanticTransaction {
         this.links = List.copyOf(links);
         this.metadata = List.copyOf(metadata);
         this.postings = List.copyOf(postings);
+        this.comments = List.copyOf(comments);
         this.location = Objects.requireNonNull(location, "location");
     }
 
@@ -74,6 +77,10 @@ public final class SemanticTransaction {
 
     public List<SemanticPosting> getPostings() {
         return postings;
+    }
+
+    public List<String> getComments() {
+        return comments;
     }
 
     public SourceLocation getLocation() {

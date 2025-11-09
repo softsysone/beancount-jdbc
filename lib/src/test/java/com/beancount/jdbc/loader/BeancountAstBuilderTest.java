@@ -70,30 +70,29 @@ class BeancountAstBuilderTest {
         assertEquals("Assets:Cash", pad.getAccount());
         assertEquals("Equity:Opening", pad.getSourceAccount());
 
-        DirectiveNode txn = assertDirective(statements.get(3));
+        TransactionNode txn = assertInstanceOf(TransactionNode.class, statements.get(3));
         assertEquals("*", txn.getDirectiveType());
-        assertEquals("2019-01-02", txn.getDate());
-        assertEquals(
-                List.of(
-                        "\"Coffee\" \"Beans\" #breakfast",
-                        "; #coffee ^onetime",
-                        "Expenses:Coffee 5 USD",
-                        "Assets:Cash"),
-                txn.getContentLines());
+        assertEquals("Coffee", txn.getPayee());
+        assertEquals("Beans", txn.getNarration());
+        assertEquals(List.of("breakfast"), txn.getTags());
+        assertEquals(List.of("#coffee ^onetime"), txn.getComments());
+        assertEquals(2, txn.getPostings().size());
+        assertEquals("Expenses:Coffee", txn.getPostings().get(0).getAccount());
+        assertEquals("Assets:Cash", txn.getPostings().get(1).getAccount());
 
-        DirectiveNode custom = assertDirective(statements.get(7));
+        DirectiveNode custom = findDirective(statements, "custom");
         assertEquals("custom", custom.getDirectiveType());
         assertEquals(List.of("\"ignored\" \"placeholder\""), custom.getContentLines());
 
-        NoteDirectiveNode note = assertInstanceOf(NoteDirectiveNode.class, statements.get(8));
+        NoteDirectiveNode note = findStatement(statements, NoteDirectiveNode.class);
         assertEquals("Assets:Cash", note.getAccount());
         assertEquals("FirstNote", note.getComment());
 
-        DocumentDirectiveNode document = assertInstanceOf(DocumentDirectiveNode.class, statements.get(9));
+        DocumentDirectiveNode document = findStatement(statements, DocumentDirectiveNode.class);
         assertEquals("Assets:Cash", document.getAccount());
         assertEquals("receipts/invoice.pdf", document.getFilename());
 
-        PriceDirectiveNode price = assertInstanceOf(PriceDirectiveNode.class, statements.get(12));
+        PriceDirectiveNode price = findStatement(statements, PriceDirectiveNode.class);
         assertEquals("USD", price.getCurrency());
         assertEquals("CAD", price.getAmountCurrency());
     }
@@ -121,10 +120,12 @@ class BeancountAstBuilderTest {
         LedgerNode ledger = builder.parse("accounts.personal", input);
 
         assertEquals(1, ledger.getStatements().size());
-        DirectiveNode directive = assertDirective(ledger.getStatements().get(0));
+        TransactionNode directive = assertInstanceOf(TransactionNode.class, ledger.getStatements().get(0));
         assertEquals("*", directive.getDirectiveType());
-        assertEquals(List.of("\"Balance Forward\"", "Assets:Bank:Cash  10 USD", "Equity:Opening-Balances  -10 USD"),
-                directive.getContentLines());
+        assertEquals("Balance Forward", directive.getPayee());
+        assertEquals(2, directive.getPostings().size());
+        assertEquals("Assets:Bank:Cash", directive.getPostings().get(0).getAccount());
+        assertEquals("Equity:Opening-Balances", directive.getPostings().get(1).getAccount());
     }
 
     @Test
@@ -176,5 +177,21 @@ class BeancountAstBuilderTest {
 
     private static IncludeNode assertInclude(StatementNode node) {
         return assertInstanceOf(IncludeNode.class, node);
+    }
+
+    private static <T extends StatementNode> T findStatement(List<StatementNode> statements, Class<T> type) {
+        return statements.stream()
+                .filter(type::isInstance)
+                .map(type::cast)
+                .findFirst()
+                .orElseThrow(() -> new AssertionError("No statement of type " + type.getSimpleName() + " found"));
+    }
+
+    private static DirectiveNode findDirective(List<StatementNode> statements, String directiveType) {
+        return statements.stream()
+                .filter(node -> node instanceof DirectiveNode directive && directiveType.equals(directive.getDirectiveType()))
+                .map(DirectiveNode.class::cast)
+                .findFirst()
+                .orElseThrow(() -> new AssertionError("No directive with type '" + directiveType + "' found"));
     }
 }

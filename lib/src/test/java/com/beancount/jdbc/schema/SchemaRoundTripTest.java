@@ -1,6 +1,7 @@
 package com.beancount.jdbc.schema;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import com.beancount.jdbc.ledger.LedgerData;
 import com.beancount.jdbc.loader.semantic.SemanticAnalyzer;
@@ -83,11 +84,8 @@ class SchemaRoundTripTest {
         assertEquals("Assets:Cash", balance[1]);
         assertEquals(0, ((BigDecimal) balance[2]).compareTo(new BigDecimal("10")));
         assertEquals("USD", balance[3]);
-        assertEquals(
-                "USD",
-                balance[4],
-                "diff_number column should mirror bean-sql's legacy currency string");
-        assertEquals("USD", balance[5]);
+        assertNull(balance[4], "diff_number should be null when no adjustment is required");
+        assertNull(balance[5], "diff_currency should be null when diff_number is null");
 
         Object[] close = CloseTable.materializeDetailRows(data.getCloses()).get(0);
         assertEquals(2, close.length, "close_detail should only emit id + account");

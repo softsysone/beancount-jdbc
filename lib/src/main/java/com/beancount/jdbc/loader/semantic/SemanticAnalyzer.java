@@ -294,8 +294,20 @@ public final class SemanticAnalyzer {
             tagSet.add(it.next());
         }
         tagSet.addAll(toNonEmptyList(transaction.getTags()));
-        List<String> tags = new ArrayList<>(tagSet);
         LinkedHashSet<String> linkSet = new LinkedHashSet<>(toNonEmptyList(transaction.getLinks()));
+        List<String> transactionComments = new ArrayList<>();
+        for (String comment : transaction.getComments()) {
+            if (comment == null) {
+                continue;
+            }
+            String trimmed = comment.trim();
+            if (trimmed.isEmpty()) {
+                continue;
+            }
+            transactionComments.add(trimmed);
+            extractAnchorsFromComment(trimmed, tagSet, linkSet);
+        }
+        List<String> tags = new ArrayList<>(tagSet);
         List<String> links = new ArrayList<>(linkSet);
         TransactionPayload payload =
                 new TransactionPayload(
@@ -324,6 +336,16 @@ public final class SemanticAnalyzer {
         }
         List<PostingRecord> postingRecords = new ArrayList<>();
         for (PostingNode posting : transaction.getPostings()) {
+            List<SemanticMetadataEntry> postingMetadata = new ArrayList<>();
+            for (TransactionMetadataNode metadata : posting.getMetadata()) {
+                postingMetadata.add(new SemanticMetadataEntry(metadata.getKey(), metadata.getValue()));
+            }
+            List<String> postingComments = new ArrayList<>();
+            for (String comment : posting.getComments()) {
+                if (comment != null && !comment.trim().isEmpty()) {
+                    postingComments.add(comment.trim());
+                }
+            }
             PostingRecord record =
                     new PostingRecord(
                             state.nextPostingId++,
@@ -340,9 +362,11 @@ public final class SemanticAnalyzer {
                             posting.getPriceCurrency());
             postingRecords.add(record);
             state.postings.add(record);
+            state.rawPostings.add(record);
             validateAccount(posting.getAccount(), posting.getLocation(), file, state);
-            for (TransactionMetadataNode metadata : posting.getMetadata()) {
-                metadataEntries.add(new SemanticMetadataEntry(metadata.getKey(), metadata.getValue()));
+            if (!postingMetadata.isEmpty() || !postingComments.isEmpty()) {
+                state.postingExtras.put(
+                        record.getPostingId(), new PostingExtras(postingMetadata, postingComments));
             }
         }
         SemanticTransaction semanticTransaction =
@@ -355,7 +379,8 @@ public final class SemanticAnalyzer {
                         tags,
                         links,
                         metadataEntries,
-                        toSemanticPostings(postingRecords),
+                        toSemanticPostings(postingRecords, state.postingExtras),
+                        transactionComments,
                         transaction.getLocation());
         state.transactions.add(semanticTransaction);
     }
@@ -455,9 +480,26 @@ public final class SemanticAnalyzer {
         }
         return cleaned;
     }
+    private static void extractAnchorsFromComment(
+            String comment, Set<String> tags, Set<String> links) {
+        if (comment == null) {
+            return;
+        }
+        String[] tokens = comment.split("\\s+");
+        for (String token : tokens) {
+            if (token.startsWith("#") && token.length() > 1) {
+                tags.add(token.substring(1));
+            } else if (token.startsWith("^") && token.length() > 1) {
+                links.add(token.substring(1));
+            }
+        }
+    }
     private void validateAccount(
             String account, SourceLocation location, Path file, AnalyzerState state) {
         if (account == null || account.isEmpty()) {
+            return;
+        }
+        if (account.startsWith("Equity:")) {
             return;
         }
         if (!state.openAccounts.contains(account)) {
@@ -817,13 +859,24 @@ public final class SemanticAnalyzer {
         value = stripQuotes(value);
         return new MetadataEntry(key, value);
     }
-    private static List<SemanticPosting> toSemanticPostings(List<PostingRecord> postings) {
+    private static List<SemanticPosting> toSemanticPostings(
+            List<PostingRecord> postings, Map<Integer, PostingExtras> extrasByPostingId) {
         Map<String, BigDecimal> sums = new HashMap<>();
         Map<String, List<Integer>> missing = new HashMap<>();
         List<SemanticPosting> semanticPostings = new ArrayList<>(postings.size());
+        LinkedHashSet<String> observedCurrencies = new LinkedHashSet<>();
+        for (PostingRecord record : postings) {
+            if (record.getCurrency() != null) {
+                observedCurrencies.add(record.getCurrency());
+            }
+        }
+        String defaultCurrency = observedCurrencies.size() == 1 ? observedCurrencies.iterator().next() : null;
         for (int i = 0; i < postings.size(); i++) {
             PostingRecord record = postings.get(i);
             String currency = record.getCurrency();
+            if (currency == null) {
+                currency = defaultCurrency;
+            }
             BigDecimal number = record.getNumber();
             if (currency != null) {
                 if (number != null) {
@@ -847,15 +900,20 @@ public final class SemanticAnalyzer {
             if (number == null) {
                 number = inferredNumbers.get(i);
             }
+            String currency = record.getCurrency() != null ? record.getCurrency() : defaultCurrency;
+            PostingExtras extras =
+                    extrasByPostingId != null ? extrasByPostingId.remove(record.getPostingId()) : null;
             semanticPostings.add(
                     new SemanticPosting(
                             record.getAccount(),
                             number,
-                            record.getCurrency(),
+                            currency,
                             record.getCostNumber(),
                             record.getCostCurrency(),
                             record.getPriceNumber(),
-                            record.getPriceCurrency()));
+                            record.getPriceCurrency(),
+                            extras != null ? extras.metadata() : List.of(),
+                            extras != null ? extras.comments() : List.of()));
         }
         return semanticPostings;
     }
@@ -863,6 +921,7 @@ public final class SemanticAnalyzer {
         return new LedgerData(
                 List.copyOf(state.entries),
                 List.copyOf(state.postings),
+                List.copyOf(state.rawPostings),
                 List.copyOf(state.opens),
                 List.copyOf(state.closes),
                 List.copyOf(state.pads),
@@ -921,6 +980,7 @@ public final class SemanticAnalyzer {
                     PadContext context =
                             state.padContextsByEntryId.getOrDefault(
                                     entry.getId(), new PadContext(pad, entry, null));
+                    warnIfPadTouchesCostedLot(state, pad, entry, runningBalances);
                     context.reset();
                     activePadContexts.put(pad.getAccount(), context);
                 }
@@ -944,9 +1004,19 @@ public final class SemanticAnalyzer {
         }
         Map<String, BigDecimal> explicitSums = new HashMap<>();
         Map<String, List<Integer>> missingByCurrency = new HashMap<>();
+        LinkedHashSet<String> observedCurrencies = new LinkedHashSet<>();
+        for (PostingRecord posting : postings) {
+            if (posting.getCurrency() != null) {
+                observedCurrencies.add(posting.getCurrency());
+            }
+        }
+        String defaultCurrency = observedCurrencies.size() == 1 ? observedCurrencies.iterator().next() : null;
         for (int i = 0; i < postings.size(); i++) {
             PostingRecord posting = postings.get(i);
             String currency = posting.getCurrency();
+            if (currency == null) {
+                currency = defaultCurrency;
+            }
             if (currency == null) {
                 continue;
             }
@@ -968,25 +1038,25 @@ public final class SemanticAnalyzer {
         List<PostingRecord> normalized = new ArrayList<>(postings.size());
         for (int i = 0; i < postings.size(); i++) {
             PostingRecord posting = postings.get(i);
-            BigDecimal inferred = inferredNumbers.get(i);
-            if (inferred != null) {
-                normalized.add(
-                        new PostingRecord(
-                                posting.getPostingId(),
-                                posting.getEntryId(),
-                                posting.getFlag(),
-                                posting.getAccount(),
-                                inferred,
-                                posting.getCurrency(),
-                                posting.getCostNumber(),
-                                posting.getCostCurrency(),
-                                posting.getCostDate(),
-                                posting.getCostLabel(),
-                                posting.getPriceNumber(),
-                                posting.getPriceCurrency()));
-            } else {
-                normalized.add(posting);
+            BigDecimal number = posting.getNumber();
+            if (number == null && inferredNumbers.containsKey(i)) {
+                number = inferredNumbers.get(i);
             }
+            String currency = posting.getCurrency() != null ? posting.getCurrency() : defaultCurrency;
+            normalized.add(
+                    new PostingRecord(
+                            posting.getPostingId(),
+                            posting.getEntryId(),
+                            posting.getFlag(),
+                            posting.getAccount(),
+                            number,
+                            currency,
+                            posting.getCostNumber(),
+                            posting.getCostCurrency(),
+                            posting.getCostDate(),
+                            posting.getCostLabel(),
+                            posting.getPriceNumber(),
+                            posting.getPriceCurrency()));
         }
         return normalized;
     }
@@ -1002,6 +1072,27 @@ public final class SemanticAnalyzer {
                 runningBalances
                         .computeIfAbsent(account, key -> new HashMap<>())
                         .merge(currency, number, BigDecimal::add);
+            }
+        }
+    }
+    private static void warnIfPadTouchesCostedLot(
+            AnalyzerState state,
+            PadRecord pad,
+            LedgerEntry entry,
+            Map<String, Map<String, BigDecimal>> runningBalances) {
+        Map<String, BigDecimal> balances = runningBalances.get(pad.getAccount());
+        if (balances == null || balances.isEmpty()) {
+            return;
+        }
+        for (String currency : balances.keySet()) {
+            if (state.inventoryTracker.hasCostedHoldings(pad.getAccount(), currency)) {
+                state.messages.add(
+                        new LoaderMessage(
+                                LoaderMessage.Level.ERROR,
+                                "Attempt to pad an entry with cost for balance: " + pad.getAccount(),
+                                entry.getSourceFilename(),
+                                entry.getSourceLineno()));
+                break;
             }
         }
     }
@@ -1058,13 +1149,17 @@ public final class SemanticAnalyzer {
         if (diffNumber != null) {
             diffNumber = diffNumber.stripTrailingZeros();
         }
+        String resultDiffCurrency = diffCurrency;
+        if (resultDiffCurrency == null) {
+            resultDiffCurrency = record.getAmountCurrency();
+        }
         return new BalanceRecord(
                 record.getEntryId(),
                 record.getAccount(),
                 record.getAmountNumber(),
                 record.getAmountCurrency(),
                 diffNumber == null ? null : diffNumber,
-                diffNumber == null ? null : diffCurrency,
+                resultDiffCurrency,
                 record.getToleranceNumber(),
                 record.getToleranceCurrency());
     }
@@ -1144,6 +1239,7 @@ public final class SemanticAnalyzer {
         final Map<Integer, ParsedDirective> directivesById = new HashMap<>();
         final List<LedgerEntry> entries = new ArrayList<>();
         final List<PostingRecord> postings = new ArrayList<>();
+        final List<PostingRecord> rawPostings = new ArrayList<>();
         final List<OpenRecord> opens = new ArrayList<>();
         final List<CloseRecord> closes = new ArrayList<>();
         final List<PadRecord> pads = new ArrayList<>();
@@ -1162,6 +1258,7 @@ public final class SemanticAnalyzer {
         final DisplayContext displayContext = new DisplayContext();
         boolean inferToleranceFromCost;
         final Map<Integer, PadContext> padContextsByEntryId = new HashMap<>();
+        final Map<Integer, PostingExtras> postingExtras = new HashMap<>();
         int nextPostingId;
         int nextEntryId;
         BookingMethod bookingMethod = BookingMethod.FIFO;
@@ -1253,6 +1350,20 @@ public final class SemanticAnalyzer {
             this.value = value;
         }
     }
+    private static final class PostingExtras {
+        private final List<SemanticMetadataEntry> metadata;
+        private final List<String> comments;
+        PostingExtras(List<SemanticMetadataEntry> metadata, List<String> comments) {
+            this.metadata = metadata == null ? List.of() : List.copyOf(metadata);
+            this.comments = comments == null ? List.of() : List.copyOf(comments);
+        }
+        List<SemanticMetadataEntry> metadata() {
+            return metadata;
+        }
+        List<String> comments() {
+            return comments;
+        }
+    }
     private static BigDecimal applyCostTolerance(
             AnalyzerState state, String currency, BigDecimal current) {
         BigDecimal baseline = current == null ? BigDecimal.ZERO : current.abs();
@@ -1319,6 +1430,9 @@ public final class SemanticAnalyzer {
             if (number == null || number.compareTo(BigDecimal.ZERO) == 0) {
                 continue;
             }
+            if (!requiresStrictCost(posting.getAccount())) {
+                continue;
+            }
             if (posting.getCostNumber() == null || posting.getCostCurrency() == null) {
                 state.messages.add(
                         new LoaderMessage(
@@ -1329,6 +1443,12 @@ public final class SemanticAnalyzer {
                                 entry.getSourceLineno()));
             }
         }
+    }
+    private static boolean requiresStrictCost(String account) {
+        if (account == null) {
+            return false;
+        }
+        return account.startsWith("Assets:") || account.startsWith("Liabilities:");
     }
     private static boolean hasCostedLot(
             AnalyzerState state, String account, String currency) {

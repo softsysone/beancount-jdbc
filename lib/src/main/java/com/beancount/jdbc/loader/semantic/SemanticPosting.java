@@ -1,6 +1,7 @@
 package com.beancount.jdbc.loader.semantic;
 
 import java.math.BigDecimal;
+import java.util.List;
 import java.util.Objects;
 
 public final class SemanticPosting {
@@ -11,6 +12,8 @@ public final class SemanticPosting {
     private final String costCurrency;
     private final BigDecimal priceNumber;
     private final String priceCurrency;
+    private final List<SemanticMetadataEntry> metadata;
+    private final List<String> comments;
 
     public SemanticPosting(
             String account,
@@ -19,7 +22,9 @@ public final class SemanticPosting {
             BigDecimal costNumber,
             String costCurrency,
             BigDecimal priceNumber,
-            String priceCurrency) {
+            String priceCurrency,
+            List<SemanticMetadataEntry> metadata,
+            List<String> comments) {
         this.account = Objects.requireNonNull(account, "account");
         this.number = number;
         this.currency = currency;
@@ -27,6 +32,8 @@ public final class SemanticPosting {
         this.costCurrency = costCurrency;
         this.priceNumber = priceNumber;
         this.priceCurrency = priceCurrency;
+        this.metadata = metadata == null ? List.of() : List.copyOf(metadata);
+        this.comments = comments == null ? List.of() : List.copyOf(comments);
     }
 
     public String getAccount() {
@@ -55,5 +62,13 @@ public final class SemanticPosting {
 
     public String getPriceCurrency() {
         return priceCurrency;
+    }
+
+    public List<SemanticMetadataEntry> getMetadata() {
+        return metadata;
+    }
+
+    public List<String> getComments() {
+        return comments;
     }
 }

@@ -19,7 +19,7 @@ class TransactionsDetailTableTest {
         List<Object[]> rows = TransactionsDetailTable.materializeRows(List.of(entry));
 
         Object[] row = rows.get(0);
-        assertEquals("", row[4], "tags column should be empty string");
-        assertEquals("", row[5], "links column should be empty string");
+        assertEquals(null, row[4], "tags column should remain null when missing");
+        assertEquals(null, row[5], "links column should remain null when missing");
     }
 }

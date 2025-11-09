@@ -74,9 +74,19 @@ public final class InventoryTracker {
         if (account == null || currency == null || units.compareTo(BigDecimal.ZERO) == 0) {
             return;
         }
+        if (bookingMethod == BookingMethod.STRICT && !requiresStrictTracking(account)) {
+            return;
+        }
         inventoryByAccount
                 .computeIfAbsent(account, key -> new AccountInventory())
                 .apply(currency, units, posting, bookingMethod);
+    }
+
+    private boolean requiresStrictTracking(String account) {
+        if (account == null) {
+            return false;
+        }
+        return account.startsWith("Assets:") || account.startsWith("Liabilities:");
     }
 
     private static final class AccountInventory {

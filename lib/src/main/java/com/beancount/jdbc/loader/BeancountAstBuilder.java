@@ -105,30 +105,36 @@ public final class BeancountAstBuilder {
             String date = ctx.DATE().getText();
             List<DirectiveLine> directiveLines = new ArrayList<>();
             BeancountParser.DirectiveHeadContext head = ctx.directiveHead();
-            String directiveType;
+            String directiveType = "";
             if (head.DIRECTIVE_KEY() != null) {
                 directiveType = head.DIRECTIVE_KEY().getText();
-                if (head.directiveBody() != null) {
-                    String primary = normalizeLine(head.directiveBody().lineContent().getText());
+                if (head.lineContent() != null) {
+                    String primary = normalizeLine(originalText(head.lineContent()));
                     if (!primary.isEmpty()) {
                         directiveLines.add(new DirectiveLine(primary, 0, location));
                     }
                 }
-            } else {
-                String header = normalizeLine(head.LINE_CONTENT().getText());
-                if (!header.isEmpty()) {
-                    int firstSpace = header.indexOf(' ');
-                    if (firstSpace >= 0) {
-                        directiveType = header.substring(0, firstSpace);
-                        String remainder = header.substring(firstSpace + 1).trim();
+            } else if (head.FLAG() != null) {
+                directiveType = head.FLAG().getText();
+                if (head.lineContent() != null) {
+                    String primary = normalizeLine(originalText(head.lineContent()));
+                    if (!primary.isEmpty()) {
+                        directiveLines.add(new DirectiveLine(primary, 0, location));
+                    }
+                }
+            } else if (head.lineContent() != null) {
+                String primary = normalizeLine(originalText(head.lineContent()));
+                if (!primary.isEmpty()) {
+                    int splitIndex = firstWhitespaceIndex(primary);
+                    if (splitIndex >= 0) {
+                        directiveType = primary.substring(0, splitIndex);
+                        String remainder = primary.substring(splitIndex + 1).trim();
                         if (!remainder.isEmpty()) {
                             directiveLines.add(new DirectiveLine(remainder, 0, location));
                         }
                     } else {
-                        directiveType = header;
+                        directiveType = primary;
                     }
-                } else {
-                    directiveType = "";
                 }
             }
 
@@ -216,17 +222,20 @@ public final class BeancountAstBuilder {
                     new GlobalDirectiveNode(
                             toLocation(ctx.PUSHTAG().getSymbol()),
                             "pushtag",
-                            List.of(normalizeLine(ctx.lineContent().getText()))));
+                            List.of(normalizeLine(originalText(ctx.lineContent())))));
             return null;
         }
 
         @Override
         public Void visitPoptagStatement(BeancountParser.PoptagStatementContext ctx) {
+            String argument =
+                    ctx.lineContent() != null ? normalizeLine(originalText(ctx.lineContent())) : "";
+            List<String> arguments = argument.isEmpty() ? List.of() : List.of(argument);
             statements.add(
                     new GlobalDirectiveNode(
                             toLocation(ctx.POPTAG().getSymbol()),
                             "poptag",
-                            List.of(normalizeLine(ctx.lineContent().getText()))));
+                            arguments));
             return null;
         }
 
@@ -236,7 +245,7 @@ public final class BeancountAstBuilder {
                     new GlobalDirectiveNode(
                             toLocation(ctx.PUSHMETA().getSymbol()),
                             "pushmeta",
-                            List.of(normalizeLine(ctx.lineContent().getText()))));
+                            List.of(normalizeLine(originalText(ctx.lineContent())))));
             return null;
         }
 
@@ -246,7 +255,7 @@ public final class BeancountAstBuilder {
                     new GlobalDirectiveNode(
                             toLocation(ctx.POPMETA().getSymbol()),
                             "popmeta",
-                            List.of(normalizeLine(ctx.lineContent().getText()))));
+                            List.of(normalizeLine(originalText(ctx.lineContent())))));
             return null;
         }
 
