@@ -5,6 +5,7 @@ import java.util.List;
 public final class LedgerData {
     private final List<LedgerEntry> entries;
     private final List<PostingRecord> postings;
+    private final List<PostingRecord> rawPostings;
     private final List<OpenRecord> opens;
     private final List<CloseRecord> closes;
     private final List<PadRecord> pads;
@@ -18,6 +19,7 @@ public final class LedgerData {
     public LedgerData(
             List<LedgerEntry> entries,
             List<PostingRecord> postings,
+            List<PostingRecord> rawPostings,
             List<OpenRecord> opens,
             List<CloseRecord> closes,
             List<PadRecord> pads,
@@ -29,6 +31,7 @@ public final class LedgerData {
             List<PriceRecord> prices) {
         this.entries = entries;
         this.postings = postings;
+        this.rawPostings = rawPostings;
         this.opens = opens;
         this.closes = closes;
         this.pads = pads;
@@ -46,6 +49,10 @@ public final class LedgerData {
 
     public List<PostingRecord> getPostings() {
         return postings;
+    }
+
+    public List<PostingRecord> getRawPostings() {
+        return rawPostings;
     }
 
     public List<OpenRecord> getOpens() {

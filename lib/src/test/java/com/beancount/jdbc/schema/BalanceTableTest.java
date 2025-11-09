@@ -25,7 +25,7 @@ class BalanceTableTest {
 
         Object[] row = BalanceTable.materializeDetailRows(List.of(record)).get(0);
 
-        assertEquals("USD", row[4]); // diff_number column
+        assertEquals(new BigDecimal("-1"), row[4]); // diff_number column should hold numeric diff
         assertEquals("USD", row[5]); // diff_currency column
     }
 

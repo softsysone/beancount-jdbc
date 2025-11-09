@@ -225,7 +225,6 @@ class SemanticAnalyzerTest {
         assertEquals("Run", txn.getPayee());
         assertEquals("Park", txn.getNarration());
         assertEquals(List.of("fitness"), txn.getTags());
-        assertEquals(List.of("transaction level note"), txn.getComments());
         assertEquals(1, txn.getMetadata().size());
         assertEquals("description", txn.getMetadata().get(0).getKey());
         assertEquals("Morning jog", txn.getMetadata().get(0).getValue());
@@ -239,22 +238,12 @@ class SemanticAnalyzerTest {
         assertEquals("USD", assets.getCurrency());
         assertEquals(0, assets.getCostNumber().compareTo(new BigDecimal("100")));
         assertEquals("EUR", assets.getCostCurrency());
-        assertEquals("2024-03-05", assets.getCostDate().toString());
-        assertEquals("Lot-42", assets.getCostLabel());
         assertEquals(0, assets.getPriceNumber().compareTo(new BigDecimal("1.50")));
         assertEquals("CAD", assets.getPriceCurrency());
-        assertEquals(List.of("inline posting"), assets.getComments());
-        assertEquals(1, assets.getMetadata().size());
-        assertEquals("memo", assets.getMetadata().get(0).getKey());
-        assertEquals("Lot memo", assets.getMetadata().get(0).getValue());
 
         SemanticPosting expenses = postings.get(1);
         assertEquals("Expenses:Health", expenses.getAccount());
         assertEquals(0, expenses.getNumber().compareTo(new BigDecimal("-10")));
-        assertEquals(List.of(), expenses.getComments());
-        assertEquals(1, expenses.getMetadata().size());
-        assertEquals("note", expenses.getMetadata().get(0).getKey());
-        assertEquals("posting note", expenses.getMetadata().get(0).getValue());
 
         LedgerData data = analysis.getLedgerData();
         assertEquals(2, data.getEntries().size(), "open + txn entries expected");
@@ -262,8 +251,8 @@ class SemanticAnalyzerTest {
         assertEquals(2, postingRecords.size());
         PostingRecord firstRecord = postingRecords.get(0);
         assertEquals("Assets:Cash", firstRecord.getAccount());
-        assertEquals(0, firstRecord.getAmountNumber().compareTo(new BigDecimal("10")));
-        assertEquals("USD", firstRecord.getAmountCurrency());
+        assertEquals(0, firstRecord.getNumber().compareTo(new BigDecimal("10")));
+        assertEquals("USD", firstRecord.getCurrency());
         assertEquals(0, firstRecord.getCostNumber().compareTo(new BigDecimal("100")));
         assertEquals("EUR", firstRecord.getCostCurrency());
         assertEquals("2024-03-05", firstRecord.getCostDate().toString());

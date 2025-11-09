@@ -144,7 +144,7 @@ final class BeancountConnection implements Connection {
         List<Object[]> priceDetailMutable = PriceTable.materializeDetailRows(ledgerData.getPrices());
         this.priceDetailRows = List.copyOf(priceDetailMutable);
         this.priceViewRows = List.copyOf(PriceTable.materializeViewRows(entryRowsMutable, priceDetailMutable));
-        this.postingsRows = List.copyOf(PostingsTable.materializeRows(ledgerData.getPostings()));
+        this.postingsRows = List.copyOf(PostingsTable.materializeRows(ledgerData.getRawPostings()));
     }
 
     Path getLedgerPath() {

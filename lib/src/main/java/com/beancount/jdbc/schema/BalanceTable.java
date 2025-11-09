@@ -29,15 +29,15 @@ public final class BalanceTable {
     public static List<Object[]> materializeDetailRows(List<BalanceRecord> records) {
         List<Object[]> rows = new ArrayList<>(records.size());
         for (BalanceRecord record : records) {
-            String diffCurrency = record.getDiffCurrency();
-            Object legacyDiffNumber = diffCurrency != null ? diffCurrency : null;
+            BigDecimal diffNumber = record.getDiffNumber();
+            String diffCurrency = diffNumber != null ? record.getDiffCurrency() : null;
             rows.add(
                     new Object[] {
                         record.getEntryId(),
                         record.getAccount(),
                         record.getAmountNumber(),
                         record.getAmountCurrency(),
-                        legacyDiffNumber,
+                        diffNumber,
                         diffCurrency
                     });
         }

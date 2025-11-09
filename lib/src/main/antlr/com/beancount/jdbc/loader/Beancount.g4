@@ -34,7 +34,7 @@ pushtagStatement
     ;
 
 poptagStatement
-    : POPTAG lineContent NEWLINE?
+    : POPTAG lineContent? NEWLINE?
     ;
 
 pushmetaStatement
@@ -50,8 +50,8 @@ directiveStatement
     ;
 
 directiveHead
-    : (DIRECTIVE_KEY | FLAG) directiveBody?
-    | LINE_CONTENT directiveBody?
+    : (DIRECTIVE_KEY | FLAG | OPTION) lineContent?
+    | lineContent
     ;
 
 directiveBody
@@ -112,7 +112,7 @@ metadataLine
     ;
 
 metadataKey
-    : LINE_CONTENT
+    : DIRECTIVE_KEY
     ;
 
 metadataValue
@@ -136,7 +136,7 @@ blankStatement
     ;
 
 lineContent
-    : (LINE_CONTENT | STRING | ACCOUNT_NAME | CURRENCY | NUMBER | FLAG | COLON | COMMA | LBRACE | RBRACE | AT | ATAT | TILDE)+
+    : (STRING | ACCOUNT_NAME | CURRENCY | NUMBER | FLAG | COLON | COMMA | LBRACE | RBRACE | AT | ATAT | TILDE | DIRECTIVE_KEY)+
     ;
 
 DATE
@@ -149,7 +149,8 @@ INCLUDE_KEY
     ;
 
 COMMENT
-    : (';' | '#') ~[\r\n]*
+    : ';' ~[\r\n]*
+    | {getCharPositionInLine() == 0}? '#' ~[\r\n]*
     ;
 
 STRING
@@ -242,13 +243,7 @@ ACCOUNT_NAME
     ;
 
 DIRECTIVE_KEY
-    : ~[ \t\r\n]+
-    ;
-
-// Matches continuation text after the first column only, stopping before quoted strings.
-// Mirrors the column-sensitive logic in beancount/parser/lexer.l, which emits separate STRING tokens.
-LINE_CONTENT
-    : {getCharPositionInLine() > 0}? ~["\r\n]+
+    : ~[ \t\r\n:,@{}()]+
     ;
 
 INDENT

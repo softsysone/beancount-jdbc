@@ -26,13 +26,7 @@ public final class TransactionsDetailTable {
             }
             TransactionPayload payload = entry.getTransactionPayload();
             String tags = payload != null ? payload.getTags() : null;
-            if (tags == null) {
-                tags = "";
-            }
             String links = payload != null ? payload.getLinks() : null;
-            if (links == null) {
-                links = "";
-            }
             rows.add(
                     new Object[] {
                         entry.getId(),

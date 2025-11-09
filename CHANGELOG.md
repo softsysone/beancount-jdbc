@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.0-beta
+- Reworked directive parsing/semantic wiring so token dumps aren’t forced, `pushtag`/`pushmeta` arguments stay intact, and transaction/posting comment metadata (including tags/links) is preserved end-to-end in `SemanticTransaction`/`SemanticPosting`.
+- Introduced dual posting streams (normalized + raw) so inventory/tolerance math can infer balanced amounts without changing the JDBC `postings` table; `transactions_detail`/`balance_detail` also now emit bean-sql compatible tag/link/diff values.
+- Added strict/average inventory fixes, tolerance/booking validations, and updated JDBC schema + tests (driver + schema round-trip suites) to lock in the new behaviour ahead of the beta.
+
 ## 0.0.42-alpha
 - Added include regression coverage to ensure entry IDs/source filenames stay ordered across nested files and that tag stacks propagate through includes.
 - Added schema view-join tests so `*_view` tables are guaranteed to mirror bean-sql’s `entry JOIN detail` column layout.

@@ -48,6 +48,6 @@ class BeancountLexerTest {
         }
 
         assertEquals(
-                List.of("DATE", "DIRECTIVE_KEY", "LINE_CONTENT", "STRING", "NEWLINE", "EOF"), symbolic);
+                List.of("DATE", "DIRECTIVE_KEY", "ACCOUNT_NAME", "STRING", "NEWLINE", "EOF"), symbolic);
     }
 }
