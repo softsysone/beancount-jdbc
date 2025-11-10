@@ -45,7 +45,7 @@ public final class EntryTable {
                         "date", Types.DATE, "DATE", 0, 0, true, Date.class.getName()));
         columns.add(
                 new ColumnDescriptor(
-                        "type", Types.CHAR, "CHAR", 8, 0, true, String.class.getName()));
+                        "type", Types.VARCHAR, "STRING", 0, 0, true, String.class.getName()));
         columns.add(
                 new ColumnDescriptor(
                         "source_filename",
