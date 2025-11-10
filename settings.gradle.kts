@@ -12,3 +12,4 @@ plugins {
 
 rootProject.name = "beancount-jdbc"
 include("lib")
+project(":lib").name = "beancount-jdbc"

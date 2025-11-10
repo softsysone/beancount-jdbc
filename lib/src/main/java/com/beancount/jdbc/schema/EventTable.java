@@ -73,7 +73,7 @@ public final class EventTable {
         columns.add(new ColumnDescriptor("type", Types.CHAR, "CHAR", 8, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("source_filename", Types.VARCHAR, "STRING", 0, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("source_lineno", Types.INTEGER, "INTEGER", 10, 0, true, Integer.class.getName()));
-        columns.add(new ColumnDescriptor("type", Types.VARCHAR, "VARCHAR", 0, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("event_type", Types.VARCHAR, "VARCHAR", 0, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("description", Types.VARCHAR, "VARCHAR", 0, 0, true, String.class.getName()));
         return new TableDefinition(VIEW_NAME, "VIEW", "entry JOIN event_detail USING (id)", columns);
     }

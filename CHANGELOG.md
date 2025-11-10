@@ -1,5 +1,131 @@
 # Changelog
 
+## 0.1.40-alpha
+- Initialised `ENTRY_VIEW_COLUMNS` before building the Calcite view SQL so the schema class no longer throws a NullPointerException during static init.
+- Calcite view registration now forces the SQL to parse immediately and reports the exact SQL text whenever the parser rejects a view; Gradle test logs only list failing tests to keep console noise down.
+
+## 0.2.0-beta
+- Calcite-backed driver now quotes all identifiers end-to-end, registers distinct view columns, and aligns metadata assertions/tests with the Calcite runtime output so the JDBC surface matches bean-sql expectations.
+
+## 0.1.41-alpha
+- Quoted every column/table identifier in the generated Calcite view SQL so reserved keywords like `date` parse correctly, and guarded Calcite view registration against re-entry while the schema is still being initialised.
+- Calcite view definitions now alias each column explicitly (e.g., `event_type`) to avoid duplicate field names, matching the JDBC metadata.
+
+## 0.1.39-alpha
+- Derived Calcite view schema paths directly from the `SchemaPlus` parent chain so view registration no longer consults `CalciteSchema.path()` mid-initialization.
+
+## 0.1.38-alpha
+- Deferred Calcite schema path resolution until the schema is registered so view registration no longer trips a `NullPointerException`.
+
+## 0.1.37-alpha
+- Rewrote all Calcite view definitions to project the exact bean-sql column list (no wildcard `SELECT *`), eliminating duplicate column names and quoting the detail tables so view SQL parses cleanly.
+
+## 0.1.36-alpha
+- Registered the bean-sql views (`open`, `close`, `pad`, `balance`, `note`, `document`, `event`, `query`, `price`, `transactions`) as real Calcite `ViewTable` macros and added Calcite-mode integration tests for each view.
+
+## 0.1.35-alpha
+- Updated `balance_detail` and `price_detail` schemas to expose currency columns as `VARCHAR`, keeping Calcite/legacy result sets free of padded spaces.
+
+## 0.1.34-alpha
+- Fixed the Calcite type mapper to use `SqlTypeName.allowsPrec()`, restoring compilation under Calcite 1.38.0.
+
+## 0.1.33-alpha
+- Added Calcite-backed tables plus integration tests for `balance_detail`, `note_detail`, `document_detail`, `event_detail`, `query_detail`, `price_detail`, and `postings`.
+
+## 0.1.32-alpha
+- Added Calcite support/tests for `pad_detail`.
+
+## 0.1.31-alpha
+- Fixed BeancountDriverTest class closure (missing brace) after adding Calcite close_detail test.
+
+## 0.1.30-alpha
+- Fixed `close_detail` Calcite table to map JDBC types via `SqlTypeName`.
+
+## 0.1.29-alpha
+- Added Calcite support/tests for `close_detail`.
+
+## 0.1.28-alpha
+- Fixed Calcite metadata wrapper compilation by importing `java.sql.DatabaseMetaData`.
+
+## 0.1.27-alpha
+- Calcite connections now wrap metadata so DBeaver shows the Beancount driver/version instead of `Calcite JDBC Driver`.
+
+## 0.1.25-alpha
+- Escaped Windows paths in the Calcite model JSON so `mode=calcite` works on DBeaver.
+
+## 0.1.24-alpha
+- Added Calcite support for the `transactions_detail` table and accompanying integration test.
+
+## 0.1.23-alpha
+- Updated metadata tests to expect the `entry.type` column as `VARCHAR` now that we’ve dropped CHAR padding.
+
+## 0.1.22-alpha
+- Switched the `entry.type` column to `VARCHAR` (no padding) so Calcite/legacy paths both return clean directive values; updated the Calcite integration test accordingly.
+
+## 0.1.21-alpha
+- Trimmed directive type strings in the Calcite integration test to account for CHAR padding.
+
+## 0.1.20-alpha
+- Calcite mode integration test now accepts the actual directive type (`txn`) returned by the entry table.
+
+## 0.1.19-alpha
+- Calcite mode now sets `lex=JAVA`, so unquoted table names like `entry` resolve correctly.
+
+## 0.1.18-alpha
+- Calcite mode integration test now runs queries with lowercase identifiers so Calcite resolves the `entry` table.
+
+## 0.1.17-alpha
+- Added a Calcite mode integration test that queries `SELECT * FROM entry` to ensure the new table wiring functions end-to-end.
+
+## 0.1.16-alpha
+- `BeancountSchema` now caches the parsed ledger and registers the Calcite `entry` table so Calcite mode can actually query it.
+
+## 0.1.15-alpha
+- Fixed `EntryCalciteTable` imports to use Calcite's `org.apache.calcite.DataContext` and restored the file after accidental truncation.
+
+## 0.1.14-alpha
+- Fixed `EntryCalciteTable` compilation by importing Calcite's `DataContext` and aligning type-precision handling with Calcite APIs.
+
+## 0.1.13-alpha
+- Added `EntryCalciteTable` and hooked it into the Calcite schema so ledger data is available for `entry` queries (still behind the `mode=calcite` flag).
+
+## 0.1.12-alpha
+- Renamed the Gradle subproject so build artifacts use the canonical `beancount-jdbc-<version>.jar` naming convention.
+
+## 0.1.11-alpha
+- Restored the `copyRuntimeClasspath` Gradle task so Calcite/runtime jars are copied to `lib/build/runtime-libs` for DBeaver.
+
+## 0.1.10-alpha
+- Added `LedgerProvider` so both the legacy JDBC path and future Calcite tables can share the same loader without duplicating code (no behaviour change yet).
+
+## 0.1.9-alpha
+- Added the Calcite feature-flag path (driver now routes to Calcite when `mode=calcite`).
+
+## 0.1.8-alpha
+- Added placeholder Calcite schema factory (`BeancountSchemaFactory`/`BeancountSchema`) to prep the driver for Calcite-backed tables.
+
+## 0.1.7-alpha
+- Improved the Gradle version helper to derive the version from MAJOR/MINOR/PATCH constants when `FULL` isn’t a literal, fixing the “unknown” banner.
+
+## 0.1.6-alpha
+- Added diagnostic logging for the Gradle version helper and an unconditional version banner via `taskGraph.whenReady`.
+
+## 0.1.5-alpha
+- Fixed Gradle’s version banner by pointing the helper to the correct `lib/src/.../Version.java` path.
+
+## 0.1.4-alpha
+- Fixed the Gradle version banner by pointing the helper at the correct `Version.java` path and propagating the driver version into `project.version`.
+
+## 0.1.3-alpha
+- Added Gradle hooks so `:lib:test` and `:lib:jar` print the current driver version (with Calcite) and embed it in the JAR manifest.
+
+## 0.1.2-alpha
+- Incremented the driver patch version to keep the DBeaver-visible build identifier in sync with the latest code changes.
+
+## 0.1.1-alpha
+- Bumped the driver version to `0.1.1-alpha` so JDBC metadata (and DBeaver) always display the latest build.
+- Added a runtime descriptor that surfaces the embedded Calcite version (`1.38.0`) alongside the driver version in `DatabaseMetaData`.
+
 ## 0.1.0-beta
 - Reworked directive parsing/semantic wiring so token dumps aren’t forced, `pushtag`/`pushmeta` arguments stay intact, and transaction/posting comment metadata (including tags/links) is preserved end-to-end in `SemanticTransaction`/`SemanticPosting`.
 - Introduced dual posting streams (normalized + raw) so inventory/tolerance math can infer balanced amounts without changing the JDBC `postings` table; `transactions_detail`/`balance_detail` also now emit bean-sql compatible tag/link/diff values.
@@ -169,3 +295,18 @@
 ## 0.0.1-alpha
 - Introduced minimal JDBC driver capable of validating Beancount ledger paths and opening connections.
 - Registered driver via service loader for use in external tools (e.g., DBeaver).
+## 0.1.18-alpha
+- Added a Calcite mode integration test that queries `SELECT * FROM entry` to ensure the new table wiring functions end-to-end.
+
+
+- Added a Calcite mode integration test that queries `SELECT * FROM entry` to ensure the new table wiring functions end-to-end.
+
+## 0.1.16-alpha
+- `BeancountSchema` now caches the parsed ledger and registers the Calcite `entry` table so Calcite mode can actually query it.
+## 0.1.20-alpha
+- Updated the Calcite integration test expectation to match the actual directive type (`txn`) returned from the entry table.
+## 0.1.22-alpha
+- Switched the `entry.type` column to `VARCHAR` (no padding) so Calcite/legacy paths both return clean directive values; updated the Calcite integration test accordingly.
+
+## 0.1.21-alpha
+- Trimmed directive type strings in the Calcite integration test to account for CHAR padding.

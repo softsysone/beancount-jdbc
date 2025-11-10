@@ -1,11 +1,11 @@
 package com.beancount.jdbc;
 
-import com.beancount.jdbc.loader.BeancountLoader;
 import com.beancount.jdbc.loader.LoaderException;
 import com.beancount.jdbc.loader.LoaderMessage;
 import com.beancount.jdbc.loader.LoaderResult;
 import com.beancount.jdbc.loader.semantic.SemanticLedger;
 import com.beancount.jdbc.ledger.LedgerData;
+import com.beancount.jdbc.ledger.LedgerProvider;
 import com.beancount.jdbc.ledger.LedgerEntry;
 import com.beancount.jdbc.schema.ColumnDescriptor;
 import com.beancount.jdbc.schema.EntryTable;
@@ -105,7 +105,7 @@ final class BeancountConnection implements Connection {
         }
         LoaderResult loaderResult;
         try {
-            loaderResult = new BeancountLoader().load(ledgerPath);
+            loaderResult = LedgerProvider.load(ledgerPath);
         } catch (LoaderException ex) {
             throw new SQLException(ex.getMessage(), ex);
         }
@@ -697,11 +697,11 @@ final class BeancountConnection implements Connection {
                 case "getDatabaseProductName":
                     return "Beancount";
                 case "getDatabaseProductVersion":
-                    return Version.FULL;
+                    return Version.RUNTIME;
                 case "getDriverName":
                     return "Beancount JDBC Driver (alpha)";
                 case "getDriverVersion":
-                    return Version.FULL;
+                    return Version.RUNTIME;
                 case "getDriverMajorVersion":
                     return Version.MAJOR;
                 case "getDriverMinorVersion":

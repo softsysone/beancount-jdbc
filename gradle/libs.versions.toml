@@ -6,6 +6,7 @@ commons-math3 = "3.6.1"
 guava = "33.2.1-jre"
 junit-jupiter = "5.10.3"
 antlr4 = "4.13.1"
+calcite = "1.38.0"
 
 [libraries]
 commons-math3 = { module = "org.apache.commons:commons-math3", version.ref = "commons-math3" }
@@ -13,3 +14,5 @@ guava = { module = "com.google.guava:guava", version.ref = "guava" }
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
 antlr4 = { module = "org.antlr:antlr4", version.ref = "antlr4" }
 antlr4-runtime = { module = "org.antlr:antlr4-runtime", version.ref = "antlr4" }
+calcite-core = { module = "org.apache.calcite:calcite-core", version.ref = "calcite" }
+calcite-linq4j = { module = "org.apache.calcite:calcite-linq4j", version.ref = "calcite" }

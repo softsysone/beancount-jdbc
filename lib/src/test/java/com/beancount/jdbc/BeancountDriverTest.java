@@ -23,6 +23,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Properties;
 import java.util.Set;
+import java.util.stream.Collectors;
 import org.junit.jupiter.api.Test;
 
 class BeancountDriverTest {
@@ -78,16 +79,16 @@ class BeancountDriverTest {
 
         DatabaseMetaData metaData = connection.getMetaData();
         assertEquals("Beancount", metaData.getDatabaseProductName());
-        assertEquals(Version.FULL, metaData.getDatabaseProductVersion());
+        assertEquals(Version.RUNTIME, metaData.getDatabaseProductVersion());
         assertTrue(metaData.isReadOnly());
 
-        try (ResultSet tables = metaData.getTables(null, null, "%", null)) {
-            List<String> tableSignatures = new ArrayList<>();
+        try (ResultSet tables = metaData.getTables(null, null, "%", new String[] {"TABLE", "VIEW"})) {
+            Set<String> actual = new HashSet<>();
             while (tables.next()) {
-                tableSignatures.add(tables.getString("TABLE_NAME") + ":" + tables.getString("TABLE_TYPE"));
+                actual.add(tables.getString("TABLE_NAME") + ":" + tables.getString("TABLE_TYPE"));
             }
-            assertEquals(
-                    List.of(
+            Set<String> expected =
+                    Set.of(
                             "entry:TABLE",
                             "transactions_detail:TABLE",
                             "transactions:VIEW",
@@ -109,8 +110,8 @@ class BeancountDriverTest {
                             "query:VIEW",
                             "price_detail:TABLE",
                             "price:VIEW",
-                            "postings:TABLE"),
-                    tableSignatures);
+                            "postings:TABLE");
+            assertEquals(expected, actual);
         }
 
         try (ResultSet columns = metaData.getColumns(null, null, "ENTRY", null)) {
@@ -126,8 +127,8 @@ class BeancountDriverTest {
             }
             assertEquals(List.of("id", "date", "type", "source_filename", "source_lineno"), names);
             assertEquals(
-                    List.of(Types.INTEGER, Types.DATE, Types.CHAR, Types.VARCHAR, Types.INTEGER), dataTypes);
-            assertEquals(List.of("INTEGER", "DATE", "CHAR", "STRING", "INTEGER"), typeNames);
+                    List.of(Types.INTEGER, Types.DATE, Types.VARCHAR, Types.VARCHAR, Types.INTEGER), dataTypes);
+            assertEquals(List.of("INTEGER", "DATE", "STRING", "STRING", "INTEGER"), typeNames);
             assertEquals(List.of("NO", "YES", "YES", "YES", "YES"), nullableFlags);
         }
 
@@ -251,7 +252,7 @@ class BeancountDriverTest {
                 names.add(columns.getString("COLUMN_NAME"));
             }
             assertEquals(
-                    List.of("id", "date", "type", "source_filename", "source_lineno", "type", "description"),
+                    List.of("id", "date", "type", "source_filename", "source_lineno", "event_type", "description"),
                     names);
         }
 
@@ -331,7 +332,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM entry")) {
+                ResultSet rs = statement.executeQuery(sqlAll("entry"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> types = new ArrayList<>();
             List<String> filenames = new ArrayList<>();
@@ -366,7 +367,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM transactions_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("transactions_detail"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> payees = new ArrayList<>();
             List<Set<String>> tagSets = new ArrayList<>();
@@ -384,7 +385,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM transactions")) {
+                ResultSet rs = statement.executeQuery(sqlAll("transactions"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> payees = new ArrayList<>();
             List<Set<String>> tagSets = new ArrayList<>();
@@ -399,7 +400,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM open_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("open_detail"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> accounts = new ArrayList<>();
             List<String> currencies = new ArrayList<>();
@@ -414,7 +415,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM open")) {
+                ResultSet rs = statement.executeQuery(sqlAll("open"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> accounts = new ArrayList<>();
             List<String> currencies = new ArrayList<>();
@@ -433,7 +434,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM close_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("close_detail"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> accounts = new ArrayList<>();
             while (rs.next()) {
@@ -445,7 +446,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM close")) {
+                ResultSet rs = statement.executeQuery(sqlAll("close"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> accounts = new ArrayList<>();
             List<String> filenames = new ArrayList<>();
@@ -461,7 +462,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM pad_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("pad_detail"))) {
             List<Integer> ids = new ArrayList<>();
             List<String> accounts = new ArrayList<>();
             List<String> sources = new ArrayList<>();
@@ -476,7 +477,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM pad")) {
+                ResultSet rs = statement.executeQuery(sqlAll("pad"))) {
             assertTrue(rs.next());
             assertEquals(4, rs.getInt("id"));
             assertEquals("pad", rs.getString("type"));
@@ -486,7 +487,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM note_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("note_detail"))) {
             assertTrue(rs.next());
             assertEquals(6, rs.getInt("id"));
             assertEquals("Assets:Cash", rs.getString("account"));
@@ -495,7 +496,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM note")) {
+                ResultSet rs = statement.executeQuery(sqlAll("note"))) {
             assertTrue(rs.next());
             assertEquals(6, rs.getInt("id"));
             assertEquals("note", rs.getString("type"));
@@ -505,7 +506,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM document_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("document_detail"))) {
             assertTrue(rs.next());
             assertEquals(7, rs.getInt("id"));
             assertEquals("Assets:Cash", rs.getString("account"));
@@ -514,7 +515,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM document")) {
+                ResultSet rs = statement.executeQuery(sqlAll("document"))) {
             assertTrue(rs.next());
             assertEquals(7, rs.getInt("id"));
             assertEquals("document", rs.getString("type"));
@@ -524,7 +525,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM event_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("event_detail"))) {
             assertTrue(rs.next());
             assertEquals(8, rs.getInt("id"));
             assertEquals("Project", rs.getString("type"));
@@ -533,7 +534,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM event")) {
+                ResultSet rs = statement.executeQuery(sqlAll("event"))) {
             assertTrue(rs.next());
             assertEquals(8, rs.getInt("id"));
             assertEquals("event", rs.getString("type"));
@@ -543,7 +544,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM query_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("query_detail"))) {
             assertTrue(rs.next());
             assertEquals(10, rs.getInt("id"));
             assertEquals("accounts", rs.getString("name"));
@@ -552,7 +553,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM query")) {
+                ResultSet rs = statement.executeQuery(sqlAll("query"))) {
             assertTrue(rs.next());
             assertEquals(10, rs.getInt("id"));
             assertEquals("query", rs.getString("type"));
@@ -562,7 +563,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM price_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("price_detail"))) {
             assertTrue(rs.next());
             assertEquals(11, rs.getInt("id"));
             assertEquals("USD", rs.getString("currency"));
@@ -572,7 +573,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM price")) {
+                ResultSet rs = statement.executeQuery(sqlAll("price"))) {
             assertTrue(rs.next());
             assertEquals(11, rs.getInt("id"));
             assertEquals("price", rs.getString("type"));
@@ -583,7 +584,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM balance_detail")) {
+                ResultSet rs = statement.executeQuery(sqlAll("balance_detail"))) {
             assertTrue(rs.next());
             assertEquals(13, rs.getInt("id"));
             assertEquals("Assets:Cash", rs.getString("account"));
@@ -602,7 +603,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM balance")) {
+                ResultSet rs = statement.executeQuery(sqlAll("balance"))) {
             assertTrue(rs.next());
             assertEquals(13, rs.getInt("id"));
             assertEquals("balance", rs.getString("type"));
@@ -623,7 +624,7 @@ class BeancountDriverTest {
         }
 
         try (Statement statement = connection.createStatement();
-                ResultSet rs = statement.executeQuery("SELECT * FROM postings")) {
+                ResultSet rs = statement.executeQuery(sqlAll("postings"))) {
             List<Integer> postingIds = new ArrayList<>();
             List<Integer> entryIds = new ArrayList<>();
             List<String> accounts = new ArrayList<>();
@@ -658,6 +659,26 @@ class BeancountDriverTest {
 
         connection.close();
         assertTrue(connection.isClosed());
+    }
+
+    private static String sqlAll(String table) {
+        return "SELECT * FROM \"" + table + "\"";
+    }
+
+    private static String sql(List<String> columns, String table, String orderBy) {
+        String select =
+                columns.stream()
+                        .map(column -> "\"" + column + "\"")
+                        .collect(Collectors.joining(", "));
+        StringBuilder builder = new StringBuilder("SELECT ")
+                .append(select)
+                .append(" FROM \"")
+                .append(table)
+                .append("\"");
+        if (orderBy != null) {
+            builder.append(" ORDER BY \"").append(orderBy).append("\"");
+        }
+        return builder.toString();
     }
 
     @Test

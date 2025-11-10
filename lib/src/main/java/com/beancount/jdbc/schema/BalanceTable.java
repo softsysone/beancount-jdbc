@@ -77,9 +77,9 @@ public final class BalanceTable {
         columns.add(new ColumnDescriptor("id", Types.INTEGER, "INTEGER", 10, 0, false, Integer.class.getName()));
         columns.add(new ColumnDescriptor("account", Types.VARCHAR, "VARCHAR", 0, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("amount_number", Types.DECIMAL, "DECIMAL(16,6)", 16, 6, true, BigDecimal.class.getName()));
-        columns.add(new ColumnDescriptor("amount_currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("amount_currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("diff_number", Types.DECIMAL, "DECIMAL(16,6)", 16, 6, true, BigDecimal.class.getName()));
-        columns.add(new ColumnDescriptor("diff_currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("diff_currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         return new TableDefinition(DETAIL_NAME, "TABLE", "Balance directives", columns);
     }
 
@@ -92,9 +92,9 @@ public final class BalanceTable {
         columns.add(new ColumnDescriptor("source_lineno", Types.INTEGER, "INTEGER", 10, 0, true, Integer.class.getName()));
         columns.add(new ColumnDescriptor("account", Types.VARCHAR, "VARCHAR", 0, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("amount_number", Types.DECIMAL, "DECIMAL(16,6)", 16, 6, true, BigDecimal.class.getName()));
-        columns.add(new ColumnDescriptor("amount_currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("amount_currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("diff_number", Types.DECIMAL, "DECIMAL(16,6)", 16, 6, true, BigDecimal.class.getName()));
-        columns.add(new ColumnDescriptor("diff_currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("diff_currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         return new TableDefinition(VIEW_NAME, "VIEW", "entry JOIN balance_detail USING (id)", columns);
     }
 }

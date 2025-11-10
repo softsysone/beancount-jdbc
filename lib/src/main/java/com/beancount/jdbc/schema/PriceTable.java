@@ -69,9 +69,9 @@ public final class PriceTable {
     private static TableDefinition createDetailDefinition() {
         List<ColumnDescriptor> columns = new ArrayList<>();
         columns.add(new ColumnDescriptor("id", Types.INTEGER, "INTEGER", 10, 0, false, Integer.class.getName()));
-        columns.add(new ColumnDescriptor("currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("amount_number", Types.DECIMAL, "DECIMAL(16,6)", 16, 6, true, BigDecimal.class.getName()));
-        columns.add(new ColumnDescriptor("amount_currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("amount_currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         return new TableDefinition(DETAIL_NAME, "TABLE", "Price directives", columns);
     }
 
@@ -82,9 +82,9 @@ public final class PriceTable {
         columns.add(new ColumnDescriptor("type", Types.CHAR, "CHAR", 8, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("source_filename", Types.VARCHAR, "STRING", 0, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("source_lineno", Types.INTEGER, "INTEGER", 10, 0, true, Integer.class.getName()));
-        columns.add(new ColumnDescriptor("currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         columns.add(new ColumnDescriptor("amount_number", Types.DECIMAL, "DECIMAL(16,6)", 16, 6, true, BigDecimal.class.getName()));
-        columns.add(new ColumnDescriptor("amount_currency", Types.CHAR, "CHAR", 10, 0, true, String.class.getName()));
+        columns.add(new ColumnDescriptor("amount_currency", Types.VARCHAR, "VARCHAR(10)", 10, 0, true, String.class.getName()));
         return new TableDefinition(VIEW_NAME, "VIEW", "entry JOIN price_detail USING (id)", columns);
     }
 }
