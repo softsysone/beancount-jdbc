@@ -1,0 +1,9 @@
+include "ParserInclude.IncludeCycle/test-cases/ParserInclude.IncludeRelative/Included1.beancount"
+
+2004-01-27 * "QUITE OLD"
+  Liabilities:US:Amex:BlueCash    -122.02 USD
+  Expenses:Food:Grocery            122.02 USD
+
+include "ParserInclude.IncludeCycle/test-cases/ParserInclude.IncludeRelative/Included1.beancount"
+
+; Source: https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeCycle.beancount

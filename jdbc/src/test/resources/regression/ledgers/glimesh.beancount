@@ -1,0 +1,7 @@
+option "title" "Glimesh Finances"
+
+option "operating_currency" "USD"
+
+include "glimesh/FY2020/FY2020.beancount"
+
+; Source: https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/glimesh.beancount

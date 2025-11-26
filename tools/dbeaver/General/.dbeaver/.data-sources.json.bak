@@ -1,0 +1,90 @@
+{
+	"folders": {},
+	"connections": {
+		"7B81473F-1901-FA3E-1BA8-7CDE24494373-19ab3499582-df49e742ae3e678": {
+			"provider": "generic",
+			"driver": "7B81473F-1901-FA3E-1BA8-7CDE24494373",
+			"name": "beancount_testing_conn",
+			"save-password": true,
+			"configuration": {
+				"url": "jdbc:beancount:${ledger_path}",
+				"configurationType": "URL",
+				"type": "dev",
+				"closeIdleConnection": true,
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"smart-commit": false,
+			"smart-commit-recover": true,
+			"auto-close-transactions": true,
+			"close-transactions-period": 1800,
+			"auto-close-connections": true,
+			"close-connections-period": 14400
+		}
+	},
+	"drivers": {
+		"generic": {
+			"7B81473F-1901-FA3E-1BA8-7CDE24494373": {
+				"provider": "generic",
+				"id": "7B81473F-1901-FA3E-1BA8-7CDE24494373",
+				"name": "Beancount JDBC (Testing)",
+				"class": "com.beancount.jdbc.BeancountDriver",
+				"url": "jdbc:beancount:{file}",
+				"custom": true,
+				"embedded": false,
+				"propagateDriverProperties": false,
+				"anonymous": false,
+				"allowsEmptyPassword": false,
+				"instantiable": true,
+				"libraries": {},
+				"driver-parameters": {
+					"read-only-data": "false",
+					"supports-indexes": "true",
+					"all-objects-pattern": "%",
+					"quote-reserved-words": "true",
+					"omit-schema": "false",
+					"supports-table-constraints": "true",
+					"schema-filters-enabled": "false",
+					"supports-delimiter-in-views": "true",
+					"supports-embedded-database-creation": "true",
+					"supports-struct-cache": "true",
+					"supports-truncate": "true",
+					"read-only-meta-data": "false",
+					"omit-type-cache": "false",
+					"split-procedures-and-functions": "false",
+					"supports-stored-code": "true",
+					"supports-references": "true",
+					"supports-multi-insert": "false",
+					"omit-catalog-name": "false",
+					"supports-catalog-selection": "true",
+					"omit-single-catalog": "false",
+					"ddl-drop-column-brackets": "false",
+					"omit-single-schema": "false",
+					"supports-scroll": "false",
+					"omit-catalog": "false",
+					"supports-views": "true",
+					"script-delimiter": ";",
+					"legacy-sql-dialect": "false",
+					"script-delimiter-after-query": "false",
+					"use-search-string-escape": "false",
+					"supports-multiple-results": "false",
+					"script-delimiter-after-block": "false",
+					"supports-schema-selection": "true",
+					"alter-table-add-column": "false",
+					"ddl-drop-column-short": "false",
+					"supports-limits": "true",
+					"supports-select-count": "true"
+				}
+			}
+		}
+	}
+}

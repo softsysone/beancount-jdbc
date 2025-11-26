@@ -1,0 +1,3 @@
+include "ParserInclude.IncludeAbsolute/some/absolute/filename.beancount"
+
+; Source: https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeAbsolute.beancount

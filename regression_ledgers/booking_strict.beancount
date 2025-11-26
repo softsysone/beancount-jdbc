@@ -1,9 +1,0 @@
-option "booking_method" "STRICT"
-2019-01-01 open Assets:Invest XYZ
-2019-01-01 open Equity:Opening USD
-2019-01-02 * "Buy"
-  Assets:Invest 5 XYZ {100 USD}
-  Equity:Opening -500 USD
-2019-01-03 * "Sell"
-  Assets:Invest -5 XYZ {100 USD}
-  Equity:Opening 500 USD

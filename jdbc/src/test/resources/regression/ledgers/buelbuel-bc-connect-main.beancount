@@ -1,0 +1,10 @@
+plugin "autobean.sorted"
+option "operating_currency" "EUR"
+
+2010-01-01 custom "fava-extension" "fava_dashboards" "{
+    'config': '../conf/dashboards.yaml'
+}"
+
+include "buelbuel-bc-connect-main/ledgers/2024.beancount"
+
+; Source: https://raw.githubusercontent.com/buelbuel/bc-connect/e9c10b8c070726297a3cd72f126f0175e7514a47/ledgers/main.beancount

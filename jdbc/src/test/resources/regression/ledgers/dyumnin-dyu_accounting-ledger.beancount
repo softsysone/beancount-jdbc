@@ -1,0 +1,9 @@
+; vim:foldmethod=marker
+option "booking_method" "FIFO"
+
+include "dyumnin-dyu_accounting-ledger/example/accounts.beancount"
+include "dyumnin-dyu_accounting-ledger/example/data.beancount"
+;include "firstyear.beancount"
+;include "depreciations.bc"
+
+; Source: https://raw.githubusercontent.com/dyumnin/dyu_accounting/80b43b897ad5e20d213f31e004cbb5e2d7fbbd8a/example/ledger.beancount

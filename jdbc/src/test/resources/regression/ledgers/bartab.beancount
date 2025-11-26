@@ -1,0 +1,7 @@
+include "bartab/static/adjustments.beancount"
+include "bartab/static/basic-accounts.beancount"
+include "bartab/static/members.beancount"
+include "bartab/static/stock.beancount"
+include "bartab/ledger/dynamic.beancount"
+
+; Source: https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/bartab.beancount

@@ -1,0 +1,10 @@
+; extension-report-example.beancount
+
+2010-01-01 custom "fava-extension" "fava.ext.fava_ext_test" "[
+        ('account_name_pattern', 'Assets:US:ETrade.*'),
+        ('account_open_metadata_pattern', ('number', '882882'))
+    ]"
+include "extension-report-example/tests/data/long-example.beancount"
+option "title" "Extension Report"
+
+; Source: https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/extension-report-example.beancount

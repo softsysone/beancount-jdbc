@@ -1,0 +1,310 @@
+; Configurações
+option "title" "apyb"
+option "operating_currency" "BRL"
+2022-11-06 custom "fava-option" "show_closed_accounts" "true"
+2023-07-02 custom "fava-option" "language" "pt_BR"
+2023-07-02 custom "fava-option" "default_page" "balance_sheet/"
+
+; APyB ========================================================================
+2020-01-02 open Assets:Bancos:BB BRL
+2022-03-02 open Assets:Bancos:PagSeguro BRL
+2025-06-30 close Assets:Bancos:PagSeguro
+2021-03-25 open Equity:Investimentos:BB BRL
+2020-09-09 open Expenses:APyB:Contadora BRL
+2020-01-15 open Expenses:APyB:Taxas:BB BRL
+2022-07-01 open Expenses:APyB:Jurídico BRL
+2020-03-13 open Expenses:APyB:Impostos BRL
+2020-11-04 open Expenses:APyB:Infra BRL
+2020-01-22 open Expenses:APyB:Ops BRL
+2021-09-19 open Expenses:APyB:PremioDTJF BRL
+2023-07-28 open Expenses:APyB:IdentidadeVisual BRL
+2021-11-16 open Income:APyB:Anuidades BRL
+2021-09-19 open Income:APyB:Estorno BRL
+2024-08-07 open Income:APyB:OrigemDesconhecida BRL
+
+; Eventos =====================================================================
+; Python Brasil 2019
+2020-01-02 open Assets:Eventos:Pybr2019 BRL
+2020-01-02 open Income:Eventos:Pybr2019 BRL
+2020-02-07 open Expenses:Eventos:Pybr2019 BRL
+; Python Brasil 2020
+2020-11-16 open Assets:Eventos:Pybr2020 BRL
+2020-11-16 open Expenses:Eventos:Pybr2020 BRL
+; Python Brasil 2021
+2021-07-30 open Assets:Eventos:Pybr2021 BRL
+2021-07-30 open Income:Eventos:Pybr2021 BRL
+2021-09-20 open Expenses:Eventos:Pybr2021 BRL
+2022-09-02 close Assets:Eventos:Pybr2021
+2022-09-02 close Income:Eventos:Pybr2021
+2022-09-02 close Expenses:Eventos:Pybr2021
+; Python Brasil 2022
+2022-06-06 open Assets:Eventos:Pybr2022 BRL
+2022-06-20 open Expenses:Eventos:Pybr2022 BRL
+2022-06-06 open Income:Eventos:Pybr2022 BRL
+2025-05-25 close Assets:Eventos:Pybr2022
+2025-05-25 close Expenses:Eventos:Pybr2022
+2025-05-25 close Income:Eventos:Pybr2022
+; Python Brasil 2023
+2023-01-31 open Assets:Eventos:Pybr2023 BRL
+2023-01-31 open Expenses:Eventos:Pybr2023 BRL
+2023-05-23 open Income:Eventos:Pybr2023 BRL
+2024-07-23 close Assets:Eventos:Pybr2023
+2024-07-23 close Income:Eventos:Pybr2023
+2024-07-23 close Expenses:Eventos:Pybr2023
+; Python Brasil 2024
+2024-01-12 open Assets:Eventos:Pybr2024 BRL
+2024-01-12 open Expenses:Eventos:Pybr2024 BRL
+2024-06-17 open Income:Eventos:Pybr2024 BRL
+2025-05-25 close Assets:Eventos:Pybr2024
+2025-05-25 close Expenses:Eventos:Pybr2024
+2025-05-25 close Income:Eventos:Pybr2024
+; Python Brasil 2025
+2024-12-10 open Assets:Eventos:Pybr2025 BRL
+2024-12-10 open Expenses:Eventos:Pybr2025 BRL
+2024-12-10 open Income:Eventos:Pybr2025 BRL
+; Python Brasil 2026
+2025-05-07 open Assets:Eventos:Pybr2026 BRL
+2025-05-07 open Expenses:Eventos:Pybr2026 BRL
+2025-05-07 open Income:Eventos:Pybr2026 BRL
+
+; Caipyra 2025
+2025-05-21 open Assets:Eventos:Caipyra2025 BRL
+2025-05-21 open Income:Eventos:Caipyra2025 BRL
+2025-05-21 open Expenses:Eventos:Caipyra2025 BRL
+
+; Python Cerrado 2024
+2024-08-01 open Assets:Eventos:Pycerrado2024 BRL
+2024-08-01 open Income:Eventos:Pycerrado2024 BRL
+2024-08-01 open Expenses:Eventos:Pycerrado2024 BRL
+2025-05-25 close Assets:Eventos:Pycerrado2024
+2025-05-25 close Income:Eventos:Pycerrado2024
+2025-05-25 close Expenses:Eventos:Pycerrado2024
+
+; Python Nordeste 2020
+2020-02-20 open Assets:Eventos:Pyne2020 BRL
+2020-02-20 open Income:Eventos:Pyne2020 BRL
+2020-03-02 open Expenses:Eventos:Pyne2020 BRL
+2022-01-01 close Assets:Eventos:Pyne2020
+2022-01-01 close Income:Eventos:Pyne2020
+2022-01-01 close Expenses:Eventos:Pyne2020
+; Python Nordeste 2022
+2022-01-01 open Assets:Eventos:Pyne2022 BRL
+2022-06-22 open Income:Eventos:Pyne2022 BRL
+2022-07-20 open Expenses:Eventos:Pyne2022 BRL
+2023-04-10 close Assets:Eventos:Pyne2022
+2023-04-10 close Income:Eventos:Pyne2022
+2023-04-10 close Expenses:Eventos:Pyne2022
+; Python Nordeste 2023
+2023-04-10 open Assets:Eventos:Pyne2023 BRL
+2023-06-01 open Income:Eventos:Pyne2023 BRL
+2023-06-14 open Expenses:Eventos:Pyne2023 BRL
+2024-06-04 close Assets:Eventos:Pyne2023
+2024-06-04 close Income:Eventos:Pyne2023
+2024-06-04 close Expenses:Eventos:Pyne2023
+; Python Nordeste 2024
+2024-02-21 open Assets:Eventos:Pyne2024 BRL
+2024-02-21 open Income:Eventos:Pyne2024 BRL
+2024-06-11 open Expenses:Eventos:Pyne2024 BRL
+2025-05-25 close Assets:Eventos:Pyne2024 
+2025-05-25 close Income:Eventos:Pyne2024 
+2025-05-25 close Expenses:Eventos:Pyne2024 
+; Python Nordeste 2025
+2024-12-03 open Assets:Eventos:Pyne2025 BRL
+2024-12-03 open Income:Eventos:Pyne2025 BRL
+2024-12-03 open Expenses:Eventos:Pyne2025 BRL
+
+; Python Norte 2023
+2023-07-07 open Assets:Eventos:Pyn2023 BRL
+2023-07-07 open Income:Eventos:Pyn2023 BRL
+2023-08-24 open Expenses:Eventos:Pyn2023 BRL
+2024-02-24 close Assets:Eventos:Pyn2023
+2024-02-24 close Income:Eventos:Pyn2023
+2024-02-24 close Expenses:Eventos:Pyn2023
+; Python Norte 2024
+2024-03-20 open Assets:Eventos:Pyn2024 BRL
+2024-07-05 open Income:Eventos:Pyn2024 BRL
+2024-03-20 open Expenses:Eventos:Pyn2024 BRL
+2025-05-25 close Assets:Eventos:Pyn2024
+2025-05-25 close Income:Eventos:Pyn2024
+2025-05-25 close Expenses:Eventos:Pyn2024
+; Python Norte 2025
+2024-05-11 open Assets:Eventos:Pyn2025 BRL
+2024-05-11 open Income:Eventos:Pyn2025 BRL
+2024-05-11 open Expenses:Eventos:Pyn2025 BRL
+
+; Python Sul 2020
+2020-03-05 open Assets:Eventos:Pysul2020 BRL
+2020-03-05 open Income:Eventos:Pysul2020 BRL
+2022-01-01 close Assets:Eventos:Pysul2020
+2022-01-01 close Income:Eventos:Pysul2020
+; Python Sul 2022
+2022-01-01 open Assets:Eventos:Pysul2022 BRL
+2022-08-15 open Income:Eventos:Pysul2022 BRL
+2022-08-17 open Expenses:Eventos:Pysul2022 BRL
+2025-05-25 close Assets:Eventos:Pysul2022
+2025-05-25 close Income:Eventos:Pysul2022
+2025-05-25 close Expenses:Eventos:Pysul2022
+; Python Sul 2024
+2024-03-25 open Assets:Eventos:Pysul2024 BRL
+2024-03-25 open Income:Eventos:Pysul2024 BRL
+2024-06-03 open Expenses:Eventos:Pysul2024 BRL
+2025-05-25 close Assets:Eventos:Pysul2024
+2025-05-25 close Income:Eventos:Pysul2024
+2025-05-25 close Expenses:Eventos:Pysul2024
+
+; Python Sudeste 2024
+2024-06-11 open Assets:Eventos:Pyse2024 BRL
+2024-06-11 open Income:Eventos:Pyse2024 BRL
+2024-06-11 open Expenses:Eventos:Pyse2024 BRL
+2025-05-25 close Assets:Eventos:Pyse2024
+2025-05-25 close Income:Eventos:Pyse2024
+2025-05-25 close Expenses:Eventos:Pyse2024
+; Python Sudeste 2025
+2025-04-14 open Assets:Eventos:Pyse2025 BRL
+2025-04-14 open Income:Eventos:Pyse2025 BRL
+2025-04-14 open Expenses:Eventos:Pyse2025 BRL
+
+; 10º Meetup Grupy-RN
+2022-10-06 open Assets:Eventos:10MeetupGrupyRN BRL
+2022-10-06 open Income:Eventos:10MeetupGrupyRN BRL
+2022-11-08 open Expenses:Eventos:10MeetupGrupyRN BRL
+; 15º Meetup Grupy-RN
+2023-03-22 open Assets:Eventos:15MeetupGrupyRN BRL
+2023-03-22 open Income:Eventos:15MeetupGrupyRN BRL
+2023-05-17 open Expenses:Eventos:15MeetupGrupyRN BRL
+; 16º Meetup Grupy-RN
+2023-08-16 open Assets:Eventos:16MeetupGrupyRN BRL
+2023-08-16 open Income:Eventos:16MeetupGrupyRN BRL
+2023-09-12 open Expenses:Eventos:16MeetupGrupyRN BRL
+; 20º Meetup Grupy-RN
+2025-02-18 open Assets:Eventos:20MeetupGrupyRN BRL
+2025-02-18 open Income:Eventos:20MeetupGrupyRN BRL
+2025-02-18 open Expenses:Eventos:20MeetupGrupyRN BRL
+
+; 2º Meetup PyData Natal
+2024-07-22 open Assets:Eventos:2MeetupPyDataNatal BRL
+2024-07-22 open Income:Eventos:2MeetupPyDataNatal BRL
+2024-07-22 open Expenses:Eventos:2MeetupPyDataNatal BRL
+
+; Django Girls Parnaíba 2022
+2022-10-07 open Assets:Eventos:DjangoGirlsParnaiba2022 BRL
+2022-10-07 open Income:Eventos:DjangoGirlsParnaiba2022 BRL
+2022-10-07 open Expenses:Eventos:DjangoGirlsParnaiba2022 BRL
+2022-12-31 close Assets:Eventos:DjangoGirlsParnaiba2022 
+2022-12-31 close Income:Eventos:DjangoGirlsParnaiba2022 
+2022-12-31 close Expenses:Eventos:DjangoGirlsParnaiba2022 
+; Django Girls Parnaíba 2023
+2023-09-20 open Assets:Eventos:DjangoGirlsParnaiba2023 BRL
+2023-09-20 open Income:Eventos:DjangoGirlsParnaiba2023 BRL
+2023-11-13 open Expenses:Eventos:DjangoGirlsParnaiba2023 BRL
+2023-12-31 close Assets:Eventos:DjangoGirlsParnaiba2023 
+2023-12-31 close Income:Eventos:DjangoGirlsParnaiba2023 
+2023-12-31 close Expenses:Eventos:DjangoGirlsParnaiba2023 
+; Django Girls Parnaíba 2024
+2024-08-14 open Assets:Eventos:DjangoGirlsParnaiba2024 BRL
+2024-08-14 open Income:Eventos:DjangoGirlsParnaiba2024 BRL
+2024-08-14 open Expenses:Eventos:DjangoGirlsParnaiba2024 BRL
+
+; 7º Meetup PyData Manaus
+2024-12-27 open Assets:Eventos:7MeetupPyDataManaus BRL
+2024-12-27 open Income:Eventos:7MeetupPyDataManaus BRL
+2024-12-27 open Expenses:Eventos:7MeetupPyDataManaus BRL
+
+; PyLadies Brasil Conf 2025
+2025-04-15 open Assets:Eventos:Pyladiesconf2025 BRL
+2025-04-15 open Income:Eventos:Pyladiesconf2025 BRL
+2025-04-15 open Expenses:Eventos:Pyladiesconf2025 BRL
+
+; Fundos de Inclusão ==========================================================
+; Python Brasil 2022
+2022-09-02 open Assets:FundoInclusão:Pybr2022 BRL
+2022-09-19 open Expenses:FundoInclusão:Pybr2022 BRL
+2022-09-21 open Income:FundoInclusão:Pybr2022 BRL
+2023-01-01 close Assets:FundoInclusão:Pybr2022
+2023-01-01 close Expenses:FundoInclusão:Pybr2022
+2023-01-01 close Income:FundoInclusão:Pybr2022
+; Python Brasil 2023
+2023-01-01 open Assets:FundoInclusão:Pybr2023 BRL
+2024-01-01 close Assets:FundoInclusão:Pybr2023
+; Python Brasil 2024
+2024-01-01 open Assets:FundoInclusão:Pybr2024 BRL
+
+; Comunidades ==========================================================
+; PyLadies Brasil
+2024-05-21 open Assets:Comunidades:Pyladiesbr BRL
+2024-05-21 open Income:Comunidades:Pyladiesbr BRL
+2024-05-21 open Expenses:Comunidades:Pyladiesbr BRL
+
+; PyLadies Fortaleza
+2024-05-14 open Assets:Comunidades:Pyladiesfortaleza BRL
+2024-05-14 open Income:Comunidades:Pyladiesfortaleza BRL
+2024-06-14 open Expenses:Comunidades:Pyladiesfortaleza BRL
+
+; Transições ==================================================================
+include "apyb-financeiro-main/financeiro/eventos-concluídos.beancount"
+include "apyb-financeiro-main/financeiro/2020-01.beancount"
+include "apyb-financeiro-main/financeiro/2020-02.beancount"
+include "apyb-financeiro-main/financeiro/2020-03.beancount"
+include "apyb-financeiro-main/financeiro/2020-04.beancount"
+include "apyb-financeiro-main/financeiro/2020-05.beancount"
+include "apyb-financeiro-main/financeiro/2020-06.beancount"
+include "apyb-financeiro-main/financeiro/2020-07.beancount"
+include "apyb-financeiro-main/financeiro/2020-08.beancount"
+include "apyb-financeiro-main/financeiro/2020-09.beancount"
+include "apyb-financeiro-main/financeiro/2020-10.beancount"
+include "apyb-financeiro-main/financeiro/2020-11.beancount"
+include "apyb-financeiro-main/financeiro/2020-12.beancount"
+include "apyb-financeiro-main/financeiro/2021-01.beancount"
+include "apyb-financeiro-main/financeiro/2021-02.beancount"
+include "apyb-financeiro-main/financeiro/2021-03.beancount"
+include "apyb-financeiro-main/financeiro/2021-04.beancount"
+include "apyb-financeiro-main/financeiro/2021-05.beancount"
+include "apyb-financeiro-main/financeiro/2021-06.beancount"
+include "apyb-financeiro-main/financeiro/2021-07.beancount"
+include "apyb-financeiro-main/financeiro/2021-08.beancount"
+include "apyb-financeiro-main/financeiro/2021-09.beancount"
+include "apyb-financeiro-main/financeiro/2021-10.beancount"
+include "apyb-financeiro-main/financeiro/2021-11.beancount"
+include "apyb-financeiro-main/financeiro/2021-12.beancount"
+include "apyb-financeiro-main/financeiro/2022-01.beancount"
+include "apyb-financeiro-main/financeiro/2022-02.beancount"
+include "apyb-financeiro-main/financeiro/2022-03.beancount"
+include "apyb-financeiro-main/financeiro/2022-04.beancount"
+include "apyb-financeiro-main/financeiro/2022-05.beancount"
+include "apyb-financeiro-main/financeiro/2022-06.beancount"
+include "apyb-financeiro-main/financeiro/2022-07.beancount"
+include "apyb-financeiro-main/financeiro/2022-08.beancount"
+include "apyb-financeiro-main/financeiro/2022-09.beancount"
+include "apyb-financeiro-main/financeiro/2022-10.beancount"
+include "apyb-financeiro-main/financeiro/2022-11.beancount"
+include "apyb-financeiro-main/financeiro/2022-12.beancount"
+include "apyb-financeiro-main/financeiro/2023-01.beancount"
+include "apyb-financeiro-main/financeiro/2023-02.beancount"
+include "apyb-financeiro-main/financeiro/2023-03.beancount"
+include "apyb-financeiro-main/financeiro/2023-04.beancount"
+include "apyb-financeiro-main/financeiro/2023-05.beancount"
+include "apyb-financeiro-main/financeiro/2023-06.beancount"
+include "apyb-financeiro-main/financeiro/2023-07.beancount"
+include "apyb-financeiro-main/financeiro/2023-08.beancount"
+include "apyb-financeiro-main/financeiro/2023-09.beancount"
+include "apyb-financeiro-main/financeiro/2023-10.beancount"
+include "apyb-financeiro-main/financeiro/2023-11.beancount"
+include "apyb-financeiro-main/financeiro/2023-12.beancount"
+include "apyb-financeiro-main/financeiro/2024-01.beancount"
+include "apyb-financeiro-main/financeiro/2024-02.beancount"
+include "apyb-financeiro-main/financeiro/2024-03.beancount"
+include "apyb-financeiro-main/financeiro/2024-04.beancount"
+include "apyb-financeiro-main/financeiro/2024-05.beancount"
+include "apyb-financeiro-main/financeiro/2024-06.beancount"
+include "apyb-financeiro-main/financeiro/2024-07.beancount"
+include "apyb-financeiro-main/financeiro/2024-08.beancount"
+include "apyb-financeiro-main/financeiro/2024-09.beancount"
+include "apyb-financeiro-main/financeiro/2024-10.beancount"
+include "apyb-financeiro-main/financeiro/2024-11.beancount"
+include "apyb-financeiro-main/financeiro/2024-12.beancount"
+include "apyb-financeiro-main/financeiro/2025-01.beancount"
+include "apyb-financeiro-main/financeiro/2025-02.beancount"
+include "apyb-financeiro-main/financeiro/2025-03.beancount"
+include "apyb-financeiro-main/financeiro/2025-04.beancount"
+include "apyb-financeiro-main/financeiro/2025-05.beancount"
+; Source: https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/main.beancount

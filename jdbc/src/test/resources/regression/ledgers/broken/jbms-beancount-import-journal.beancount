@@ -1,0 +1,5 @@
+include "jbms-beancount-import-journal/examples/fresh/accounts.beancount"
+include "jbms-beancount-import-journal/examples/fresh/transactions.beancount"
+include "jbms-beancount-import-journal/examples/fresh/prices.beancount"
+
+; Source: https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/examples/fresh/journal.beancount

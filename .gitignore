@@ -3,5 +3,12 @@
 
 # Ignore Gradle build output directory
 build
-third_party/
+
+# Local GitHub token (do not commit)
+.github_token
 .gradle-user/
+.gradle-work/
+.venv/
+__pycache__/
+*/__pycache__/
+.vscode/

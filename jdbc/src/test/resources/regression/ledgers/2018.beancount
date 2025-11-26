@@ -1,0 +1,6 @@
+include "2018/Data/accounts.beancount"
+include "2018/Data/2018-01-1.beancount"
+include "2018/Data/2018-01-2.beancount"
+include "2018/Data/2018-01-3.beancount"
+
+; Source: https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/2018.beancount

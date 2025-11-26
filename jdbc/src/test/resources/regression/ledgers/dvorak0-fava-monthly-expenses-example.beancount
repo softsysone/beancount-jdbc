@@ -1,0 +1,9 @@
+2000-01-01 custom "fava-extension" "monthly_expenses" "{'accounts':['Expenses','Expenses:Life','Expenses:Life:Transportation'],'account_used_to_get_valid_month':'Expenses:Life:General'}"
+
+option "operating_currency" "USD"
+plugin "beancount.plugins.auto"
+
+include "dvorak0-fava-monthly-expenses-example/example_data.beancount"
+
+
+; Source: https://raw.githubusercontent.com/dvorak0/fava-monthly-expenses/85b742926ead6833f73a6d2bbf71a552c737e45f/example.beancount

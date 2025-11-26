@@ -1,0 +1,805 @@
+; SYNTAX TEST "Packages/sublime-beancount/Beancount.sublime-syntax"
+
+; This is a comment line.
+; <- comment.line.semicolon.beancount
+; ^^^^^^^^^^^^^^^^^^ comment.line.semicolon.beancount
+
+*** This is an ignored line.
+; <- comment.line.ignored.beancount
+;   ^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.ignored.beancount
+
+  ; This is an end-of-line comment.
+; ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ comment.line.semicolon.beancount
+
+*** ================
+*** Dated Directives
+*** ================
+
+***
+*** Balance Directive
+***
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 CAD
+; <- constant.other.date.beancount
+;          ^^^^^^^ keyword.control.directive.balance.beancount
+;                  ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+;                                       ^^^^^^ constant.numeric.number.beancount
+;                                              ^^^ support.type.currency.beancount
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 ~ 0.01 CAD
+; <- constant.other.date.beancount
+;          ^^^^^^^ keyword.control.directive.balance.beancount
+;                  ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+;                                       ^^^^^^ constant.numeric.number.beancount
+;                                              ^ keyword.operator.tilde.beancount
+;                                                ^^^^ constant.numeric.number.beancount
+;                                                     ^^^ support.type.currency.beancount
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 CAD
+    this: Assets:Bank:Savings
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+*** - Currency Variations
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 CAD'X
+;                                              ^^^^^ support.type.currency.beancount
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 CAD.X
+;                                              ^^^^^ support.type.currency.beancount
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 CAD_X
+;                                              ^^^^^ support.type.currency.beancount
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 CAD-X
+;                                              ^^^^^ support.type.currency.beancount
+
+2025-01-01 balance Assets:Bank:Chequing 100.00 X
+;                                              ^ support.type.currency.beancount
+
+***
+*** Close Directive
+***
+
+2025-01-01 close Assets:Bank:Chequing
+; <- constant.other.date.beancount
+;          ^^^^^ keyword.control.directive.close.beancount
+;                ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+2025-01-01 close Assets:Bank:Chequing
+    this: 100.00 CAD
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^^ constant.numeric.number.beancount
+;                ^^^ support.type.currency.beancount
+    this: 100.00 CAD'X
+;                ^^^^^ support.type.currency.beancount
+    this: 100.00 CAD.X
+;                ^^^^^ support.type.currency.beancount
+    this: 100.00 CAD_X
+;                ^^^^^ support.type.currency.beancount
+    this: 100.00 CAD-X
+;                ^^^^^ support.type.currency.beancount
+    this: 100.00 X
+;                ^ support.type.currency.beancount
+
+***
+*** Commodity Directive
+***
+
+2025-01-01 commodity CAD
+; <- constant.other.date.beancount
+;          ^^^^^^^^^ keyword.control.directive.commodity.beancount
+;                    ^^^ support.type.currency.beancount
+
+2025-01-01 commodity CAD
+    this: FALSE
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^ constant.language.bool.beancount
+    this: TRUE
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^ constant.language.bool.beancount
+
+*** - Currency Variations
+
+2025-01-01 commodity CAD'X
+;                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 commodity CAD.X
+;                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 commodity CAD_X
+;                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 commodity CAD-X
+;                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 commodity X
+;                    ^ support.type.currency.beancount
+
+***
+*** Custom Directive
+***
+
+; Account
+2025-01-01 custom "Custom" Assets:Bank:Chequing
+; <- constant.other.date.beancount
+;          ^^^^^^ keyword.control.directive.custom.beancount
+;                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                  ^^^^^^^ string.quoted.double.beancount
+;                        ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                          ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+; Amount
+2025-01-01 custom "Custom" 100.00 CAD (99.00 + 1.00) CAD (100.00 * 1.00) CAD
+; <- constant.other.date.beancount
+;          ^^^^^^ keyword.control.directive.custom.beancount
+;                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                  ^^^^^^^ string.quoted.double.beancount
+;                        ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                          ^^^^^^ constant.numeric.number.beancount
+;                                 ^^^ support.type.currency.beancount
+;                                     ^ punctuation.section.begin.lparen.beancount
+;                                      ^^^^^ constant.numeric.number.beancount
+;                                            ^ keyword.operator.plus.beancount
+;                                              ^^^^ constant.numeric.number.beancount
+;                                                  ^ punctuation.section.end.rparen.beancount
+;                                                    ^^^ support.type.currency.beancount
+;                                                        ^ punctuation.section.begin.lparen.beancount
+;                                                         ^^^^^^ constant.numeric.number.beancount
+;                                                                ^ keyword.operator.asterisk.beancount
+;                                                                  ^^^^ constant.numeric.number.beancount
+;                                                                      ^ punctuation.section.end.rparen.beancount
+;                                                                        ^^^ support.type.currency.beancount
+
+; Bool
+2025-01-01 custom "Custom" FALSE TRUE
+; <- constant.other.date.beancount
+;          ^^^^^^ keyword.control.directive.custom.beancount
+;                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                  ^^^^^^^ string.quoted.double.beancount
+;                        ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                          ^^^^^ constant.language.bool.beancount
+;                                ^^^^ constant.language.bool.beancount
+
+; Date
+2025-01-01 custom "Custom" 2025-01-01
+; <- constant.other.date.beancount
+;          ^^^^^^ keyword.control.directive.custom.beancount
+;                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                  ^^^^^^^ string.quoted.double.beancount
+;                        ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                          ^^^^^^^^^^ constant.other.date.beancount
+
+; Number
+2025-01-01 custom "Custom" 100.00 (99.00 + 1.00) (100.00 * 1.00)
+; <- constant.other.date.beancount
+;          ^^^^^^ keyword.control.directive.custom.beancount
+;                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                  ^^^^^^^ string.quoted.double.beancount
+;                        ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                          ^^^^^^ constant.numeric.number.beancount
+;                                 ^ punctuation.section.begin.lparen.beancount
+;                                  ^^^^^ constant.numeric.number.beancount
+;                                        ^ keyword.operator.plus.beancount
+;                                          ^^^^ constant.numeric.number.beancount
+;                                              ^ punctuation.section.end.rparen.beancount
+;                                                ^ punctuation.section.begin.lparen.beancount
+;                                                 ^^^^^^ constant.numeric.number.beancount
+;                                                        ^ keyword.operator.asterisk.beancount
+;                                                          ^^^^ constant.numeric.number.beancount
+;                                                              ^ punctuation.section.end.rparen.beancount
+
+; String
+2025-01-01 custom "Custom" "Custom"
+; <- constant.other.date.beancount
+;          ^^^^^^ keyword.control.directive.custom.beancount
+;                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                  ^^^^^^^ string.quoted.double.beancount
+;                        ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                          ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                           ^^^^^^^ string.quoted.double.beancount
+;                                 ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+; String
+2025-01-01 custom "Custom" "Custom"
+    this: CAD
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^ support.type.currency.beancount
+
+***
+*** Document Directive
+***
+
+2025-01-01 document Assets:Bank:Chequing "document.pdf"
+; <- constant.other.date.beancount
+;          ^^^^^^^^ keyword.control.directive.document.beancount
+;                   ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+;                                        ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                                         ^^^^^^^^^^^^^ string.quoted.double.beancount
+;                                                     ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 document Assets:Bank:Chequing "document.pdf" #this ^that
+;                                                       ^^^^^ entity.name.tag.beancount
+;                                                             ^^^^^ entity.name.link.beancount
+
+2025-01-01 document Assets:Bank:Chequing "document.pdf"
+    this: 2025-01-01
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^^^^^^ constant.other.date.beancount
+
+***
+*** Event Directive
+***
+
+2025-01-01 event "this" "that"
+; <- constant.other.date.beancount
+;          ^^^^^ keyword.control.directive.event.beancount
+;                ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                 ^^^^^ string.quoted.double.beancount
+;                     ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                       ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                        ^^^^^ string.quoted.double.beancount
+;                            ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 event "this" "that"
+    this: NULL
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^ constant.language.null.beancount
+
+***
+*** Note Directive
+***
+
+2025-01-01 note Assets:Bank:Chequing "note"
+; <- constant.other.date.beancount
+;          ^^^^ keyword.control.directive.note.beancount
+;               ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+;                                    ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                                     ^^^^^ string.quoted.double.beancount
+;                                         ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 note Assets:Bank:Chequing "note" #this ^that
+;                                           ^^^^^ entity.name.tag.beancount
+;                                                 ^^^^^ entity.name.link.beancount
+
+2025-01-01 note Assets:Bank:Chequing "note"
+    this: (100.00 * 1.00)
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^ punctuation.section.begin.lparen.beancount
+;          ^^^^^^ constant.numeric.number.beancount
+;                 ^ keyword.operator.asterisk.beancount
+;                   ^^^^ constant.numeric.number.beancount
+;                       ^ punctuation.section.end.rparen.beancount
+
+***
+*** Open Directive
+***
+
+2025-01-01 open Assets:Bank:Chequing
+; <- constant.other.date.beancount
+;          ^^^^ keyword.control.directive.open.beancount
+;               ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+2025-01-01 open Assets:Bank:Chequing CAD
+;                                    ^^^ support.type.currency.beancount
+
+2025-01-01 open Assets:Bank:Chequing CAD,USD
+;                                    ^^^ support.type.currency.beancount
+;                                       ^ punctuation.separator.comma.beancount
+;                                        ^^^ support.type.currency.beancount
+
+2025-01-01 open Assets:Bank:Chequing CAD "STRICT"
+;                                    ^^^ support.type.currency.beancount
+;                                        ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                                         ^^^^^^^ string.quoted.double.beancount
+;                                               ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 open Assets:Bank:Chequing "STRICT"
+;                                    ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                                     ^^^^^^^ string.quoted.double.beancount
+;                                           ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 open Assets:Bank:Chequing
+    this: "that"
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;          ^^^^^ string.quoted.double.beancount
+;              ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+*** - Currency Variations
+
+2025-01-01 open Assets:Bank:Chequing CAD'X
+;                                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 open Assets:Bank:Chequing CAD.X
+;                                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 open Assets:Bank:Chequing CAD_X
+;                                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 open Assets:Bank:Chequing CAD-X
+;                                    ^^^^^ support.type.currency.beancount
+
+2025-01-01 open Assets:Bank:Chequing X
+;                                    ^ support.type.currency.beancount
+
+***
+*** Pad Directive
+***
+
+2025-01-01 pad Assets:Bank:Chequing Assets:Bank:Savings
+; <- constant.other.date.beancount
+;          ^^^ keyword.control.directive.pad.beancount
+;              ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+;                                   ^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+2025-01-01 pad Assets:Bank:Chequing Assets:Bank:Savings
+    this: #that
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^ entity.name.tag.beancount
+
+***
+*** Price Directive
+***
+
+2025-01-01 price CAD 1.00
+; <- constant.other.date.beancount
+;          ^^^^^ keyword.control.directive.price.beancount
+;                ^^^ support.type.currency.beancount
+;                    ^^^^ constant.numeric.number.beancount
+
+2025-01-01 price CAD (1.00 * 1.00)
+; <- constant.other.date.beancount
+;          ^^^^^ keyword.control.directive.price.beancount
+;                ^^^ support.type.currency.beancount
+;                    ^ punctuation.section.begin.lparen.beancount
+;                     ^^^^ constant.numeric.number.beancount
+;                          ^ keyword.operator.asterisk.beancount
+;                            ^^^^ constant.numeric.number.beancount
+;                                ^ punctuation.section.end.rparen.beancount
+
+2025-01-01 price CAD 1.00
+    this: Assets:Bank:Chequing
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+*** - Currency Variations
+
+2025-01-01 price CAD'X 1.00
+;                ^^^^^ support.type.currency.beancount
+
+2025-01-01 price CAD.X 1.00
+;                ^^^^^ support.type.currency.beancount
+
+2025-01-01 price CAD_X 1.00
+;                ^^^^^ support.type.currency.beancount
+
+2025-01-01 price CAD-X 1.00
+;                ^^^^^ support.type.currency.beancount
+
+2025-01-01 price X 1.00
+;                ^ support.type.currency.beancount
+
+***
+*** Query Directive
+***
+
+2025-01-01 query "this" "that"
+; <- constant.other.date.beancount
+;          ^^^^^ keyword.control.directive.query.beancount
+;                ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                 ^^^^^ string.quoted.double.beancount
+;                     ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                       ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                        ^^^^^ string.quoted.double.beancount
+;                            ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 query "this" "that"
+    this: 100.00 CAD
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^^ constant.numeric.number.beancount
+;                ^^^ support.type.currency.beancount
+
+***
+*** Txn Directive
+***
+
+*** - Txn Variations
+
+2025-01-01 txn
+; <- constant.other.date.beancount
+;          ^^^ keyword.control.directive.transaction.beancount
+
+2025-01-01 txn "this"
+; <- constant.other.date.beancount
+;          ^^^ keyword.control.directive.transaction.beancount
+;              ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;               ^^^^^ string.quoted.double.beancount
+;                   ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 txn "this" "that"
+; <- constant.other.date.beancount
+;          ^^^ keyword.control.directive.transaction.beancount
+;              ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;               ^^^^^ string.quoted.double.beancount
+;                   ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                     ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                      ^^^^^ string.quoted.double.beancount
+;                          ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 txn "this" "that" #this ^that
+; <- constant.other.date.beancount
+;          ^^^ keyword.control.directive.transaction.beancount
+;              ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;               ^^^^^ string.quoted.double.beancount
+;                   ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                     ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                      ^^^^^ string.quoted.double.beancount
+;                          ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 txn "this" | "that"
+; <- constant.other.date.beancount
+;          ^^^ keyword.control.directive.transaction.beancount
+;              ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;               ^^^^^ string.quoted.double.beancount
+;                   ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;                     ^ invalid.deprecated.pipe.beancount
+;                       ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                        ^^^^^ string.quoted.double.beancount
+;                            ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 txn "this" "that"
+    this: FALSE
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^^ constant.language.bool.beancount
+    this: TRUE
+;   ^^^^ entity.name.key.beancount
+;       ^ punctuation.separator.colon.beancount
+;         ^^^^ constant.language.bool.beancount
+
+*** - Flag Variations
+
+; ASTERISK
+2025-01-01 * "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; CAPITAL
+2025-01-01 X "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; FLAG
+2025-01-01 ! "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; FLAG
+2025-01-01 & "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; FLAG
+2025-01-01 # "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; FLAG
+2025-01-01 ? "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; FLAG
+2025-01-01 % "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+; HASH
+2025-01-01 # "this" "that"
+;          ^ keyword.control.directive.transaction.beancount
+
+*** - Posting Variations
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Savings
+;   ^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD
+;   ^^^^^^^^^^^^^^^^^^^^ entity.name.account.beancount
+;                        ^^^^^^ constant.numeric.number.beancount
+;                               ^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD @ 100.00 USD
+;                                   ^ keyword.operator.at.beancount
+;                                     ^^^^^^ constant.numeric.number.beancount
+;                                            ^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD @@ 100.00 USD
+;                                   ^^ keyword.operator.atat.beancount
+;                                      ^^^^^^ constant.numeric.number.beancount
+;                                             ^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {100.00 USD}
+;                                   ^ punctuation.section.begin.lcurl.beancount
+;                                    ^^^^^^ constant.numeric.number.beancount
+;                                           ^^^ support.type.currency.beancount
+;                                              ^ punctuation.section.end.rcurl.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {{100.00 USD}}
+;                                   ^^ punctuation.section.begin.lcurllcurl.beancount
+;                                     ^^^^^^ constant.numeric.number.beancount
+;                                            ^^^ support.type.currency.beancount
+;                                               ^^ punctuation.section.end.rcurlrcurl.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {100.00 USD, *}
+;                                              ^ punctuation.separator.comma.beancount
+;                                                ^ keyword.operator.asterisk.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {{100.00 USD, *}}
+;                                               ^ punctuation.separator.comma.beancount
+;                                                 ^ keyword.operator.asterisk.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {100.00 USD, 100 # 100 CAD}
+;                                              ^ punctuation.separator.comma.beancount
+;                                                ^^^ constant.numeric.number.beancount
+;                                                    ^ keyword.operator.hash.beancount
+;                                                      ^^^ constant.numeric.number.beancount
+;                                                          ^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {{100.00 USD, 100 # 100 CAD}}
+;                                               ^ punctuation.separator.comma.beancount
+;                                                 ^^^ constant.numeric.number.beancount
+;                                                     ^ keyword.operator.hash.beancount
+;                                                       ^^^ constant.numeric.number.beancount
+;                                                           ^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {100.00 USD, 2025-01-01}
+;                                              ^ punctuation.separator.comma.beancount
+;                                                ^^^^^^^^^^ constant.other.date.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {{100.00 USD, 2025-01-01}}
+;                                               ^ punctuation.separator.comma.beancount
+;                                                 ^^^^^^^^^^ constant.other.date.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {100.00 USD, "this"}
+;                                              ^ punctuation.separator.comma.beancount
+;                                                ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                                                 ^^^^^ string.quoted.double.beancount
+;                                                     ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {{100.00 USD, "this"}}
+;                                               ^ punctuation.separator.comma.beancount
+;                                                 ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;                                                  ^^^^^ string.quoted.double.beancount
+;                                                      ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {USD}
+;                                    ^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD {{USD}}
+;                                     ^^^ support.type.currency.beancount
+
+*** - Posting Variations - Currency
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD'X
+;                               ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD.X
+;                               ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD_X
+;                               ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD-X
+;                               ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 X
+;                               ^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD'X @ 100 USD'X
+;                               ^^^^^ support.type.currency.beancount
+;                                           ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD.X @ 100 USD.X
+;                               ^^^^^ support.type.currency.beancount
+;                                           ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD_X @ 100 USD_X
+;                               ^^^^^ support.type.currency.beancount
+;                                           ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD-X @ 100 USD-X
+;                               ^^^^^ support.type.currency.beancount
+;                                           ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 X @ 100 X
+;                               ^ support.type.currency.beancount
+;                                       ^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD'X @@ 100 USD'X
+;                               ^^^^^ support.type.currency.beancount
+;                                            ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD.X @@ 100 USD.X
+;                               ^^^^^ support.type.currency.beancount
+;                                            ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD_X @@ 100 USD_X
+;                               ^^^^^ support.type.currency.beancount
+;                                            ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 CAD-X @@ 100 USD-X
+;                               ^^^^^ support.type.currency.beancount
+;                                            ^^^^^ support.type.currency.beancount
+
+2025-01-01 txn "this" "that"
+    Assets:Bank:Chequing 100.00 X @@ 100 X
+;                               ^ support.type.currency.beancount
+;                                        ^ support.type.currency.beancount
+
+*** - Posting Variations - OptFlag
+
+; ASTERISK
+2025-01-01 txn "this" "that"
+    * Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; CAPITAL
+2025-01-01 txn "this" "that"
+    X Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; FLAG
+2025-01-01 txn "this" "that"
+    ! Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; FLAG
+2025-01-01 txn "this" "that"
+    & Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; FLAG
+2025-01-01 txn "this" "that"
+    # Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; FLAG
+2025-01-01 txn "this" "that"
+    ? Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; FLAG
+2025-01-01 txn "this" "that"
+    % Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+; HASH
+2025-01-01 txn "this" "that"
+    # Assets:Bank:Chequing 100.00 CAD
+;   ^ keyword.control.flag.beancount
+
+*** - Posting Variations - Tags & Links
+
+2025-01-01 txn "this" "that"
+    #this ^that
+;   ^^^^^ entity.name.tag.beancount
+;         ^^^^^ entity.name.link.beancount
+
+*** ====================
+*** Non-Dated Directives
+*** ====================
+
+***
+*** Include Directive
+***
+
+include "syntax_test_beancount/test/this.beancount"
+; <- keyword.control.directive.include.beancount
+;       ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+
+***
+*** Option Directive
+***
+
+option "this" "that"
+; <- keyword.control.directive.option.beancount
+;      ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;       ^^^^^ string.quoted.double.beancount
+;           ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;             ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;              ^^^^^ string.quoted.double.beancount
+;                  ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+***
+*** Plugin Directive
+***
+
+plugin "this"
+; <- keyword.control.directive.plugin.beancount
+;      ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;       ^^^^^ string.quoted.double.beancount
+;           ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+plugin "this" "that"
+; <- keyword.control.directive.plugin.beancount
+;      ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;       ^^^^^ string.quoted.double.beancount
+;           ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+;             ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;              ^^^^^ string.quoted.double.beancount
+;                  ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+***
+*** PopMeta Directive
+***
+
+popmeta this:
+; <- keyword.control.directive.popmeta.beancount
+;       ^^^^ entity.name.key.beancount
+;           ^ punctuation.separator.colon.beancount
+
+***
+*** PopTag Directive
+***
+
+poptag #this
+; <- keyword.control.directive.poptag.beancount
+;      ^^^^^ entity.name.tag.beancount
+
+***
+*** PushMeta Directive
+***
+
+pushmeta this: "that"
+; <- keyword.control.directive.pushmeta.beancount
+;        ^^^^ entity.name.key.beancount
+;            ^ punctuation.separator.colon.beancount
+;              ^ string.quoted.double.beancount punctuation.definition.string.begin.beancount
+;               ^^^^^ string.quoted.double.beancount
+;                   ^ string.quoted.double.beancount punctuation.definition.string.end.beancount
+
+***
+*** PushTag Directive
+***
+
+pushtag #this
+; <- keyword.control.directive.pushtag.beancount
+;       ^^^^^ entity.name.tag.beancount
+
+; Source: https://raw.githubusercontent.com/michaellenaghan/sublime-beancount/f8acadc35ac0dd4f576f75bc8b883ea3d7f20af4/test/syntax_test_beancount.beancount

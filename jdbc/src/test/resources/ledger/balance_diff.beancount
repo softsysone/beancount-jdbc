@@ -1,0 +1,4 @@
+option "title" "balance diff exposure"
+
+2013-01-01 open Assets:Cash AUD
+2013-01-01 balance Assets:Cash 10 AUD 0 AUD

@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.jkiss.dbeaver.core.confirm.exit=always
+tipOfTheDayInitializer.notFirstRun=true
+ui.auto.update.check.time=1764071936206
+ui.show.tip.of.the.day.on.startup=false
