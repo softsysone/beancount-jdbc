@@ -1,0 +1,30 @@
+include "donearm-ledger-all/accounts.beancount"
+include "donearm-ledger-all/2013.beancount"
+include "donearm-ledger-all/2014.beancount"
+include "donearm-ledger-all/2015.beancount"
+include "donearm-ledger-all/2016.beancount"
+include "donearm-ledger-all/2017.beancount"
+include "donearm-ledger-all/2018.beancount"
+include "donearm-ledger-all/2019.beancount"
+include "donearm-ledger-all/2020.beancount"
+include "donearm-ledger-all/2021.beancount"
+include "donearm-ledger-all/2022.beancount"
+include "donearm-ledger-all/2023.beancount"
+include "donearm-ledger-all/2024.beancount"
+include "donearm-ledger-all/2025.beancount"
+
+; prices
+include "donearm-ledger-all/prices/*.prices"
+
+option "operating_currency" "EUR"
+option "operating_currency" "PLN"
+option "operating_currency" "USD"
+
+option "inferred_tolerance_default" "*:0.1"
+option "title" "Gianluca Fiore's Ledger"
+; Save any rounding error in currencies conversions into a specific
+; account
+; Unfortunately this was removed, check https://github.com/beancount/beancount/issues/337
+;option "account_rounding" "Equity:RoundingError"
+
+; Source: https://raw.githubusercontent.com/Donearm/ledger/caedb3409a96b50fb9a28e938df90198d4b4d698/all.beancount

@@ -1,0 +1,1000 @@
+https://raw.githubusercontent.com/beancount/beancount/1cbb0b6bc08a47572c4779eabee71e9fd5807079/examples/example.beancount	347280	no	
+https://raw.githubusercontent.com/boyter/scc/f14ea3f11d293b611d5b39e888155c9a197ee937/examples/language/bean.beancount	766	no	
+https://raw.githubusercontent.com/simonmichael/hledger/655e9f0d0d423ea3862e15f9c6d81e9ee0b1ebba/examples/lots/beancount.beancount	939	no	
+https://raw.githubusercontent.com/ananthakumaran/paisa/c8b72931c8304e3f17693b617e93a28792fc523d/Dockerfile.beancount	117	no	
+https://raw.githubusercontent.com/plaintextaccounting/plaintextaccounting/bca5752b9e82757fa7669872cde3ddd1976494f2/src/quickref/a.beancount	301	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/examples/fresh/journal.beancount	89	yes	accounts.beancount,transactions.beancount,prices.beancount
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/jd/example-jd-output.beancount	10358	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/init.beancount	1823	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/pythonanywhere/commodities.beancount	1700	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-dashboards/d63d93053680bb9e04c77b6ee157e3fcb97c694b/example/portfolio.beancount	1874	no	
+https://raw.githubusercontent.com/ericaltendorf/magicbeans/1f03eae22c00245dfbfc6d70c4093163e063e1e7/data/magicbeans_example.beancount	28951	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/main.beancount	11648	yes	eventos-concluídos.beancount,2020-01.beancount,2020-02.beancount,2020-03.beancount,2020-04.beancount,2020-05.beancount,2020-06.beancount,2020-07.beancount,2020-08.beancount,2020-09.beancount,2020-10.beancount,2020-11.beancount,2020-12.beancount,2021-01.beancount,2021-02.beancount,2021-03.beancount,2021-04.beancount,2021-05.beancount,2021-06.beancount,2021-07.beancount,2021-08.beancount,2021-09.beancount,2021-10.beancount,2021-11.beancount,2021-12.beancount,2022-01.beancount,2022-02.beancount,2022-03.beancount,2022-04.beancount,2022-05.beancount,2022-06.beancount,2022-07.beancount,2022-08.beancount,2022-09.beancount,2022-10.beancount,2022-11.beancount,2022-12.beancount,2023-01.beancount,2023-02.beancount,2023-03.beancount,2023-04.beancount,2023-05.beancount,2023-06.beancount,2023-07.beancount,2023-08.beancount,2023-09.beancount,2023-10.beancount,2023-11.beancount,2023-12.beancount,2024-01.beancount,2024-02.beancount,2024-03.beancount,2024-04.beancount,2024-05.beancount,2024-06.beancount,2024-07.beancount,2024-08.beancount,2024-09.beancount,2024-10.beancount,2024-11.beancount,2024-12.beancount,2025-01.beancount,2025-02.beancount,2025-03.beancount,2025-04.beancount,2025-05.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/x.beancount	179	no	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/2018-01-3.beancount	234	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/long_string.beancount	638	no	
+https://raw.githubusercontent.com/dyumnin/dyu_accounting/80b43b897ad5e20d213f31e004cbb5e2d7fbbd8a/example/ledger.beancount	169	yes	accounts.beancount,data.beancount
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/contrib/examples/budgets-example.beancount	322281	no	
+https://raw.githubusercontent.com/dumbPy/beanbot/ce5afe17ba1b14675cc4a96e26f790797a2d66e2/accounts.beancount	3521	no	
+https://raw.githubusercontent.com/crispgm/telescope-heading.nvim/e85c0f69cb64048f56e76548dcb2f10277576df9/fixtures/example.beancount	467	no	
+https://raw.githubusercontent.com/dvorak0/fava-monthly-expenses/85b742926ead6833f73a6d2bbf71a552c737e45f/example_data.beancount	14695	no	
+https://raw.githubusercontent.com/henriquebastos/gnucash-to-beancount/8017c73614ef0ad54f3b7958d7f23a8f94589a66/data/sample.beancount	3388	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/static/stock.beancount	8281	no	
+https://raw.githubusercontent.com/yagebu/tree-sitter-beancount/9c359799017f523ab14f493655c0911645ac2a9c/examples/long-example.beancount	280608	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/dynamic.beancount	15571	yes	imported-from-spacebar.beancount,barmaid_2018-11-25 04:30:30.037826+00:00.beancount,barmaid_2018-11-25 14:51:27.633082+00:00.beancount,barmaid_2018-12-05 16:14:27.903981+00:00.beancount,barmaid_2019-01-03 14:06:05.167329+00:00.beancount,barmaid_2019-01-10 16:51:21.432587+00:00.beancount,barmaid_2019-01-19 16:40:44.966822+00:00.beancount,barmaid_2019-01-20 02:22:41.800419+00:00.beancount,barmaid_2019-01-24 15:51:29.232369+00:00.beancount,barmaid_2019-01-24 23:44:04.028847+00:00.beancount,barmaid_2019-01-24 23:48:03.258675+00:00.beancount,barmaid_2019-01-24 23:52:36.907913+00:00.beancount,barmaid_2019-01-28 08:24:35.301266+00:00.beancount,barmaid_2019-01-28 17:07:56.514464+00:00.beancount,barmaid_2019-01-28 21:18:12.081539+00:00.beancount,barmaid_2019-01-31 17:17:32.382635+00:00.beancount,barmaid_2019-01-31 18:49:00.875448+00:00.beancount,barmaid_2019-02-08 21:07:05.686944+00:00.beancount,barmaid_2019-02-21 18:30:57.082927+00:00.beancount,barmaid_2019-03-07 18:12:53.190605+00:00.beancount,barmaid_2019-03-08 16:47:32.363628+00:00.beancount,barmaid_2019-03-08 17:31:52.395447+00:00.beancount,backtab_2019-03-08 18:10:04.920733+00:00.beancount,backtab_2019-03-10 18:02:26.544718+00:00.beancount,backtab_2019-04-17 09:45:46.431595+00:00.beancount,backtab_2019-04-17 21:41:23.583235+00:00.beancount,backtab_2019-04-18 17:26:18.671157+00:00.beancount,backtab_2019-04-18 18:14:31.646955+00:00.beancount,backtab_2019-04-18 18:53:34.896598+00:00.beancount,barmaid_2019-04-18 19:27:08.094423+00:00.beancount,barmaid_2019-04-18 19:53:40.683489+00:00.beancount,barmaid_2019-04-19 20:06:17.592528+00:00.beancount,barmaid_2019-04-23 17:11:35.076202+00:00.beancount,barmaid_2019-04-24 13:59:17.214709+00:00.beancount,barmaid_2019-04-25 09:30:33.105978+00:00.beancount,barmaid_2019-04-25 17:44:28.205247+00:00.beancount,barmaid_2019-04-25 19:00:37.639609+00:00.beancount,barmaid_2019-04-26 14:30:56.076874+00:00.beancount,barmaid_2019-04-26 16:34:45.793922+00:00.beancount,barmaid_2019-04-27 08:59:52.139423+00:00.beancount,barmaid_2019-04-28 18:16:07.910704+00:00.beancount,barmaid_2019-05-02 17:00:10.950026+00:00.beancount,barmaid_2019-05-06 07:36:04.122639+00:00.beancount,barmaid_2019-05-09 16:44:39.341449+00:00.beancount,barmaid_2019-06-05 14:57:52.327783+00:00.beancount,barmaid_2019-06-06 17:20:52.289978+00:00.beancount,barmaid_2019-06-08 12:38:31.078912+00:00.beancount,barmaid_2019-06-20 14:19:45.639016+00:00.beancount,barmaid_2019-06-22 20:35:01.817807+00:00.beancount,barmaid_2019-07-27 13:44:52.977942+00:00.beancount,barmaid_2019-08-04 16:59:02.839789+00:00.beancount,barmaid_2019-10-11 11:12:41.151423+00:00.beancount,barmaid_2019-10-17 16:06:42.257198+00:00.beancount,barmaid_2019-10-31 22:32:10.699070+00:00.beancount,barmaid_2019-12-05 17:18:39.833105+00:00.beancount,barmaid_2020-05-19 08:56:04.913385+00:00.beancount,barmaid_2020-07-30 15:38:12.568290+00:00.beancount,barmaid_2020-08-11 08:42:36.901297+00:00.beancount,barmaid_2020-09-09 23:39:14.288806+00:00.beancount,barmaid_2020-09-16 14:37:06.998074+00:00.beancount,barmaid_2021-01-12 13:46:47.052925+00:00.beancount,barmaid_2021-02-11 09:52:59.395992+00:00.beancount,barmaid_2021-02-25 12:53:53.631856+00:00.beancount,barmaid_2021-03-10 22:20:39.680274+00:00.beancount,barmaid_2021-03-22 19:16:55.753747+00:00.beancount,barmaid_2021-05-21 09:04:34.949004+00:00.beancount,barmaid_2021-06-03 11:25:36.719257+00:00.beancount,barmaid_2021-06-10 14:59:19.573777+00:00.beancount,servingwench_2021-06-15 19:23:58.173095+00:00.beancount,servingwench_2021-06-15 19:29:25.449490+00:00.beancount,barmaid_2021-07-15 17:40:21.954281+00:00.beancount,barmaid_2021-07-15 19:07:21.560574+00:00.beancount,barmaid_2021-07-22 18:27:56.437870+00:00.beancount,barmaid_2021-07-27 13:53:41.275918+00:00.beancount,barmaid-ng_2021-08-05 16:58:34.279306+00:00.beancount,barmaid-ng_2021-08-05 17:11:15.147262+00:00.beancount,barmaid-ng_2021-08-05 17:21:03.638872+00:00.beancount,barmaid-ng_2021-08-05 18:04:26.616465+00:00.beancount,barmaid-ng_2021-08-05 18:28:03.728345+00:00.beancount,barmaid-ng_2021-08-06 18:56:05.894124+00:00.beancount,barmaid_2021-09-03 17:18:10.753386+00:00.beancount,barmaid_2021-09-05 17:18:08.101297+00:00.beancount,barmaid_2021-09-06 15:58:18.604875+00:00.beancount,barmaid_2022-02-04 17:29:25.826465+00:00.beancount,barmaid_2022-03-20 13:58:44.305581+00:00.beancount,barmaid_2022-04-01 13:52:49.233328+00:00.beancount,barmaid_2022-04-02 14:12:46.879954+00:00.beancount,barmaid_2022-04-02 22:48:55.625861+00:00.beancount,barmaid_2022-04-18 18:05:57.722860+00:00.beancount,barmaid_2022-04-18 23:55:43.179934+00:00.beancount,barmaid_2022-04-19 06:57:39.637497+00:00.beancount,barmaid_2022-04-19 10:08:44.607897+00:00.beancount,barmaid_2022-04-19 15:23:14.656233+00:00.beancount,barmaid_2022-04-21 12:50:35.945713+00:00.beancount,barmaid_2022-04-21 15:32:14.519314+00:00.beancount,barmaid_2022-04-21 19:08:07.335920+00:00.beancount,barmaid_2022-04-21 20:57:59.016031+00:00.beancount,barmaid_2022-04-21 21:45:26.081200+00:00.beancount,barmaid_2022-04-21 21:53:46.042100+00:00.beancount,barmaid_2022-04-21 22:31:14.004640+00:00.beancount,barmaid_2022-04-21 22:34:24.706484+00:00.beancount,barmaid_2022-04-22 08:32:22.372453+00:00.beancount,barmaid_2022-04-25 20:12:42.744192+00:00.beancount,UberBarmaid_2022-04-27 16:10:03.894879+00:00.beancount,UberBarmaid_2022-04-27 17:25:18.998653+00:00.beancount,UberBarmaid_2022-04-29 18:55:25.948844+00:00.beancount,UberBarmaid_2022-04-29 19:51:39.213145+00:00.beancount,UberBarmaid_2022-05-11 18:15:28.155441+00:00.beancount,UberBarmaid_2022-05-12 12:40:47.931338+00:00.beancount,UberBarmaid_2022-05-12 18:32:06.213150+00:00.beancount,UberBarmaid_2022-05-15 22:19:45.161006+00:00.beancount,UberBarmaid_2022-05-17 16:55:48.271732+00:00.beancount,UberBarmaid_2022-05-19 14:56:57.749636+00:00.beancount,UberBarmaid_2022-05-19 17:21:57.235261+00:00.beancount,UberBarmaid_2022-06-11 17:53:28.861543+00:00.beancount,UberBarmaid_2022-06-17 10:17:23.715052+00:00.beancount,UberBarmaid_2022-07-10 18:25:52.396109+00:00.beancount,UberBarmaid_2022-07-11 21:08:15.291287+00:00.beancount,UberBarmaid_2022-07-21 18:37:05.399806+00:00.beancount,UberBarmaid_2022-07-27 17:01:43.378475+00:00.beancount,UberBarmaid_2022-07-28 12:52:31.812053+00:00.beancount,UberBarmaid_2022-07-28 15:36:48.279478+00:00.beancount,UberBarmaid_2022-08-27 13:33:16.320151+00:00.beancount,UberBarmaid_2022-09-01 17:37:13.722959+00:00.beancount,UberBarmaid_2022-09-01 19:31:04.207099+00:00.beancount,UberBarmaid_2022-09-01 20:45:20.296152+00:00.beancount,UberBarmaid_2022-09-01 21:46:02.493502+00:00.beancount,UberBarmaid_2022-09-02 17:34:14.758119+00:00.beancount,UberBarmaid_2022-09-02 17:36:11.126641+00:00.beancount,UberBarmaid_2022-09-02 17:40:53.120467+00:00.beancount,UberBarmaid_2022-09-02 18:15:44.278151+00:00.beancount,UberBarmaid_2022-09-04 17:20:11.124265+00:00.beancount,UberBarmaid_2022-09-04 19:23:04.478013+00:00.beancount,UberBarmaid_2022-09-11 14:08:14.723857+00:00.beancount,UberBarmaid_2022-09-18 20:00:29.435652+00:00.beancount,UberBarmaid_2022-11-05 00:36:22.236826+00:00.beancount,UberBarmaid_2022-11-05 14:43:14.955353+00:00.beancount,UberBarmaid_2022-11-11 12:07:15.121346+00:00.beancount,UberBarmaid_2022-11-11 14:02:52.858731+00:00.beancount,UberBarmaid_2022-11-11 21:27:04.178801+00:00.beancount,UberBarmaid_2022-11-13 16:47:40.576757+00:00.beancount,UberBarmaid_2022-12-08 13:51:42.222268+00:00.beancount,UberBarmaid_2022-12-26 21:35:07.917992+00:00.beancount,UberBarmaid_2023-01-08 15:25:12.668656+00:00.beancount,UberBarmaid_2023-01-15 20:05:27.289950+00:00.beancount,UberBarmaid_2023-03-02 16:47:36.348616+00:00.beancount,UberBarmaid_2023-03-31 15:55:10.692411+00:00.beancount,UberBarmaid_2023-04-01 13:54:11.606559+00:00.beancount,UberBarmaid_2023-04-01 14:35:01.225917+00:00.beancount,UberBarmaid_2023-04-01 16:11:35.765217+00:00.beancount,UberBarmaid_2023-04-01 19:31:22.054028+00:00.beancount,UberBarmaid_2023-04-02 11:11:06.420527+00:00.beancount,UberBarmaid_2023-04-02 11:18:22.176567+00:00.beancount,UberBarmaid_2023-04-02 12:32:47.899101+00:00.beancount,UberBarmaid_2023-04-02 17:19:29.138541+00:00.beancount,UberBarmaid_2023-04-02 17:57:43.183894+00:00.beancount,UberBarmaid_2023-04-03 19:51:09.619864+00:00.beancount,UberBarmaid_2023-04-05 19:15:15.786489+00:00.beancount,UberBarmaid_2023-04-06 17:14:11.012896+00:00.beancount,UberBarmaid_2023-04-06 23:01:02.498354+00:00.beancount,UberBarmaid_2023-04-06 23:25:00.818555+00:00.beancount,UberBarmaid_2023-04-10 14:31:27.965523+00:00.beancount,UberBarmaid_2023-04-20 21:41:45.099832+00:00.beancount,UberBarmaid_2023-05-14 10:34:14.047385+00:00.beancount,UberBarmaid_2023-06-22 16:50:15.741805+00:00.beancount,UberBarmaid_2023-07-13 15:11:51.623059+00:00.beancount,UberBarmaid_2023-07-26 12:20:02.422975+00:00.beancount,UberBarmaid_2023-07-28 14:19:26.915184+00:00.beancount,UberBarmaid_2023-08-03 20:47:54.248548+00:00.beancount,UberBarmaid_2023-08-10 15:03:50.183652+00:00.beancount,UberBarmaid_2023-10-08 19:23:08.779253+00:00.beancount,UberBarmaid_2023-10-26 15:46:53.154669+00:00.beancount,UberBarmaid_2023-11-06 16:45:56.317827+00:00.beancount,UberBarmaid_2023-11-23 17:08:30.662170+00:00.beancount,UberBarmaid_2023-12-10 19:01:05.680048+00:00.beancount,UberBarmaid_2023-12-21 19:15:53.117592+00:00.beancount,UberBarmaid_2024-01-04 20:36:28.839072+00:00.beancount,UberBarmaid_2024-01-18 19:32:39.804552+00:00.beancount,UberBarmaid_2024-01-23 19:20:55.037849+00:00.beancount,UberBarmaid_2024-01-25 20:57:42.462961+00:00.beancount,UberBarmaid_2024-02-11 19:05:26.264565+00:00.beancount,UberBarmaid_2024-02-15 20:26:13.198021+00:00.beancount,UberBarmaid_2024-02-29 12:18:10.126173+00:00.beancount,UberBarmaid_2024-03-07 17:53:07.045189+00:00.beancount,UberBarmaid_2024-03-21 16:50:09.472401+00:00.beancount,UberBarmaid_2024-03-28 18:31:57.658998+00:00.beancount,UberBarmaid_2024-04-11 17:58:06.170877+00:00.beancount,UberBarmaid_2024-04-12 17:39:49.262908+00:00.beancount,UberBarmaid_2024-04-13 16:44:37.090373+00:00.beancount,UberBarmaid_2024-04-18 16:31:10.925369+00:00.beancount,UberBarmaid_2024-05-01 13:14:27.452081+00:00.beancount,UberBarmaid_2024-05-01 17:18:32.255593+00:00.beancount,UberBarmaid_2024-05-02 23:31:45.878135+00:00.beancount,UberBarmaid_2024-05-09 16:39:32.517652+00:00.beancount,UberBarmaid_2024-05-16 16:28:42.537373+00:00.beancount,UberBarmaid_2024-05-21 17:54:48.019723+00:00.beancount,UberBarmaid_2024-05-23 18:11:59.776416+00:00.beancount,UberBarmaid_2024-05-30 15:06:58.460156+00:00.beancount,UberBarmaid_2024-05-30 18:23:38.702490+00:00.beancount,UberBarmaid_2024-06-10 13:54:43.784869+00:00.beancount,UberBarmaid_2024-06-29 11:09:37.939078+00:00.beancount,UberBarmaid_2024-08-05 16:20:53.125402+00:00.beancount,UberBarmaid_2024-09-12 14:23:46.186065+00:00.beancount,UberBarmaid_2024-09-12 15:20:09.020035+00:00.beancount,UberBarmaid_2024-09-13 15:21:44.838438+00:00.beancount,UberBarmaid_2024-09-17 19:05:00.100810+00:00.beancount,UberBarmaid_2024-09-17 19:33:23.832695+00:00.beancount,UberBarmaid_2024-09-17 20:13:41.809239+00:00.beancount,UberBarmaid_2024-09-26 16:04:02.017952+00:00.beancount,UberBarmaid_2024-09-29 16:02:20.206385+00:00.beancount,UberBarmaid_2024-11-18 21:54:08.714654+00:00.beancount,UberBarmaid_2025-01-02 22:38:51.319700+00:00.beancount,UberBarmaid_2025-01-16 19:14:48.114818+00:00.beancount,UberBarmaid_2025-01-16 22:32:22.885153+00:00.beancount,UberBarmaid_2025-01-23 18:59:07.154397+00:00.beancount,UberBarmaid_2025-01-30 20:50:01.821110+00:00.beancount,UberBarmaid_2025-02-06 18:13:43.297236+00:00.beancount,UberBarmaid_2025-03-04 19:57:52.429083+00:00.beancount,UberBarmaid_2025-03-13 15:53:19.089759+00:00.beancount,UberBarmaid_2025-03-16 15:30:21.679138+00:00.beancount,UberBarmaid_2025-04-15 17:52:16.736512+00:00.beancount,UberBarmaid_2025-04-24 17:22:47.667925+00:00.beancount,UberBarmaid_2025-04-27 17:45:31.917268+00:00.beancount,UberBarmaid_2025-05-22 22:53:04.403442+00:00.beancount,UberBarmaid_2025-05-22 22:54:26.450543+00:00.beancount,UberBarmaid_2025-05-23 17:15:12.801308+00:00.beancount,UberBarmaid_2025-05-23 17:40:32.655172+00:00.beancount,UberBarmaid_2025-05-23 21:37:03.196352+00:00.beancount,UberBarmaid_2025-05-24 14:34:55.875101+00:00.beancount,UberBarmaid_2025-05-26 14:03:03.753597+00:00.beancount,UberBarmaid_2025-05-29 16:35:13.343257+00:00.beancount,UberBarmaid_2025-05-29 18:17:13.564632+00:00.beancount,UberBarmaid_2025-05-29 18:39:11.176730+00:00.beancount,UberBarmaid_2025-06-05 18:21:48.046774+00:00.beancount,UberBarmaid_2025-06-20 21:46:32.081369+00:00.beancount,UberBarmaid_2025-06-20 23:10:12.277968+00:00.beancount,UberBarmaid_2025-06-22 09:59:11.031669+00:00.beancount,UberBarmaid_2025-06-26 20:44:12.256531+00:00.beancount,UberBarmaid_2025-06-30 14:10:58.616925+00:00.beancount,UberBarmaid_2025-07-03 20:25:01.585314+00:00.beancount,UberBarmaid_2025-07-10 23:40:55.661555+00:00.beancount,UberBarmaid_2025-08-14 18:15:16.855438+00:00.beancount,UberBarmaid_2025-10-21 12:59:56.807968+00:00.beancount,UberBarmaid_2025-11-10 17:58:30.465122+00:00.beancount
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/static/members.beancount	5095	no	
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/glimesh.beancount	104	yes	FY2020/FY2020.beancount
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/simple/basic.beancount	20544	no	
+https://raw.githubusercontent.com/buelbuel/bc-connect/e9c10b8c070726297a3cd72f126f0175e7514a47/ledgers/2024.beancount	1921	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/static/basic-accounts.beancount	224	no	
+https://raw.githubusercontent.com/sagarbehere/ofx-to-beancount/f5dc031627348f0c99631465d41a83e5ff60b2c8/config/example_training.beancount	3127	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/experiments/print/input.beancount	1905	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/options.beancount	2109	no	
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/FY2020/2020-09.beancount	375	no	
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/FY2020/2020-08.beancount	339	no	
+https://raw.githubusercontent.com/simonmichael/hledger/655e9f0d0d423ea3862e15f9c6d81e9ee0b1ebba/examples/lots/beancount1.beancount	1032	no	
+https://raw.githubusercontent.com/simonmichael/hledger/655e9f0d0d423ea3862e15f9c6d81e9ee0b1ebba/examples/lots/subaccounts.beancount	1482	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/budgeting-expenses.beancount	1261	no	
+https://raw.githubusercontent.com/redstreet/beancount_reds_importers/1029d63e5778f653d2fe3d58203e49c896bbd40f/beancount_reds_importers/example/my.beancount	751	no	
+https://raw.githubusercontent.com/redstreet/beancount_reds_plugins/b3346c441ef611203c83cd4622bc2504bbc10576/beancount_reds_plugins/capital_gains_classifier/example.gain_loss.beancount	555	no	
+https://raw.githubusercontent.com/redstreet/beancount_reds_plugins/b3346c441ef611203c83cd4622bc2504bbc10576/beancount_reds_plugins/capital_gains_classifier/example.long_short.beancount	436	no	
+https://raw.githubusercontent.com/VitoMinheere/lab/3a952e78f9d8366dfb872a0db9384d035d04f535/kubernetes/beancount/basic.beancount	20571	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-10 16:51:21.432587+00:00.beancount	49673	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-24 15:51:29.232369+00:00.beancount	12970	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2020-08-11 08:42:36.901297+00:00.beancount	108712	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-03-20 13:58:44.305581+00:00.beancount	51299	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-03-10 22:20:39.680274+00:00.beancount	24444	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-05-21 09:04:34.949004+00:00.beancount	24646	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-01-12 13:46:47.052925+00:00.beancount	31297	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-27 08:59:52.139423+00:00.beancount	20205	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2018-12-05 16:14:27.903981+00:00.beancount	18615	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-28 17:07:56.514464+00:00.beancount	1808	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 22:31:14.004640+00:00.beancount	394	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/backtab_2019-03-10 18:02:26.544718+00:00.beancount	66234	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-06-08 12:38:31.078912+00:00.beancount	33288	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-12-05 17:18:39.833105+00:00.beancount	188549	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-23 17:11:35.076202+00:00.beancount	2734	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-05-09 16:44:39.341449+00:00.beancount	40622	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-25 19:00:37.639609+00:00.beancount	7934	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-02-21 18:30:57.082927+00:00.beancount	14758	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-18 19:53:40.683489+00:00.beancount	4199	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-08-04 16:59:02.839789+00:00.beancount	132471	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-02-08 21:07:05.686944+00:00.beancount	14563	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-19 15:23:14.656233+00:00.beancount	7364	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/backtab_2019-04-18 17:26:18.671157+00:00.beancount	976	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-19 20:06:17.592528+00:00.beancount	4157	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-07-22 18:27:56.437870+00:00.beancount	20233	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2020-09-09 23:39:14.288806+00:00.beancount	23176	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-05-02 17:00:10.950026+00:00.beancount	10313	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-28 18:16:07.910704+00:00.beancount	11063	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-06-10 14:59:19.573777+00:00.beancount	112662	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-05-06 07:36:04.122639+00:00.beancount	1371	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-09-05 17:18:08.101297+00:00.beancount	14633	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-02 14:12:46.879954+00:00.beancount	330	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-10-31 22:32:10.699070+00:00.beancount	40578	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 21:45:26.081200+00:00.beancount	601	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/backtab_2019-03-08 18:10:04.920733+00:00.beancount	12403	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/backtab_2019-04-18 18:14:31.646955+00:00.beancount	639	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-31 17:17:32.382635+00:00.beancount	1473	no	
+https://raw.githubusercontent.com/MulanRevive/bounty/e2722117205898c8921e4a69a82c2198e7732f26/收支账本/总账.beancount	16662	no	
+https://raw.githubusercontent.com/kevindugan/Beancount-Intellisense/94be88b9df901e7dede8c7aab88c04381c7ed978/client/testFixture/completion-minimal-transaction.beancount	155	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid-ng_2021-08-05 18:28:03.728345+00:00.beancount	715	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid-ng_2021-08-06 18:56:05.894124+00:00.beancount	484	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid-ng_2021-08-05 18:04:26.616465+00:00.beancount	291	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-02-15 20:26:13.198021+00:00.beancount	7946	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-01 16:11:35.765217+00:00.beancount	21889	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-12 18:32:06.213150+00:00.beancount	21651	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-01-18 19:32:39.804552+00:00.beancount	3774	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-01-23 19:20:55.037849+00:00.beancount	4779	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-17 19:05:00.100810+00:00.beancount	291	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-29 16:35:13.343257+00:00.beancount	1333	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-02 17:57:43.183894+00:00.beancount	6032	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-01-30 20:50:01.821110+00:00.beancount	2984	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-02 17:34:14.758119+00:00.beancount	324	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-02 17:19:29.138541+00:00.beancount	2167	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-12 14:23:46.186065+00:00.beancount	369	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-21 17:54:48.019723+00:00.beancount	989	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-01-15 20:05:27.289950+00:00.beancount	136937	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-12-10 19:01:05.680048+00:00.beancount	14263	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-04-15 17:52:16.736512+00:00.beancount	7380	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-01 17:37:13.722959+00:00.beancount	3752	no	
+https://raw.githubusercontent.com/BarrySong97/beancount-sqlite/b615993ad0b9adfa116143f17cc41fa35fb4617a/example.beancount	347280	no	
+https://raw.githubusercontent.com/Nulifier/beancountr/3dfb1599af94b5ec4d95fa18d65c235531ce5ea7/examples/example.beancount	347280	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/examples/manually_entered/journal.beancount	89	yes	accounts.beancount,transactions.beancount,prices.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/new_empty_files/x.beancount	179	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/make/x.beancount	179	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/contrib/examples/budgets-example.beancount	322281	no	
+https://raw.githubusercontent.com/beancount/beancount/1cbb0b6bc08a47572c4779eabee71e9fd5807079/examples/simple/starter.beancount	14940	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/bmo/credit/example-bmo-output.beancount	604	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/account.beancount	5449	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/pythonanywhere/fava_config.beancount	1294	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/example/example.beancount	246010	no	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/2018.beancount	119	yes	accounts.beancount,2018-01-1.beancount,2018-01-2.beancount,2018-01-3.beancount
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-08.beancount	7262	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/includes.beancount	808	yes	includes/included.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/_rx_def_INITIAL_COPY.beancount	4106	no	
+https://raw.githubusercontent.com/Donearm/ledger/caedb3409a96b50fb9a28e938df90198d4b4d698/accounts.beancount	4779	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-24 23:52:36.907913+00:00.beancount	4738	no	
+https://raw.githubusercontent.com/redstreet/beancount_reds_plugins/b3346c441ef611203c83cd4622bc2504bbc10576/beancount_reds_plugins/effective_date/examples.beancount	1133	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/commodity.beancount	2445	no	
+https://raw.githubusercontent.com/polarmutex/manage-finances-using-python/ea69890489202812868179de1dd7c2f1b503c512/example.beancount	347310	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-11.beancount	1902	no	
+https://raw.githubusercontent.com/redstreet/fava_miler/90514fe293e0c563e87a8a4fcbba067e3ab376c0/screenshot.beancount	1349	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-validation.beancount	733	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/examples/beancount/balance.beancount	1113	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/rx_def_updated.beancount	3230	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-04-18 16:31:10.925369+00:00.beancount	12745	no	
+https://raw.githubusercontent.com/Donearm/ledger/caedb3409a96b50fb9a28e938df90198d4b4d698/prices/commodities.beancount	283	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/clemente.beancount	402	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/plugins/forecast.beancount	2007	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/eventos-concluídos.beancount	2539	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-06.beancount	1332	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-12.beancount	153	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-11.beancount	20288	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-10.beancount	153	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-01 13:14:27.452081+00:00.beancount	1445	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-03-04 19:57:52.429083+00:00.beancount	7260	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-24 14:34:55.875101+00:00.beancount	41525	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-06 17:14:11.012896+00:00.beancount	7729	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-07-11 21:08:15.291287+00:00.beancount	28326	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-07-27 17:01:43.378475+00:00.beancount	396	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-07-28 15:36:48.279478+00:00.beancount	78492	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-08-03 20:47:54.248548+00:00.beancount	4372	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-03 19:51:09.619864+00:00.beancount	4435	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-11-05 14:43:14.955353+00:00.beancount	21199	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/servingwench_2021-06-15 19:29:25.449490+00:00.beancount	289	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-07-27 13:53:41.275918+00:00.beancount	206495	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-28 08:24:35.301266+00:00.beancount	289	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-06-20 21:46:32.081369+00:00.beancount	1578	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-03-13 15:53:19.089759+00:00.beancount	6064	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-01-02 22:38:51.319700+00:00.beancount	1815	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-11 18:15:28.155441+00:00.beancount	1637	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-23 17:40:32.655172+00:00.beancount	14038	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-01 19:31:22.054028+00:00.beancount	15904	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/import.beancount	311	no	
+https://raw.githubusercontent.com/beancount/smart_importer/ef0b279f1e650673221170ea4370d041d9d1b29b/tests/data/multiaccounts.beancount	713	no	
+https://raw.githubusercontent.com/ghislainbourgeois/beancount_portfolio_allocation/df2fc7d5366978b49e85d34476c48a7f0248defb/tests/test_inputs/portfolio.beancount	1679	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/dates.beancount	1446	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/spacing.beancount	647	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/sample_KapJI_cgc.beancount	12313	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/some_fund_example.beancount	1389	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/cool_fund_example.beancount	1176	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/simple-whtax.xml.beancount	212	no	
+https://raw.githubusercontent.com/staticaland/beancount-no-amex/1e6a126343f34c0c158c9538a9cd3da7e580e931/test_data/activity.qbo.beancount	1808	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/include1.beancount	302	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/comments.beancount	3529	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/commodities.beancount	5737	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/WithUnsplitS104.beancount	1125	no	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/prices.beancount	42779	no	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/original.beancount	265061	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/missing_fx_expected.beancount	63	no	
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/Whitespace.beancount	223	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/wise_csv/wise-personal-old-format-EUR.csv.beancount	740	no	
+https://raw.githubusercontent.com/AlphaJack/toc/a4ffcec4adf3a84e2d8005f853dbb1fb52a0ac06/tests/reference/beancount_simple.beancount	807	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/output/cool_fund_example_output.beancount	2021	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/stock-trades-merge.xml.beancount	302	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/sensebank/alfabank-uah.csv.beancount	1208	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/fail_no.beancount	171	no	
+https://raw.githubusercontent.com/Ramblurr/intellij-beancount/60fc0c29891cb0576a53555c871bd814d806a79e/resources-test/testData/parsing/Option.beancount	40	no	
+https://raw.githubusercontent.com/fengkx/beancount-smart-query/ecf4874d07a99d3fad825b09fc84666730da843a/tests/examples/example.beancount	293238	no	
+https://raw.githubusercontent.com/nathangs6/beancount-split-webui/19c30ad028073fd9fd3e22f69c2f6322ae824adc/test_data/fava/test_Bob.beancount	1057	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/stock_split.beancount	812	no	
+https://raw.githubusercontent.com/Bergschrat1/beancount-tui/3ffcc1ec964e8cdf00de0a22cf0c761dbba6f478/data/test.beancount	438	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/example_rx.beancount	3951	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/defs_opts.beancount	4622	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/rx_230630.beancount	38030	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/rx_opts_221231.beancount	13337	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/defs_repeat_payee.beancount	4734	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/savings_plan_daily.beancount	1219	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.ZeroAmount.beancount	104	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.CostNegative.beancount	109	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopMeta.PushmetaOverride.beancount	276	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.PriceMissing.beancount	81	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserPlugin.PluginWithConfig.beancount	50	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostEmptyComponents.beancount	98	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeRelative.beancount	239	yes	ParserInclude.IncludeRelative/Included1.beancount,ParserInclude.IncludeRelative/Included2.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserOptions.OptionSingleValue.beancount	28	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Comment.CommentBeforeTransaction.beancount	63	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostMissingBasis.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostNoNumberTotal.beancount	85	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserComplete.ExtraWhitespaceNote.beancount	40	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/DeprecatedOptions.DeprecatedOption.beancount	37	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalPriceWithMissing.beancount	114	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissingWithCost.beancount	81	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.TransactionTwoStrings.beancount	117	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissingWithPrice.beancount	91	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostMissingNumberTotal.beancount	87	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.TransactionThreeStrings.beancount	133	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.LexerErrorsInPostings.beancount	539	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsPoptag.beancount	77	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsKeyValue.beancount	102	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/beancount/pad.beancount	1455	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Document.beancount	76	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsPlugin.beancount	87	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Balance.TotalCost.beancount	310	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsInclude.beancount	136	yes	LexerAndParserErrors.GrammarExceptionsInclude/Included.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsPushtag.beancount	78	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostWithSlashes.beancount	118	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsOption.beancount	95	no	
+https://raw.githubusercontent.com/mmichie/lima/5039f8d5750e8eb0950e58a1b02fe442d02562f2/testdata/sample.beancount	1142	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostFull.beancount	89	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Commodity.beancount	26	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_anzcc/journal.beancount	139	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_basic/2/journal.beancount	639	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_amex/import_results.beancount	2635	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/mint/test_basic/import_results.beancount	1744	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_fidelity_savings/journal.beancount	155	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_bank_medium/import_results.beancount	2536	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_investment_401k/import_results.beancount	2687	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/healthequity/test_invalid/import_results.beancount	2496	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_basic/import_results.beancount	3772	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_training_examples/journal.beancount	1439	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_non_default_capital_gains/import_results.beancount	3386	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_amazon_large/0/journal.beancount	423	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_cleared_and_invalid/journal.beancount	5900	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/waveapps/test_matching/journal.beancount	152	no	
+https://raw.githubusercontent.com/nblock/beancount-nblock/6fa6a73b1440ead3b4b079278539c2f47b4c5f03/tests/fixtures/repel/single.beancount	152	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/_defs_INITIAL_COPY.beancount	4106	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/defs_221231.beancount	3230	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/import.beancount	311	no	
+https://raw.githubusercontent.com/nathangs6/beancount-split-webui/19c30ad028073fd9fd3e22f69c2f6322ae824adc/test_data/fava/Bob/ledger.beancount	1057	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostEmptyWithOther.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalPriceWithMissing2.beancount	114	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Document.DocumentNoTagsLinks.beancount	76	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/healthequity/test_matching/import_results.beancount	2496	no	
+https://raw.githubusercontent.com/plaintextaccounting/plaintextaccounting/bca5752b9e82757fa7669872cde3ddd1976494f2/src/Recording-dates/a.beancount	315	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/icbc/credit/example-icbc-credit-output.beancount	1141	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/cryptocoin.beancount	423	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-02.beancount	152	no	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/2018-01-2.beancount	277	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/recon/x.beancount	1222	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-includes/simple-errors.beancount	267	no	
+https://raw.githubusercontent.com/eidorb/portfolio/6000eabc8d37b7100989b16498c5c73f13de03f3/cdk/demo-function/demo-portfolio.beancount	15757	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-09 16:39:32.517652+00:00.beancount	10390	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/sharing/duxbury2015.beancount	3792	no	
+https://raw.githubusercontent.com/EmNebergall/Garbanzo/c12b506a0df4f2577d423784ce0cdaf154ad6e99/data/sample/example.beancount	336353	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-11.beancount	4135	no	
+https://raw.githubusercontent.com/Logic-gate/cryptodash/4784625328f73f05e21c6943167e463d640f2e67/beancount/portfolio.beancount	1800	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/washsales/irs-more-than-sold-example-2.beancount	3443	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/icbc/debit-v2/example-icbc-debit-v2-output.beancount	2339	no	
+https://raw.githubusercontent.com/debanjum/company-ledger/c6911b7e39b29c0d5f2541392ff485b0f53fd366/examples/otzi.beancount	12163	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/rx_def.beancount	4105	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-03-08 16:47:32.363628+00:00.beancount	1578	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/examples/beancount/full.beancount	3454	no	
+https://raw.githubusercontent.com/yagebu/tree-sitter-beancount/9c359799017f523ab14f493655c0911645ac2a9c/examples/example.beancount	3075	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/sharing/cozumel2015.beancount	11279	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/commissions.beancount	1709	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-05.beancount	153	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-08.beancount	530	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-04.beancount	252	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-03.beancount	1108	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-01.beancount	679	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-04.beancount	1637	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-01.beancount	547	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-01 19:31:04.207099+00:00.beancount	1897	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-07-28 12:52:31.812053+00:00.beancount	1309	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-02-11 19:05:26.264565+00:00.beancount	3545	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-03-28 18:31:57.658998+00:00.beancount	6688	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-04-13 16:44:37.090373+00:00.beancount	6401	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-29 18:17:13.564632+00:00.beancount	291	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-20 21:41:45.099832+00:00.beancount	53903	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-06-22 16:50:15.741805+00:00.beancount	48816	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/bartab.beancount	184	yes	static/adjustments.beancount,static/basic-accounts.beancount,static/members.beancount,static/stock.beancount,ledger/dynamic.beancount
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/hsbchk/credit/example-hsbchk-credit-output.beancount	3206	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-11 14:08:14.723857+00:00.beancount	34328	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-10-21 12:59:56.807968+00:00.beancount	24145	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-11-11 14:02:52.858731+00:00.beancount	3047	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/off-by-one.beancount	731	no	
+https://raw.githubusercontent.com/gerdemb/beanpost/dec44298d72451b529b238e4337cb5210f1b3dfc/tests/test.beancount	1418	no	
+https://raw.githubusercontent.com/redstreet/beancount_reds_plugins/b3346c441ef611203c83cd4622bc2504bbc10576/beancount_reds_plugins/zerosum/zs_test.beancount	1303	no	
+https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/comments.beancount	115	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/kraken/ledgers.csv.beancount	544	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/bug237.beancount	201	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/no-config.beancount	562	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/dates-month.beancount	908	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/normal_input.beancount	179	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/entry_already_exists_input.beancount	252	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/Assets/Bank/test_ok_implicit.beancount	240	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/balance_extended_example.beancount	1754	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/simple-div.xml.beancount	210	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/Blank.beancount	813	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/div-interest.xml.beancount	252	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/tax-adjustment.xml.beancount	315	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/SameDayMergeInterleaved.beancount	1579	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/entry_already_exists_expected.beancount	189	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserPlugin.Plugin.beancount	37	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Note.beancount	62	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Document.DocumentLinks.beancount	76	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Close.beancount	45	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.ZeroCosts.beancount	118	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.NoPostings.beancount	55	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.ZeroPrices.beancount	177	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostRepeatedDate.beancount	111	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserComplete.NoEmptyLines.beancount	414	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostRepeatedLabel.beancount	106	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Comment.CommentAfterPostings.beancount	66	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprNegative.beancount	111	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeAbsolute.beancount	44	yes	/some/absolute/filename.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserOptions.LegacyTranslations.beancount	66	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.BalanceWithCost.beancount	59	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalPricePositive.beancount	112	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataTransactionBegin.beancount	125	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostMissingNumbers.beancount	81	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Comment.CommentAfterTransactionStart.beancount	67	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostMissingCurrency.beancount	81	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserComplete.ExtraWhitespaceComment.beancount	99	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostMissingNumberPer.beancount	85	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/DisplayContextOptions.RenderCommasYes2.beancount	30	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MiscOptions.PluginProcessingModeDefault.beancount	42	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.BlankLineWithSpacesNotAllowed.beancount	94	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserComplete.TransactionSinglePostingAtZero.beancount	78	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarSyntaxErrorRecovery2.beancount	54	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsTagLinkNew.beancount	152	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsInclude/Included.beancount	126	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/kiwibank.expected.beancount	426	yes	kiwibank.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Balance.TotalPrice.beancount	105	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/ledger.beancount	3310	yes	rx.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/rx_opts.beancount	230	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/x.beancount	2566	no	
+https://raw.githubusercontent.com/robinvdvleuten/beancount/46d44607a479573a592a4be6a92b73796d592e36/testdata/kitchensink.beancount	5298	no	
+https://raw.githubusercontent.com/trevorld/r-ledger/8669963cc5b0aa6004cf4b7f557f642aee0a6732/inst/extdata/example.beancount	3726	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_checking2/journal.beancount	143	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/venmo/test_matching/journal.beancount	5035	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_matching/0/journal.beancount	646	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_matching/0/pending.beancount	124	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/healthequity/test_invalid/journal.beancount	3113	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/healthequity/test_matching/journal.beancount	2910	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_matching/journal.beancount	731	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/waveapps/test_basic/import_results.beancount	867	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_invalid/journal.beancount	2029	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/waveapps/test_matching/import_results.beancount	440	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_401k_matching/journal.beancount	776	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_invalid/import_results.beancount	683	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ultipro_google/test_20220107/import_results.beancount	3524	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_with_cash_account/journal.beancount	242	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_401k_matching/import_results.beancount	3601	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_cleared_and_invalid/import_results.beancount	11010	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_roth_ira_matching/import_results.beancount	371	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_cost/input/generic_statement.beancount	92	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/2/additional/transactions.beancount	204	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_with_cash_account_matching_missing_primary/import_results.beancount	1157	no	
+https://raw.githubusercontent.com/BeanyLedger/Beany/c629de96c44508e32c08a367cc3fbef04a06426a/core/test/testdata/accounts.beancount	255	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/experiments/washsales/irs-more-than-sold-example-2.beancount	3443	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/off-by-one.beancount	731	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsTagLinkPipe.beancount	152	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsTransaction.beancount	152	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/make/rx_opts.beancount	230	no	
+https://raw.githubusercontent.com/cran/ledger/5ba64eddb3ce15807ae7e2010f8d10290c5cbff8/inst/extdata/example.beancount	3726	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_matching/import_results.beancount	683	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/cmb/debit/example-cmb-output.beancount	857	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/latest-prices.beancount	457	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/full.beancount	3170	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-01.beancount	1654	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/rx.beancount	169	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/experiments/print/print.beancount	3180	no	
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/FY2020/2020-12.beancount	3365	no	
+https://raw.githubusercontent.com/kevindugan/Beancount-Intellisense/94be88b9df901e7dede8c7aab88c04381c7ed978/client/testFixture/diagnostics.beancount	191	no	
+https://raw.githubusercontent.com/PhracturedBlue/fava-portfolio-summary/7d3301619025d735830c389948e5527456050d44/example/example.beancount	3718	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-03-22 19:16:55.753747+00:00.beancount	93246	no	
+https://raw.githubusercontent.com/omarcelh/bean-sheet/38595968f868feaecdf5df06f0781e005922b19d/functions/src/input-example.beancount	1539	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/examples/beancount/simple.beancount	1685	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/new_empty_files/rx_def.beancount	276	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-04.beancount	301	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-03-31 15:55:10.692411+00:00.beancount	52312	no	
+https://raw.githubusercontent.com/blaulan/beancount-pbi/0349f8af34680b341f69fd67d7524bb3ebebdedf/example.beancount	287273	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/options.beancount	1078	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/alipay/example-alipay-output.beancount	2810	no	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/template.beancount	428	no	
+https://raw.githubusercontent.com/julianespinel/lab/66f4fcb2d0e46ba5df00466e8820a599f4958189/accounting/formance/ledger.beancount	1770	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/virtuals.beancount	1807	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-01-25 20:57:42.462961+00:00.beancount	5480	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-07-28 14:19:26.915184+00:00.beancount	3960	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-03-02 16:47:36.348616+00:00.beancount	56956	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-12 15:20:09.020035+00:00.beancount	6925	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-11-13 16:47:40.576757+00:00.beancount	74269	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-19 17:21:57.235261+00:00.beancount	69724	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-03-16 15:30:21.679138+00:00.beancount	19905	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-03.beancount	822	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2025-01.beancount	3481	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-11.beancount	376	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-06.beancount	1544	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-05.beancount	252	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-05.beancount	153	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-cycle.beancount	757	yes	error-include-cycle/included.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-duplicate-options.beancount	338	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-04-29 19:51:39.213145+00:00.beancount	26425	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-cycle/included.beancount	294	yes	../error-include-cycle.beancount
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-04.beancount	235	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-01-16 19:14:48.114818+00:00.beancount	3558	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-07-21 18:37:05.399806+00:00.beancount	21231	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-07-03 20:25:01.585314+00:00.beancount	7530	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-06-20 23:10:12.277968+00:00.beancount	971	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-01 20:45:20.296152+00:00.beancount	2879	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-26 14:03:03.753597+00:00.beancount	7929	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-02 11:18:22.176567+00:00.beancount	4373	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-06-22 09:59:11.031669+00:00.beancount	12986	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-16 16:28:42.537373+00:00.beancount	7652	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-06-30 14:10:58.616925+00:00.beancount	2108	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/wechat/example-wechat-output.beancount	10363	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-25 09:30:33.105978+00:00.beancount	3142	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/backtab_2019-04-18 18:53:34.896598+00:00.beancount	1211	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-07-15 17:40:21.954281+00:00.beancount	3193	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-24 23:44:04.028847+00:00.beancount	321	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 20:57:59.016031+00:00.beancount	2054	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-02-25 12:53:53.631856+00:00.beancount	24713	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-24 13:59:17.214709+00:00.beancount	4586	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 12:50:35.945713+00:00.beancount	2659	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-06-10 13:54:43.784869+00:00.beancount	44027	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-03-07 17:53:07.045189+00:00.beancount	15168	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-parse.beancount	721	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/account-types.beancount	1290	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/bmo/debit/example-bmo-output.beancount	647	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/cmb/credit/example-cmb-output.beancount	743	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/edit-example.beancount	966	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/long-example.beancount	280792	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/hledger.beancount	10379	no	
+https://raw.githubusercontent.com/beancount/beangulp/c5e8188bd186a1c77bb5835b252f2f07d41dd85b/examples/tests/acme/acmebank1.pdf.beancount	73	no	
+https://raw.githubusercontent.com/beancount/beangulp/c5e8188bd186a1c77bb5835b252f2f07d41dd85b/examples/tests/csvbank/statement.csv.beancount	809	no	
+https://raw.githubusercontent.com/beancount/beangulp/c5e8188bd186a1c77bb5835b252f2f07d41dd85b/examples/tests/utrade/UTrade20140713.csv.beancount	2436	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/ib/beancount.xml.beancount	5367	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/ok_none.beancount	171	no	
+https://raw.githubusercontent.com/beancount/smart_importer/ef0b279f1e650673221170ea4370d041d9d1b29b/tests/data/chinese.beancount	2295	no	
+https://raw.githubusercontent.com/michaellenaghan/sublime-beancount/f8acadc35ac0dd4f576f75bc8b883ea3d7f20af4/test/test.beancount	15389	yes	/some/absolute/filename.beancount,some/relative/filename.beancount
+https://raw.githubusercontent.com/erpreciso/beancount-expected-transaction/09091b8326d37c6d183dca4d4ebfeb6a51731d04/test-ledger.beancount	1878	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/output/cool_fund_output.beancount	1802	no	
+https://raw.githubusercontent.com/jord1e/graalvm-with-graalpy-and-pip/8fe46e77ae28edf4b02a809126686a38f8bd70bd/test.beancount	99	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/sample_HS284_Example_3_2021.beancount	1424	no	
+https://raw.githubusercontent.com/kubauk/fava-review/dbc9089011a0072e8def81d3f78a90e2dfb2996e/test/gbp-first-operating-currency-and-usd-more-than-gbp.beancount	1385	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/savings_plan.beancount	1458	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/one-decimal.xml.beancount	211	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/brk-int-recvd.xml.beancount	237	no	
+https://raw.githubusercontent.com/nathangs6/beancount-split-webui/19c30ad028073fd9fd3e22f69c2f6322ae824adc/test_data/fava/test_Joe.beancount	967	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/SameDayMerge.beancount	1568	no	
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/n26/journal_credit_debit.beancount	714	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/MultipleMatches.beancount	1962	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/WithAssetEventsBB.beancount	2112	no	
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/n26/journal_foreign_currency.beancount	541	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/WithAssetEventsSameDay.beancount	830	no	
+https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/simple.beancount	1609	no	
+https://raw.githubusercontent.com/zacchiro/beangrep/e079c37ae9e25925a80a72e9572aad94b5ec3a91/tests/data/small.beancount	977	no	
+https://raw.githubusercontent.com/tarioch/bapi/d97b5c9beca2e5bd9bfe4a1f8409722d9b2c65d5/tests/data/example.beancount	332916	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsFull.beancount	79	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.EmptyNarration.beancount	92	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostRepeatedMerge.beancount	87	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/expected_x.beancount	671	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.PayeeNoNarration.beancount	103	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalPriceNegative.beancount	112	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/expected_injection.beancount	5875	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarSyntaxError.beancount	21	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.ParsingErrorAtRoot.beancount	28	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Currencies.DifferentCostAndPriceCurrency.beancount	147	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsOpen.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsEvent.beancount	104	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.MultipleTagsLinksOnMetadataLine.beancount	158	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostLabel.beancount	92	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataOther.beancount	569	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Event.beancount	97	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Custom.beancount	79	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopTag.PopInvalidTag.beancount	24	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprAdd.beancount	88	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopTag.TagLeftUnclosed.beancount	25	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/DisplayContextOptions.RenderCommasNo.beancount	27	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserOptions.ToleranceMapValue.beancount	135	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopTag.Multiple.beancount	163	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_basic/0/pending.beancount	912	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_suncorp/journal.beancount	139	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_basic/0/pending.beancount	586	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard401k/journal.beancount	343	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/matching_test/match_many_merged/pending.beancount	1213	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_checking/import_results.beancount	2841	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_cost/journal.beancount	28	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/schwab_csv/test_lots/import_results.beancount	8917	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/mint/test_training_examples/journal.beancount	659	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_td_ameritrade/import_results.beancount	895	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_roth_ira/import_results.beancount	741	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_investment_buy_sell_income/journal.beancount	479	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_credit_card_transactions/import_results.beancount	19712	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_with_cash_account_matching_missing_transfer/import_results.beancount	1469	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_fidelity/journal.beancount	2969	no	
+https://raw.githubusercontent.com/nblock/beancount-nblock/6fa6a73b1440ead3b4b079278539c2f47b4c5f03/tests/fixtures/unlinked_documents/document.beancount	168	no	
+https://raw.githubusercontent.com/BeanyLedger/Beany/c629de96c44508e32c08a367cc3fbef04a06426a/importers/test/testdata/wise_output.beancount	1405	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/new_empty_files/rx.beancount	169	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/rx.beancount	169	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/make/rx.beancount	169	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/make/rx_def.beancount	276	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/edit-example.beancount	966	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/long-example.beancount	280792	no	
+https://raw.githubusercontent.com/nathangs6/beancount-split-webui/19c30ad028073fd9fd3e22f69c2f6322ae824adc/test_data/fava/Joe/ledger.beancount	967	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ignore/0/pending.beancount	912	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_cleared/0/pending.beancount	586	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_ignore_price/0/pending.beancount	586	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_basic/journal.beancount	28	no	
+https://raw.githubusercontent.com/plaintextaccounting/plaintextaccounting/bca5752b9e82757fa7669872cde3ddd1976494f2/src/Time-tracking/a.beancount	272	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/examples/manually_entered/accounts.beancount	1502	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-dashboards/d63d93053680bb9e04c77b6ee157e3fcb97c694b/example/example.beancount	247479	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/ccb/example-ccb-output.beancount	4247	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/main.beancount	543	yes	account.beancount,init.beancount,salary.beancount,daily/2019.beancount,commodity.beancount,invest.beancount,prices.beancount,cryptocoin.beancount
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-12.beancount	1373	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-duplicate.beancount	637	yes	error-include-duplicate/included.beancount
+https://raw.githubusercontent.com/wileykestner/beancount-example/ede2c5470bec42df42fe54159e94d1fde67a5544/plugin-example.beancount	497	no	
+https://raw.githubusercontent.com/owodunni/beancount-swe/2644f15c915086cd1093b6f0b8dbf201428061d3/example/transactions.beancount	998	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/modules/minimizegains/example.beancount	482	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-31 18:49:00.875448+00:00.beancount	12932	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/washsales/irs-loss-and-gain-on-same-day.beancount	2941	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/icbc/debit-v1/example-icbc-debit-v1-output.beancount	2115	no	
+https://raw.githubusercontent.com/seltzered/fava-classy-portfolio-demo/e492703422dca8c18d060a88b24a67ff6d68564d/portfolio-demo.beancount	2206	yes	portfolio-demo-prices.beancount
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/prices.beancount	238858	no	
+https://raw.githubusercontent.com/chromecountry/raven/b8e48f9cbe881a0007666c19fa8c0f3d90d1ba56/data/ledger.beancount	579	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/examples/manually_entered/transactions.beancount	1974	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/simple/starter.beancount	14938	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-09.beancount	26235	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-duplicates.beancount	967	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-11-10 17:58:30.465122+00:00.beancount	24123	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-01-16 22:32:22.885153+00:00.beancount	547	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-15 22:19:45.161006+00:00.beancount	6559	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-12-08 13:51:42.222268+00:00.beancount	45164	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-07-10 18:25:52.396109+00:00.beancount	9042	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-02-29 12:18:10.126173+00:00.beancount	16209	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-04-27 16:10:03.894879+00:00.beancount	287	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-04-11 17:58:06.170877+00:00.beancount	3770	no	
+https://raw.githubusercontent.com/jpluscplusm/blog.jpluscplusm.com/01e331ab30ebaf0626a7c65f3c6777002798af4b/articles/modelling-corporation-tax-in-beancount/CDD_Systems_Limited-baseline.beancount	1557	no	
+https://raw.githubusercontent.com/igor-dimi/learning/b40eb56256dc7a3bde435336997d7a60cfc00748/finance/beancount/example.beancount	335588	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-11-18 21:54:08.714654+00:00.beancount	42353	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-06-26 20:44:12.256531+00:00.beancount	4398	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2020-07-30 15:38:12.568290+00:00.beancount	44352	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-18 18:05:57.722860+00:00.beancount	941	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-18 23:55:43.179934+00:00.beancount	515	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-26 16:34:45.793922+00:00.beancount	22457	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-03-21 16:50:09.472401+00:00.beancount	5625	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-03-08 17:31:52.395447+00:00.beancount	920	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 22:34:24.706484+00:00.beancount	601	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/examples/beancount/trading.beancount	2888	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-01-04 20:36:28.839072+00:00.beancount	12850	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-02 12:32:47.899101+00:00.beancount	11864	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-06.beancount	153	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2025-05.beancount	8147	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-09.beancount	450	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-03.beancount	2376	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/errors.beancount	381	no	
+https://raw.githubusercontent.com/radian-software/apheleia/b4bdc8fdbd40d10937fd9458231815f6703cd2f6/test/formatters/samplecode/bean-format/out.beancount	341	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/flags.beancount	556	no	
+https://raw.githubusercontent.com/ghislainbourgeois/beancount_portfolio_allocation/df2fc7d5366978b49e85d34476c48a7f0248defb/tests/test_inputs/no-main-currency.beancount	360	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/include2.beancount	302	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/directives.beancount	7651	yes	include1.beancount,include2.beancount,include3.beancount
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/virtual-postings.beancount	2165	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/balance-assertion.beancount	4770	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/wise_csv/wise-personal-new-format-EUR.csv.beancount	791	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/commissions.xml.beancount	286	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/forex-combine.xml.beancount	360	no	
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/certo_one/journal.beancount	424	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/WithSplitBB.beancount	1341	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/HMRCExample1.beancount	1446	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/WithAssetEvents.beancount	1646	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/commission-adjustment.xml.beancount	478	no	
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/n26/journal_special_chars.beancount	897	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/expired/x.beancount	705	no	
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/Comments.beancount	106	no	
+https://raw.githubusercontent.com/beanvest/beanvest/48acad1fc430daab68a10982f467123eda823c74/beanvest/beanvest/src/test/resources/export/sample.beancount	220	no	
+https://raw.githubusercontent.com/redstreet/beancount_reds_plugins/b3346c441ef611203c83cd4622bc2504bbc10576/beancount_reds_plugins/box_accrual/test.beancount	843	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/procreditbank-business/procredit.csv.beancount	1199	no	
+https://raw.githubusercontent.com/Sieboldianus/beancount-hibiscus-importer/82687e584e1677a6636e441202074390aa444aa2/src/importers_tests/hibiscus/hibiscus.mv.db.beancount	529	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/ledger_opts.beancount	3376	yes	rx_opts.beancount
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/CommentsEndOfLine.beancount	237	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/cash-balances.xml.beancount	372	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/non-standard-account-root.beancount	1409	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/kiwibank.beancount	100	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/ledger_with_error.beancount	3372	yes	rx.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/firstdirect.expected.beancount	2682	yes	firstdirect.beancount
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/PostingWithoutTransaction.beancount	35	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/beancount/price.beancount	1640	no	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/main.beancount	219679	no	
+https://raw.githubusercontent.com/fxtlabs/beansoup/678a74fe558a4ed14fd6626a6d3b74ebaa68558a/tests/example.beancount	276812	no	
+https://raw.githubusercontent.com/zacchiro/beangrep/e079c37ae9e25925a80a72e9572aad94b5ec3a91/tests/data/example.beancount	347380	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.Simple1.beancount	118	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostRepeated.beancount	103	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Open5.beancount	53	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostBothCosts.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserOptions.InvalidOption.beancount	39	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.TooManyStrings.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.PriceNegative.beancount	109	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostThreeComponents.beancount	439	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Expressions.ExplicitPrecision.beancount	58	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Misc.CommentInPostingsInvalid.beancount	169	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopMeta.PushmetaForgotten.beancount	43	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprPositive.beancount	80	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserOptions.OptionListValue.beancount	102	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostTotalJustCurrency.beancount	120	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalCostNegative.beancount	195	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.TagsAfterFirstPosting.beancount	145	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprDifferentPlaces2.beancount	360	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.LexerInvalidToken.beancount	22	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostAverageMissingBasis.beancount	104	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsPad.beancount	103	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsPosting.beancount	132	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissingCurrencyWithPrice.beancount	91	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarSyntaxErrorMultiple.beancount	133	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsTagLinkLink.beancount	162	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostEmpty.beancount	78	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostTotalEmptyTotal.beancount	94	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Balance.beancount	120	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.LinkAndThenTag.beancount	125	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprDifferentPlaces.beancount	239	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopMeta.PushmetaNormal.beancount	142	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissingCurrency.beancount	75	no	
+https://raw.githubusercontent.com/johnmee/aussie-bean-tools/20cc5632cc3fa6b6424405d36bfcda425c624a8b/aussie_bean_tools/testdata/fuzzing.beancount	701	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MiscOptions.PluginProcessingModeRaw.beancount	38	no	
+https://raw.githubusercontent.com/blossom-hub/blossom/4964ead12e9975edf5af62beb720cd0074c4b7c4/blossom-core/testdata/test.beancount	928	no	
+https://raw.githubusercontent.com/nblock/beancount-nblock/6fa6a73b1440ead3b4b079278539c2f47b4c5f03/tests/fixtures/file_ordering/ok.beancount	244	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ignore/1/ignore.beancount	259	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ignore/2/ignore.beancount	500	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/schwab_csv/test_lots/journal.beancount	484	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_prediction/journal.beancount	5121	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_checking2/import_results.beancount	10891	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_ignore_balance/0/ignore.beancount	80	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard401k/import_results.beancount	4357	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ultipro_google/test_basic/import_results.beancount	4600	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/google_purchases/test_basic/import_results.beancount	1018	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ultipro_google/test_20211223/import_results.beancount	3335	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_bank_medium/journal.beancount	133	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_checking_emptyledgerbal/import_results.beancount	2708	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/4/transactions.beancount	343	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_with_cash_account/import_results.beancount	1943	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/experiments/washsales/irs-loss-and-gain-on-same-day.beancount	2941	no	
+https://raw.githubusercontent.com/chromecountry/raven/b8e48f9cbe881a0007666c19fa8c0f3d90d1ba56/data/ledger/ledger.beancount	579	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/errors.beancount	381	no	
+https://raw.githubusercontent.com/beanvest/beanvest/48acad1fc430daab68a10982f467123eda823c74/beanvest/acceptance/src/test/resources/export/sample.beancount	220	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.TransactionOneString.beancount	118	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/3/transactions.beancount	343	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/1/transactions.beancount	343	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/2/transactions.beancount	343	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/modules/tlh/example.beancount	1404	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/daily/2019.beancount	128	yes	2019/2019-06-03-spdbcc.beancount,2019/2019-06-03-other.beancount,2019/2019-06-03-settle.beancount
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-02.beancount	763	no	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/accounts.beancount	6046	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/sharing/duxbury2015.beancount	3803	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-account-types.beancount	197	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/static/adjustments.beancount	2342	no	
+https://raw.githubusercontent.com/richardjlyon/monzo-beancount/5d1ed3b388973ecbadddb7e0aaced35033c6490e/Dockerfile.beancount	767	no	
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/FY2020/FY2020.beancount	468	yes	2020-08.beancount,2020-09.beancount,2020-10.beancount,2020-11.beancount,2020-12.beancount
+https://raw.githubusercontent.com/redstreet/beancount_reds_plugins/b3346c441ef611203c83cd4622bc2504bbc10576/beancount_reds_plugins/zerosum/zerosum-example.beancount	1831	no	
+https://raw.githubusercontent.com/igor-dimi/learning/b40eb56256dc7a3bde435336997d7a60cfc00748/finance/beancount/trial.beancount	200	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-12.beancount	4615	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/daily/2019/2019-06-03-settle.beancount	53	no	
+https://raw.githubusercontent.com/dyumnin/dyu_accounting/80b43b897ad5e20d213f31e004cbb5e2d7fbbd8a/example/data.beancount	180987	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-20 02:22:41.800419+00:00.beancount	4421	no	
+https://raw.githubusercontent.com/Kilerd/beancount/aad047a26010debfd7f4c83d425b22871f2224de/examples/example.beancount	341730	no	
+https://raw.githubusercontent.com/nobodxbodon/share-content-using-bluetooth/b4b3351fb2f92ef06f0d71498e5f5dd46663eafe/收支账本/总账.beancount	1722	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/ledger.beancount	3337	yes	rx.beancount,x.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/examples/beancount/tolerance.beancount	463	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/modules/assetalloc_class/multicurrency.beancount	700	no	
+https://raw.githubusercontent.com/opensourcepledge/finances/9a0badc6813c0e7308561bbe1aa7273942db502e/accounts.beancount	648	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/washsales/irs-simple-example-1.beancount	3482	no	
+https://raw.githubusercontent.com/kubauk/fava-review/dbc9089011a0072e8def81d3f78a90e2dfb2996e/example.beancount	240763	no	
+https://raw.githubusercontent.com/WolfgangFahl/pynomina/97b6785ac73e731c077abce1485ca5ab8ea59819/nomina_examples/example.beancount	330238	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/example.beancount	256789	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2025-02.beancount	2831	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-02.beancount	1616	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-10.beancount	13091	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-10.beancount	21432	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-06.beancount	2170	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2025-04.beancount	6914	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-03-07 18:12:53.190605+00:00.beancount	8193	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-07-27 13:44:52.977942+00:00.beancount	8751	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/backtab_2019-04-17 21:41:23.583235+00:00.beancount	903	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-11-06 16:45:56.317827+00:00.beancount	18601	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-26 16:04:02.017952+00:00.beancount	5894	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-10-08 19:23:08.779253+00:00.beancount	13580	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-05 19:15:15.786489+00:00.beancount	3389	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-05-14 10:34:14.047385+00:00.beancount	108066	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-07-13 15:11:51.623059+00:00.beancount	19293	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-04 17:20:11.124265+00:00.beancount	2057	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-04-27 17:25:18.998653+00:00.beancount	23242	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-02 11:11:06.420527+00:00.beancount	566	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-29 18:39:11.176730+00:00.beancount	865	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-11-05 00:36:22.236826+00:00.beancount	377	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-25 17:44:28.205247+00:00.beancount	2581	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-02 22:48:55.625861+00:00.beancount	27316	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-01 13:54:11.606559+00:00.beancount	3193	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-11-11 21:27:04.178801+00:00.beancount	1494	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-02 23:31:45.878135+00:00.beancount	303	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-10-26 15:46:53.154669+00:00.beancount	18980	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-09.beancount	9990	no	
+https://raw.githubusercontent.com/afmhenry/beancounter/c6101a2bb49c0869136608040383762255545307/beans/example.beancount	1341	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-23 18:11:59.776416+00:00.beancount	10837	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-12.beancount	468	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-06-05 14:57:52.327783+00:00.beancount	3709	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 21:53:46.042100+00:00.beancount	491	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-10-11 11:12:41.151423+00:00.beancount	697	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-04-29 18:55:25.948844+00:00.beancount	298	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-17 16:55:48.271732+00:00.beancount	4398	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/pythonanywhere/example.beancount	316964	yes	commodities.beancount,fava_config.beancount
+https://raw.githubusercontent.com/ananthakumaran/paisa/c8b72931c8304e3f17693b617e93a28792fc523d/tests/fixture/inr-beancount/main.beancount	2278	no	
+https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/includes.beancount	184	yes	./comments.beancount,./simple.beancount,./official.beancount,./includes.beancount,./cycle.beancount
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/nexo/nexo.csv.beancount	740	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/bug245.beancount	402	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/prices.beancount	3644	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/include3.beancount	302	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/transactions.beancount	530	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/fail_missing.beancount	176	no	
+https://raw.githubusercontent.com/beancount/beangulp/c5e8188bd186a1c77bb5835b252f2f07d41dd85b/examples/tests/utrade/UTrade20150720.csv.beancount	2264	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/monobank/monobank-black-UAH_01-06-23_15-03-59.csv.beancount	832	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/trivial_sample.beancount	821	no	
+https://raw.githubusercontent.com/kubauk/fava-review/dbc9089011a0072e8def81d3f78a90e2dfb2996e/test/no-operating-currency-and-usd-more-than-gbp.beancount	1317	no	
+https://raw.githubusercontent.com/zahanm/collect-beans/d2822344014563b179a125cee8b72a044706c065/xx-archive/__tests__/tmp.beancount	335	no	
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/n26/journal.beancount	12284	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/div-tax.xml.beancount	484	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/sample_HMRC_bed_and_breakfast.beancount	2760	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/Simple.beancount	1171	no	
+https://raw.githubusercontent.com/ghislainbourgeois/beancount_portfolio_allocation/df2fc7d5366978b49e85d34476c48a7f0248defb/tests/test_inputs/zero-position.beancount	1837	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/stock-trades.xml.beancount	486	no	
+https://raw.githubusercontent.com/ghislainbourgeois/beancount_portfolio_allocation/df2fc7d5366978b49e85d34476c48a7f0248defb/tests/test_inputs/missing_prices.beancount	833	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/CarryLoss.beancount	1586	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/ok_types.beancount	109	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/tax-reversal.xml.beancount	485	no	
+https://raw.githubusercontent.com/peberanek/beanclerk/802bc43fee310dff07ec09d00f3e8262544228ed/tests/ledger.beancount	271	no	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/accounts.beancount	709	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/defs.beancount	4570	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/output/some_fund_output.beancount	2643	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/example_ledger.beancount	15967	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/privatbank_xlsx/obYFD4Q-Qa6lpkgUSvtOEwZ2SUdRdOnbfSIZ5FlkZDc.xlsx.beancount	585	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/answers/example_rx_txns_rmvd.beancount	2534	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.ZeroCost.beancount	106	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataKeySyntax.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeCycle.beancount	239	yes	ParserInclude.IncludeRelative/Included1.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/SyntaxErrors.NoFinalNewline.beancount	66	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprGroups.beancount	96	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Expressions.ExplicitPrecision2.beancount	237	no	
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/Big.beancount	321447	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataTransactionMany.beancount	213	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserOptions.InvalidAccountNames.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/SyntaxErrors.ErrorInTransactionLine.beancount	193	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataTransactionRepeated.beancount	172	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/DisplayContextOptions.RenderCommasYes.beancount	27	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.PriceMissingCurrency.beancount	85	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeRelative/Included2.beancount	120	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MiscOptions.PluginProcessingModeInvalid.beancount	42	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsNote.beancount	113	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissingNumberWithCost.beancount	93	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/pairing.beancount	1877	no	
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/firstdirect.beancount	517	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Parser.BasicTesting.beancount	118	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataEmpty.beancount	88	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserLinks.ParseLinks.beancount	124	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarSyntaxErrorRecovery.beancount	80	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.PriceNone.beancount	79	no	
+https://raw.githubusercontent.com/robinvdvleuten/beancount/46d44607a479573a592a4be6a92b73796d592e36/testdata/example.beancount	306841	no	
+https://raw.githubusercontent.com/johnmee/aussie-bean-tools/20cc5632cc3fa6b6424405d36bfcda425c624a8b/aussie_bean_tools/testdata/training.beancount	793	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_basic/1/pending.beancount	298	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/paypal/test_matching/journal.beancount	2774	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_cleared/0/journal.beancount	625	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/healthequity/test_basic/journal.beancount	190	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/venmo/test_basic/import_results.beancount	13787	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_basic/journal.beancount	230	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/mint/test_currency/import_results.beancount	1744	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_xfer_in/journal.beancount	256	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_multiple_accounts/journal.beancount	246	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/venmo/test_matching/import_results.beancount	1429	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_checking2_matching/journal.beancount	490	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/schwab_csv/test_basic/import_results.beancount	36602	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/0/transactions.beancount	171	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_investment_buy_sell_income/import_results.beancount	10975	no	
+https://raw.githubusercontent.com/nblock/beancount-nblock/6fa6a73b1440ead3b4b079278539c2f47b4c5f03/tests/fixtures/unlinked_documents/ok.beancount	237	no	
+https://raw.githubusercontent.com/berkes/tabula/87a6d7175b6766f3ce62e63b2a4572f53514757a/tests/fixtures/invoices.beancount	459	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/experiments/washsales/irs-simple-example-1.beancount	3482	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeDuplicate.beancount	239	yes	ParserInclude.IncludeRelative/Included1.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/MetaData.MetadataTransactionRepeated2.beancount	172	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeRelative/Included1.beancount	118	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeDuplicate/Included1.beancount	118	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ignore/2/pending.beancount	298	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/venmo/test_invalid_references/import_results.beancount	1429	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/contrib/examples/example.beancount	318015	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/huobi/example-huobi-output.beancount	1184	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/daily/2019/2019-06-03-other.beancount	1152	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-11.beancount	5162	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/recon/x_updated.beancount	449	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-no-such-file.beancount	521	yes	/this/file/does/not/exist.beancount
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/examples/example.beancount	2521	no	
+https://raw.githubusercontent.com/Donearm/ledger/caedb3409a96b50fb9a28e938df90198d4b4d698/all.beancount	797	yes	accounts.beancount,2013.beancount,2014.beancount,2015.beancount,2016.beancount,2017.beancount,2018.beancount,2019.beancount,2020.beancount,2021.beancount,2022.beancount,2023.beancount,2024.beancount,2025.beancount,prices/*.prices
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-07-15 19:07:21.560574+00:00.beancount	22124	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/taxdodgers.beancount	4421	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/sharing/cozumel2015.beancount	11244	no	
+https://raw.githubusercontent.com/RYGhub/money/dd67cd2d39d68cb438fa42d1f3ccbbed1b47d096/ryg.beancount	7978	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-08.beancount	153	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/hsbchk/debit/example-hsbchk-debit-output.beancount	1819	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-07-10 23:40:55.661555+00:00.beancount	45259	no	
+https://raw.githubusercontent.com/abeimler/pymledger/f01491adf0d2b1de24902540a5697db1643fa362/journals/all.beancount	34543	no	
+https://raw.githubusercontent.com/dvorak0/fava-monthly-expenses/85b742926ead6833f73a6d2bbf71a552c737e45f/example.beancount	289	yes	example_data.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/recon/expected_injection.beancount	4949	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/modules/summarizer/example.beancount	1675	no	
+https://raw.githubusercontent.com/mmultra21/retro21_finance/2d7d13a2e217c816a66103a8d643ed2876ef891e/personal-finance/ledger/main.beancount	4050	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-06-05 18:21:48.046774+00:00.beancount	24029	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-18 20:00:29.435652+00:00.beancount	104637	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-06 23:25:00.818555+00:00.beancount	6326	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-04-24 17:22:47.667925+00:00.beancount	5055	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-30 15:06:58.460156+00:00.beancount	2421	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-04-27 17:45:31.917268+00:00.beancount	23274	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-02 17:40:53.120467+00:00.beancount	1578	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-08-10 15:03:50.183652+00:00.beancount	89883	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-06-17 10:17:23.715052+00:00.beancount	44324	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-12-21 19:15:53.117592+00:00.beancount	16034	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-13 15:21:44.838438+00:00.beancount	1392	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-01-08 15:25:12.668656+00:00.beancount	42468	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-01 17:18:32.255593+00:00.beancount	7377	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-04-12 17:39:49.262908+00:00.beancount	1626	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/citic/credit/example-citic-output.beancount	1920	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-07.beancount	14502	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-05.beancount	2645	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-12.beancount	1202	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-02.beancount	610	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-03.beancount	1178	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2020-07.beancount	253	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-18 19:27:08.094423+00:00.beancount	493	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2020-09-16 14:37:06.998074+00:00.beancount	216190	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-02-04 17:29:25.826465+00:00.beancount	85308	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-24 23:48:03.258675+00:00.beancount	289	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-06-06 17:20:52.289978+00:00.beancount	9849	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2020-05-19 08:56:04.913385+00:00.beancount	163863	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-06-03 11:25:36.719257+00:00.beancount	10871	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-03 14:06:05.167329+00:00.beancount	9741	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-09-03 17:18:10.753386+00:00.beancount	119932	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-06-22 20:35:01.817807+00:00.beancount	64998	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-01 21:46:02.493502+00:00.beancount	6726	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-11-23 17:08:30.662170+00:00.beancount	25450	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-10 14:31:27.965523+00:00.beancount	34675	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-08-27 13:33:16.320151+00:00.beancount	13588	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-12-26 21:35:07.917992+00:00.beancount	56021	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-17 20:13:41.809239+00:00.beancount	8520	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-08-14 18:15:16.855438+00:00.beancount	88948	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-05-30 18:23:38.702490+00:00.beancount	21862	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-21 15:32:14.519314+00:00.beancount	13140	no	
+https://raw.githubusercontent.com/IanTeda/development_containers/918122f3d74e9eedc2f0c477dc4ba66b1578133c/beancount/example.beancount	250238	no	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/doc/development/example.beancount	4501	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-01.beancount	253	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-04 19:23:04.478013+00:00.beancount	25152	no	
+https://raw.githubusercontent.com/radian-software/apheleia/b4bdc8fdbd40d10937fd9458231815f6703cd2f6/test/formatters/samplecode/bean-format/in.beancount	313	no	
+https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/cycle.beancount	31	yes	./includes.beancount
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/annualized.beancount	553	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/target_currency.beancount	734	no	
+https://raw.githubusercontent.com/Ramblurr/intellij-beancount/60fc0c29891cb0576a53555c871bd814d806a79e/resources-test/testData/parsing/Simple.beancount	673	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/linear_growth_stock.beancount	1274	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/Assets/Bank/test_fail_no.beancount	164	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/Assets/Bank/test_ok_none.beancount	189	no	
+https://raw.githubusercontent.com/beancount/smart_importer/ef0b279f1e650673221170ea4370d041d9d1b29b/tests/data/simple.beancount	2335	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/Assets/Bank/test_fail_missing.beancount	216	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/forex.xml.beancount	351	no	
+https://raw.githubusercontent.com/staticaland/beancount-no-sparebank1/10ab1b2cc3f3a3168de5bb468bc6c5af04f11509/test_data/sb1.csv.beancount	2909	no	
+https://raw.githubusercontent.com/zahanm/collect-beans/d2822344014563b179a125cee8b72a044706c065/xx-archive/__tests__/journal.beancount	1354	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/forex-mix.xml.beancount	355	no	
+https://raw.githubusercontent.com/Sudneo/csv2beancount/cc0b7d8eb29eaaed3774bded5270a68f90e85c0b/test/ledger.beancount	1045	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/lots.beancount	17428	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/payee.beancount	3260	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/bug214.beancount	156	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/metadata.beancount	9927	no	
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/n26/journal_edge_cases.beancount	909	no	
+https://raw.githubusercontent.com/alensiljak/alens-importers/2cb8af65642e92ffce7a4f6f6bd3c50b0d93e4c1/tests/deposits-withdrawals.xml.beancount	320	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/issue122_expected.beancount	189	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/ok_implicit.beancount	175	no	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/cgtcalc_inputs_beancount/AssetEventsNotFullSale.beancount	1940	no	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/commodities.beancount	261	no	
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/MetaData.beancount	789	no	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/option-move_posting_tags.beancount	861	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Arithmetic.NumberExprDivide.beancount	86	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissing.beancount	64	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Comment.CommentBetweenPostings.beancount	65	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopMeta.PushmetaInvalidPop.beancount	18	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Comment.CommentAfterTransaction.beancount	63	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases-unsupported/ParserOptions.UnaryOption.beancount	141	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserComplete.ExtraWhitespaceTransaction.beancount	114	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsClose.beancount	101	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParseLots.CostDate.beancount	88	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Open2.beancount	50	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/PushPopMeta.PushmetaShadow.beancount	170	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/extension-report-example.beancount	295	yes	long-example.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserComplete.Comment.beancount	25	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.Imbalance.beancount	91	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalCost.beancount	421	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.TagThenLink.beancount	125	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostEmpty.beancount	78	no	
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/InvalidCost.beancount	229	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/Transactions.BlankLineNotAllowed.beancount	92	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.PriceMissingNumber.beancount	85	no	
+https://raw.githubusercontent.com/Boelensman1/node-beancount/91c2959eaf7a92e03c748e453c2b59ff6454361b/test/example-full.beancount	330626	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.UnitsMissingNumberWithPrice.beancount	91	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsTagLinkTag.beancount	161	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsCompoundAmount.beancount	152	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserEntryTypes.Pad.beancount	68	no	
+https://raw.githubusercontent.com/michaellenaghan/sublime-beancount/f8acadc35ac0dd4f576f75bc8b883ea3d7f20af4/test/syntax_test_beancount.beancount	33790	yes	this.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/TotalsAndSigns.TotalPriceInverted.beancount	115	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/IncompleteInputs.CostAverage.beancount	79	no	
+https://raw.githubusercontent.com/kubauk/fava-review/dbc9089011a0072e8def81d3f78a90e2dfb2996e/test/example.beancount	2021	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/extraction.beancount	3431	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/expired/expected_x.beancount	532	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/expired/expected_rx.beancount	342	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/example_ledger_txns.beancount	9759	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/expected_injection_ascending.beancount	5875	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/example.beancount	2871	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ignore/3/ignore.beancount	743	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/mint/test_invalid/journal.beancount	1366	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/mint/test_currency/journal.beancount	136	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_basic/0/journal.beancount	254	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/paypal/test_basic/import_results.beancount	16789	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_fidelity/import_results.beancount	9352	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_ignore_balance/0/pending.beancount	505	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/google_purchases/test_invalid/journal.beancount	531	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/venmo/test_invalid_references/journal.beancount	5328	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_basic/import_results.beancount	1494	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/paypal/de_DE/test_basic/import_results.beancount	4546	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_xfer_in/import_results.beancount	1663	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/generic_importer/test_cost/import_results.beancount	296	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/matching_test/match_many_merged/pending_candidate.beancount	3516	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_roth_ira_matching/journal.beancount	519	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_credit_card_transactions/journal.beancount	76	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/webserver/test_check_modification/3/additional/transactions.beancount	365	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_with_cash_account_matching_missing_primary/journal.beancount	500	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_vanguard_with_cash_account_matching_missing_transfer/journal.beancount	785	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_fidelity_ira/journal.beancount	5014	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_anzcc/import_results.beancount	857	no	
+https://raw.githubusercontent.com/duarteocarmo/hacking-on-my-finances/b6e8420b934f2edfe9ab65aa1a966264c27e4ba1/example.beancount	318015	no	
+https://raw.githubusercontent.com/alkafinance/plain-text-accounting/7b59ff07c554b69322a5b52ecc0d82c385ca8eb8/examples/example.beancount	318015	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/contrib/examples/example.beancount	318015	no	
+https://raw.githubusercontent.com/alexiri/docker-fava/e2535d20db4c85d3cb61477751d1e343ffbb0d75/example.beancount	318015	no	
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/extension-report-example.beancount	295	yes	long-example.beancount
+https://raw.githubusercontent.com/ChrisRoyse/Fava/223356d0f953108b39b8c7e6d66562b4fddc7c59/tests/data/example.beancount	2871	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_ignore_price/0/journal.beancount	254	no	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/reconcile/test_ofx_ignore_balance/0/journal.beancount	254	no	
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/td/example-td-output.beancount	1239	no	
+https://raw.githubusercontent.com/beancount/beangulp/c5e8188bd186a1c77bb5835b252f2f07d41dd85b/examples/ledger/ledger.beancount	17047	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/invest.beancount	1523	no	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/modules/tlh/wash_substantially_identical.beancount	818	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-09.beancount	15954	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/includes/included.beancount	317	no	
+https://raw.githubusercontent.com/Ev2geny/evbeantools/97f637d9a599d077239f8a9556776a3c82817b4c/docs/example.beancount	354455	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-01-28 21:18:12.081539+00:00.beancount	782	no	
+https://raw.githubusercontent.com/buelbuel/bc-connect/e9c10b8c070726297a3cd72f126f0175e7514a47/ledgers/main.beancount	185	yes	2024.beancount
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/FY2020/2020-10.beancount	2441	no	
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/washsales/irs-more-than-sold-example-1.beancount	3877	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2021-09.beancount	798	no	
+https://raw.githubusercontent.com/jpluscplusm/blog.jpluscplusm.com/01e331ab30ebaf0626a7c65f3c6777002798af4b/articles/modelling-corporation-tax-in-beancount/CDD_Systems_Limited-method_1-no_modelling.beancount	2021	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-post-balancing.beancount	659	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-09-02 17:36:11.126641+00:00.beancount	298	no	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/daily/2019/2019-06-03-spdbcc.beancount	2662	no	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/2018-01-1.beancount	729	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-04.beancount	723	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-02-06 18:13:43.297236+00:00.beancount	30276	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-includes.beancount	824	yes	error-includes/simple-errors.beancount
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2024-06.beancount	9734	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2023-07.beancount	1321	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2022-10.beancount	15283	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-09-29 16:02:20.206385+00:00.beancount	51958	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-12 12:40:47.931338+00:00.beancount	1178	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-06-29 11:09:37.939078+00:00.beancount	39239	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-05-19 14:56:57.749636+00:00.beancount	1214	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-05-23 21:37:03.196352+00:00.beancount	16535	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-11-11 12:07:15.121346+00:00.beancount	552	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2025-01-23 18:59:07.154397+00:00.beancount	6282	no	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/2025-03.beancount	3205	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-19 06:57:39.637497+00:00.beancount	291	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-25 20:12:42.744192+00:00.beancount	15560	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2021-02-11 09:52:59.395992+00:00.beancount	30025	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-10-17 16:06:42.257198+00:00.beancount	21905	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-22 08:32:22.372453+00:00.beancount	23594	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2019-04-26 14:30:56.076874+00:00.beancount	3237	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2022-04-19 10:08:44.607897+00:00.beancount	602	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2023-04-06 23:01:02.498354+00:00.beancount	1314	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2024-08-05 16:20:53.125402+00:00.beancount	39469	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/UberBarmaid_2022-06-11 17:53:28.861543+00:00.beancount	20580	no	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-duplicate/included.beancount	254	no	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/ledger/barmaid_2018-11-25 04:30:30.037826+00:00.beancount	1982	no	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/query-example.beancount	113824	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/ib/existing.beancount	1398	no	
+https://raw.githubusercontent.com/OSadovy/uabean/8f7bbb8933c1f97d883cd5704e941b43f6c5fa15/tests/importers/binance/binance.csv.beancount	4608	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/import.beancount	57	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/issue122_input.beancount	121	no	
+https://raw.githubusercontent.com/tarioch/beancounttools/51c5eaed9b92dd4fd2780128e1171f78f1735c44/tests/tariochbctools/plugins/data/generate_base_ccy_prices/missing_fx_input.beancount	120	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/rx.beancount	14142	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/ok_explicit.beancount	175	no	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/expired/rx.beancount	378	no	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/src/fava_portfolio_returns/test/ledger/portfolio_vs_currency.beancount	1276	no	
+https://raw.githubusercontent.com/siriobalmelli/beancount_docverif/572fdf1a5f86c0ea1b092bcf1adbe96b8f218da8/test/Assets/Bank/test_ok_explicit.beancount	241	no	
+https://raw.githubusercontent.com/beancount/smart_importer/ef0b279f1e650673221170ea4370d041d9d1b29b/tests/data/single-account.beancount	435	no	
+https://raw.githubusercontent.com/Evernight/beancount-lazy-plugins/7f33203cdb7506aefc4ef46f44d5327662b8980f/tests/data/currencies_used_example.beancount	779	no	

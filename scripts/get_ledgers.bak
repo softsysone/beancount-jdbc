@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Target folder (your path)
+DEST="/mnt/c/Users/jacob-walker/Documents/GitHub/beancount-jdbc/jdbc/src/test/resources/regression/ledgers"
+
+# 1) temp work dir
+TMP="$(mktemp -d)"
+cd "$TMP"
+
+# 2) sparse clone the repo (fast, minimal data)
+git clone --filter=blob:none --no-checkout https://github.com/einverne/beancount-sample.git repo
+cd repo
+git sparse-checkout init --cone
+git sparse-checkout set account beans  # contains all the ledger files
+git checkout
+
+# 3) copy all .bean / .beancount, renaming to avoid collisions
+mkdir -p "$DEST"
+while IFS= read -r -d '' f; do
+  rel="${f#./}"                                     # strip leading ./ 
+  base="einverne-${rel//\//-}"                      # replace / with -
+  out="$DEST/$base"
+  if [[ -e "$out" ]]; then
+    echo "SKIP (already exists): $(basename "$out")"
+  else
+    cp "$f" "$out"
+    echo "ADD  $(basename "$out")"
+  fi
+done < <(find . -type f \( -name "*.bean" -o -name "*.beancount" \) -print0)
+
+echo "✅ Done. Files copied to: $DEST"

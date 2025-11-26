@@ -1,0 +1,5 @@
+2000-01-01 open Assets:Before
+include "LexerAndParserErrors.GrammarExceptionsInclude/test-cases/LexerAndParserErrors.GrammarExceptionsInclude/Included.beancount"
+2010-01-01 close Assets:Before
+
+; Source: https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsInclude.beancount

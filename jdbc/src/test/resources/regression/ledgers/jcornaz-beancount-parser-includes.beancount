@@ -1,0 +1,10 @@
+include "jcornaz-beancount-parser-includes/tests/samples/comments.beancount"
+include "jcornaz-beancount-parser-includes/tests/samples/simple.beancount"
+include "jcornaz-beancount-parser-includes/tests/samples/official.beancount"
+include "jcornaz-beancount-parser-includes/tests/samples/includes.beancount"
+include "jcornaz-beancount-parser-includes/tests/samples/cycle.beancount"
+
+2024-04-01 open Foo:Bar:Baz CHF
+
+
+; Source: https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/includes.beancount

@@ -1,0 +1,90 @@
+https://raw.githubusercontent.com/beancount/beancount/1cbb0b6bc08a47572c4779eabee71e9fd5807079/examples/example.beancount	347280	single	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/examples/fresh/journal.beancount	89	main	examples/fresh/accounts.beancount,examples/fresh/prices.beancount,examples/fresh/transactions.beancount,examples/manually_entered/accounts.beancount,examples/manually_entered/prices.beancount,examples/manually_entered/transactions.beancount
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/jd/example-jd-output.beancount	10358	single	
+https://raw.githubusercontent.com/ericaltendorf/magicbeans/1f03eae22c00245dfbfc6d70c4093163e063e1e7/data/magicbeans_example.beancount	28951	single	
+https://raw.githubusercontent.com/apyb/financeiro/7abb6649355f89f174dd6c7e515ae1a15ce2f76d/financeiro/main.beancount	11648	main	financeiro/2020-01.beancount,financeiro/2020-02.beancount,financeiro/2020-03.beancount,financeiro/2020-04.beancount,financeiro/2020-05.beancount,financeiro/2020-06.beancount,financeiro/2020-07.beancount,financeiro/2020-08.beancount,financeiro/2020-09.beancount,financeiro/2020-10.beancount,financeiro/2020-11.beancount,financeiro/2020-12.beancount,financeiro/2021-01.beancount,financeiro/2021-02.beancount,financeiro/2021-03.beancount,financeiro/2021-04.beancount,financeiro/2021-05.beancount,financeiro/2021-06.beancount,financeiro/2021-07.beancount,financeiro/2021-08.beancount,financeiro/2021-09.beancount,financeiro/2021-10.beancount,financeiro/2021-11.beancount,financeiro/2021-12.beancount,financeiro/2022-01.beancount,financeiro/2022-02.beancount,financeiro/2022-03.beancount,financeiro/2022-04.beancount,financeiro/2022-05.beancount,financeiro/2022-06.beancount,financeiro/2022-07.beancount,financeiro/2022-08.beancount,financeiro/2022-09.beancount,financeiro/2022-10.beancount,financeiro/2022-11.beancount,financeiro/2022-12.beancount,financeiro/2023-01.beancount,financeiro/2023-02.beancount,financeiro/2023-03.beancount,financeiro/2023-04.beancount,financeiro/2023-05.beancount,financeiro/2023-06.beancount,financeiro/2023-07.beancount,financeiro/2023-08.beancount,financeiro/2023-09.beancount,financeiro/2023-10.beancount,financeiro/2023-11.beancount,financeiro/2023-12.beancount,financeiro/2024-01.beancount,financeiro/2024-02.beancount,financeiro/2024-03.beancount,financeiro/2024-04.beancount,financeiro/2024-05.beancount,financeiro/2024-06.beancount,financeiro/2024-07.beancount,financeiro/2024-08.beancount,financeiro/2024-09.beancount,financeiro/2024-10.beancount,financeiro/2024-11.beancount,financeiro/2024-12.beancount,financeiro/2025-01.beancount,financeiro/2025-02.beancount,financeiro/2025-03.beancount,financeiro/2025-04.beancount,financeiro/2025-05.beancount,financeiro/eventos-concluídos.beancount
+https://raw.githubusercontent.com/dyumnin/dyu_accounting/80b43b897ad5e20d213f31e004cbb5e2d7fbbd8a/example/ledger.beancount	169	main	example/accounts.beancount,example/data.beancount
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/contrib/examples/budgets-example.beancount	322281	single	
+https://raw.githubusercontent.com/yagebu/tree-sitter-beancount/9c359799017f523ab14f493655c0911645ac2a9c/examples/long-example.beancount	280608	single	
+https://raw.githubusercontent.com/Glimesh/finances/5fed38f643f3f72460ced788112b6a2226e392e0/glimesh.beancount	104	main	FY2020/FY2020.beancount
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/simple/basic.beancount	20544	single	
+https://raw.githubusercontent.com/VitoMinheere/lab/3a952e78f9d8366dfb872a0db9384d035d04f535/kubernetes/beancount/basic.beancount	20571	single	
+https://raw.githubusercontent.com/MulanRevive/bounty/e2722117205898c8921e4a69a82c2198e7732f26/收支账本/总账.beancount	16662	single	
+https://raw.githubusercontent.com/beancount/beancount/1cbb0b6bc08a47572c4779eabee71e9fd5807079/examples/simple/starter.beancount	14940	single	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-portfolio-returns/be8310a6ab6a7047ffc37b8e568fb8ea0ba34f40/example/example.beancount	246010	single	
+https://raw.githubusercontent.com/lidongchao/BeancountSample/647d643e4f4d546e4ebd19f6d52d1776b3e966c3/Data/2018.beancount	119	main	Data/2018-01-1.beancount,Data/2018-01-2.beancount,Data/2018-01-3.beancount,Data/accounts.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/includes.beancount	808	main	examples/data/includes/included.beancount
+https://raw.githubusercontent.com/polarmutex/manage-finances-using-python/ea69890489202812868179de1dd7c2f1b503c512/example.beancount	347310	single	
+https://raw.githubusercontent.com/Evernight/beancount-plugin-tax-uk/3987dde0638cee4da01f6a842b7fc4fdca25826d/tests/data/sample_KapJI_cgc.beancount	12313	single	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/prices.beancount	42779	single	
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/original.beancount	265061	single	
+https://raw.githubusercontent.com/fengkx/beancount-smart-query/ecf4874d07a99d3fad825b09fc84666730da843a/tests/examples/example.beancount	293238	single	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/rx_230630.beancount	38030	single	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/rx_opts_221231.beancount	13337	single	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeRelative.beancount	239	main	test-cases/ParserInclude.IncludeRelative/Included1.beancount,test-cases/ParserInclude.IncludeRelative/Included2.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/LexerAndParserErrors.GrammarExceptionsInclude.beancount	136	main	test-cases/LexerAndParserErrors.GrammarExceptionsInclude/Included.beancount
+https://raw.githubusercontent.com/eidorb/portfolio/6000eabc8d37b7100989b16498c5c73f13de03f3/cdk/demo-function/demo-portfolio.beancount	15757	single	
+https://raw.githubusercontent.com/EmNebergall/Garbanzo/c12b506a0df4f2577d423784ce0cdaf154ad6e99/data/sample/example.beancount	336353	single	
+https://raw.githubusercontent.com/debanjum/company-ledger/c6911b7e39b29c0d5f2541392ff485b0f53fd366/examples/otzi.beancount	12163	single	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/sharing/cozumel2015.beancount	11279	single	
+https://raw.githubusercontent.com/0x20/tab-data/05d2f575029a63fa40748af00a3a4ec826bcba33/bartab.beancount	184	main	ledger/dynamic.beancount,static/adjustments.beancount,static/basic-accounts.beancount,static/members.beancount,static/stock.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeAbsolute.beancount	44	main	some/absolute/filename.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/kiwibank.expected.beancount	426	main	tests/import/kiwibank.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/ledger.beancount	3310	main	tests/resources/defs/rx.beancount
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_cleared_and_invalid/import_results.beancount	11010	single	
+https://raw.githubusercontent.com/blaulan/beancount-pbi/0349f8af34680b341f69fd67d7524bb3ebebdedf/example.beancount	287273	single	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-cycle.beancount	757	main	examples/data/error-include-cycle/included.beancount
+https://raw.githubusercontent.com/deb-sig/double-entry-generator/970fd5b5427795a12e975b0e329695169c434f26/example/wechat/example-wechat-output.beancount	10363	single	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/hledger.beancount	10379	single	
+https://raw.githubusercontent.com/michaellenaghan/sublime-beancount/f8acadc35ac0dd4f576f75bc8b883ea3d7f20af4/test/test.beancount	15389	main	some/absolute/filename.beancount,test/some/relative/filename.beancount
+https://raw.githubusercontent.com/tarioch/bapi/d97b5c9beca2e5bd9bfe4a1f8409722d9b2c65d5/tests/data/example.beancount	332916	single	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/amazon/test_credit_card_transactions/import_results.beancount	19712	single	
+https://raw.githubusercontent.com/andreasgerstmayr/fava-dashboards/d63d93053680bb9e04c77b6ee157e3fcb97c694b/example/example.beancount	247479	single	
+https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/main.beancount	543	main	ledger/account.beancount,ledger/commodity.beancount,ledger/cryptocoin.beancount,ledger/daily/2019.beancount,ledger/init.beancount,ledger/invest.beancount,ledger/prices.beancount,ledger/salary.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-duplicate.beancount	637	main	examples/data/error-include-duplicate/included.beancount
+https://raw.githubusercontent.com/seltzered/fava-classy-portfolio-demo/e492703422dca8c18d060a88b24a67ff6d68564d/portfolio-demo.beancount	2206	main	portfolio-demo-prices.beancount
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/simple/starter.beancount	14938	single	
+https://raw.githubusercontent.com/igor-dimi/learning/b40eb56256dc7a3bde435336997d7a60cfc00748/finance/beancount/example.beancount	335588	single	
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/directives.beancount	7651	main	tests/include1.beancount,tests/include2.beancount,tests/include3.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/ledger_opts.beancount	3376	main	tests/resources/defs/rx_opts.beancount
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/defs/ledger_with_error.beancount	3372	main	tests/resources/defs/rx.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-lima/ad8b44f7bfc167024d52070825a25a5c0372c4b1/tests/import/firstdirect.expected.beancount	2682	main	tests/import/firstdirect.beancount
+https://raw.githubusercontent.com/ezirmusitua/mcp-demo/8f8d442524cf06fe30c7f09e8a910c7068b35103/test_data/ledger/main.beancount	219679	single	
+https://raw.githubusercontent.com/fxtlabs/beansoup/678a74fe558a4ed14fd6626a6d3b74ebaa68558a/tests/example.beancount	276812	single	
+https://raw.githubusercontent.com/zacchiro/beangrep/e079c37ae9e25925a80a72e9572aad94b5ec3a91/tests/data/example.beancount	347380	single	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_checking2/import_results.beancount	10891	single	
+https://raw.githubusercontent.com/Kilerd/beancount/aad047a26010debfd7f4c83d425b22871f2224de/examples/example.beancount	341730	single	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/examples/defs/ledger.beancount	3337	main	examples/defs/rx.beancount,examples/defs/x.beancount
+https://raw.githubusercontent.com/kubauk/fava-review/dbc9089011a0072e8def81d3f78a90e2dfb2996e/example.beancount	240763	single	
+https://raw.githubusercontent.com/WolfgangFahl/pynomina/97b6785ac73e731c077abce1485ca5ab8ea59819/nomina_examples/example.beancount	330238	single	
+https://raw.githubusercontent.com/cyndis/beancount/1d2680b1945b569ec37dc62bf305f010468f3f28/examples/example.beancount	256789	single	
+https://raw.githubusercontent.com/redstreet/fava_investor/2a058314d5fd342592666d3fba9f35f95dc0eaf2/fava_investor/pythonanywhere/example.beancount	316964	main	fava_investor/pythonanywhere/commodities.beancount,fava_investor/pythonanywhere/fava_config.beancount
+https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/includes.beancount	184	main	tests/samples/./comments.beancount,tests/samples/./cycle.beancount,tests/samples/./includes.beancount,tests/samples/./official.beancount,tests/samples/./simple.beancount
+https://raw.githubusercontent.com/c-vigo/beancount-importers/56c00004ea95c29d84dc752207e219d61a449f9d/tests/n26/journal.beancount	12284	single	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/example_ledger.beancount	15967	single	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeCycle.beancount	239	main	test-cases/ParserInclude.IncludeRelative/Included1.beancount
+https://raw.githubusercontent.com/Nef10/SwiftBeanCountParser/a47e8f01bfe464945c7648af9d675a2455f99fbc/Tests/SwiftBeanCountParserTests/Resources/Big.beancount	321447	single	
+https://raw.githubusercontent.com/robinvdvleuten/beancount/46d44607a479573a592a4be6a92b73796d592e36/testdata/example.beancount	306841	single	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/venmo/test_basic/import_results.beancount	13787	single	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/schwab_csv/test_basic/import_results.beancount	36602	single	
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/ofx/test_investment_buy_sell_income/import_results.beancount	10975	single	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/test-cases/ParserInclude.IncludeDuplicate.beancount	239	main	test-cases/ParserInclude.IncludeRelative/Included1.beancount
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/contrib/examples/example.beancount	318015	single	
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-include-no-such-file.beancount	521	main	this/file/does/not/exist.beancount
+https://raw.githubusercontent.com/Donearm/ledger/caedb3409a96b50fb9a28e938df90198d4b4d698/all.beancount	797	main	2013.beancount,2014.beancount,2015.beancount,2016.beancount,2017.beancount,2018.beancount,2019.beancount,2020.beancount,2021.beancount,2022.beancount,2023.beancount,2024.beancount,2025.beancount,accounts.beancount,prices/*.prices
+https://raw.githubusercontent.com/beancount/beanlabs/74e4eca8cf7f80418804124898b2a4e60caf522e/beanlabs/sharing/cozumel2015.beancount	11244	single	
+https://raw.githubusercontent.com/abeimler/pymledger/f01491adf0d2b1de24902540a5697db1643fa362/journals/all.beancount	34543	single	
+https://raw.githubusercontent.com/dvorak0/fava-monthly-expenses/85b742926ead6833f73a6d2bbf71a552c737e45f/example.beancount	289	main	example_data.beancount
+https://raw.githubusercontent.com/IanTeda/development_containers/918122f3d74e9eedc2f0c477dc4ba66b1578133c/beancount/example.beancount	250238	single	
+https://raw.githubusercontent.com/jcornaz/beancount-parser/f78a9f05155077a5dca894a1e4d869234844f6ca/tests/samples/cycle.beancount	31	main	tests/samples/./includes.beancount
+https://raw.githubusercontent.com/beancount/ledger2beancount/6f3dd63dacdebf7576f03b1a3f7c18716bb15c2c/tests/lots.beancount	17428	single	
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/extension-report-example.beancount	295	main	tests/data/long-example.beancount
+https://raw.githubusercontent.com/Boelensman1/node-beancount/91c2959eaf7a92e03c748e453c2b59ff6454361b/test/example-full.beancount	330626	single	
+https://raw.githubusercontent.com/michaellenaghan/sublime-beancount/f8acadc35ac0dd4f576f75bc8b883ea3d7f20af4/test/syntax_test_beancount.beancount	33790	main	test/this.beancount
+https://raw.githubusercontent.com/jbms/beancount-import/6b5421356f53bc71a3fa09c9438ef92aff56bb10/testdata/source/paypal/test_basic/import_results.beancount	16789	single	
+https://raw.githubusercontent.com/beancount/beangulp/c5e8188bd186a1c77bb5835b252f2f07d41dd85b/examples/ledger/ledger.beancount	17047	single	
+https://raw.githubusercontent.com/Ev2geny/evbeantools/97f637d9a599d077239f8a9556776a3c82817b4c/docs/example.beancount	354455	single	
+https://raw.githubusercontent.com/buelbuel/bc-connect/e9c10b8c070726297a3cd72f126f0175e7514a47/ledgers/main.beancount	185	main	ledgers/2024.beancount
+https://raw.githubusercontent.com/tesujimath/beancount-parser-lima/5fb4457394ef9752703fc975e09bfd39b5a22249/examples/data/error-includes.beancount	824	main	examples/data/error-includes/simple-errors.beancount
+https://raw.githubusercontent.com/beancount/fava/15889fc67a9480b2de942d5c4ee81348ee0e0bc0/tests/data/query-example.beancount	113824	single	
+https://raw.githubusercontent.com/maread99/beanahead/368b3100e321727b6cfae2b8127715878fae43bf/tests/resources/recon/rx.beancount	14142	single	

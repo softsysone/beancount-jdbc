@@ -1,0 +1,26 @@
+option "title" "YourLedger"
+
+; 记账时千分之一的偏差忽略不计
+option "inferred_tolerance_default" "*:0.001"
+; 汇总时你希望以什么货币单位结算
+option "operating_currency" "CNY"
+option "operating_currency" "USD"
+option "operating_currency" "HKD"
+
+include "mckelvin-beancount-boilerplate-cn-main/ledger/account.beancount"
+include "mckelvin-beancount-boilerplate-cn-main/ledger/init.beancount"
+
+;; 工资流水
+include "mckelvin-beancount-boilerplate-cn-main/ledger/salary.beancount"
+
+;; 工资流水
+include "mckelvin-beancount-boilerplate-cn-main/ledger/daily/2019.beancount"
+
+;; 标的
+include "mckelvin-beancount-boilerplate-cn-main/ledger/commodity.beancount"
+
+include "mckelvin-beancount-boilerplate-cn-main/ledger/invest.beancount"
+include "mckelvin-beancount-boilerplate-cn-main/ledger/prices.beancount"
+include "mckelvin-beancount-boilerplate-cn-main/ledger/cryptocoin.beancount"
+
+; Source: https://raw.githubusercontent.com/mckelvin/beancount-boilerplate-cn/f250b25c2a05b6cf922b59a598ffb4fda4dead8d/ledger/main.beancount

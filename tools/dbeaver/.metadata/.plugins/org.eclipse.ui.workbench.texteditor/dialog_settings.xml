@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="hasShownOverlayPopupBefore" value="true"/>
+	<section name="java.lang.Class">
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="transactions_detail"/>
+			<item value="transaction_detail"/>
+			<item value="balance_detail"/>
+			<item value="balance"/>
+			<item value="open_detail"/>
+		</list>
+	</section>
+</section>

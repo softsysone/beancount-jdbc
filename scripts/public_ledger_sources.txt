@@ -1,0 +1,79 @@
+# --- Official Beancount repo (beancount/beancount) ---
+
+https://raw.githubusercontent.com/beancount/beancount/HEAD/examples/example.beancount
+https://raw.githubusercontent.com/beancount/beancount/master/examples/simple/basic.beancount
+https://raw.githubusercontent.com/beancount/beancount/master/examples/simple/starter.beancount
+
+# TODO: these test data files 404; find correct paths/branches before reenabling:
+# https://raw.githubusercontent.com/beancount/beancount/HEAD/tests/data/basic.beancount
+# https://raw.githubusercontent.com/beancount/beancount/HEAD/tests/data/multi_commodity.beancount
+# https://raw.githubusercontent.com/beancount/beancount/HEAD/tests/data/booking_lifo.beancount
+# https://raw.githubusercontent.com/beancount/beancount/HEAD/tests/data/booking_strict.beancount
+# https://raw.githubusercontent.com/beancount/beancount/HEAD/tests/data/display_context.beancount
+
+# --- Fava repo (beancount/fava) ---
+
+# Main demo ledger used by Fava
+https://raw.githubusercontent.com/beancount/fava/HEAD/tests/data/example.beancount
+
+# Extension report example
+https://raw.githubusercontent.com/beancount/fava/HEAD/tests/data/extension-report-example.beancount
+
+# Import example ledger
+https://raw.githubusercontent.com/beancount/fava/HEAD/tests/data/import.beancount
+
+# --- Beangulp (beancount/beangulp) ---
+
+# Example ledger used for ingestion pipeline demos
+https://raw.githubusercontent.com/beancount/beangulp/HEAD/examples/ledger/ledger.beancount
+
+# --- Beancount-import (jbms/beancount-import) ---
+
+# These three correspond to the import test ledgers:
+https://raw.githubusercontent.com/jbms/beancount-import/HEAD/examples/manually_entered/accounts.beancount
+https://raw.githubusercontent.com/jbms/beancount-import/HEAD/examples/manually_entered/journal.beancount
+# TODO: this path returned empty content; confirm correct URL/branch:
+# https://raw.githubusercontent.com/jbms/beancount-import/master/examples/manually_entered/prices.beancount
+
+# --- Fava-envelope (polarmutex/fava-envelope) ---
+
+https://raw.githubusercontent.com/polarmutex/fava-envelope/HEAD/example.beancount
+
+# --- Fava monthly expenses (dvorak0/fava-monthly-expenses) ---
+
+https://raw.githubusercontent.com/dvorak0/fava-monthly-expenses/HEAD/example_data.beancount
+
+# --- Docker Fava (alexiri/docker-fava) ---
+
+https://raw.githubusercontent.com/alexiri/docker-fava/HEAD/example.beancount
+
+# --- Lazy Beancount (Evernight/lazy-beancount) ---
+
+# This is the main example ledger (your local file is lazy-beancount-main.bean):
+https://raw.githubusercontent.com/Evernight/lazy-beancount/HEAD/example_data/main.bean
+
+# --- Beansoup (fxtlabs/beansoup) ---
+
+https://raw.githubusercontent.com/fxtlabs/beansoup/HEAD/tests/example.beancount
+
+# --- Simple example ledger collection (peberanek/beancount-examples) ---
+
+https://raw.githubusercontent.com/peberanek/beancount-examples/HEAD/ledger.beancount
+
+# --- Einverne’s sample Beancount setup (einverne/beancount-sample) ---
+
+# IMPORTANT: this repo does *not* have sample/accounts.beancount.
+# Instead it has .bean fragments under account/ and a generated ledger in beans/.
+
+# Generated ledger from CSV import:
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/beans/comm-2021.01.bean
+
+# Account definition fragments (good to test multi-file includes):
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/assets.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/commodity.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/crypto.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/equity.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/expenses.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/income.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/liabilities.bean
+https://raw.githubusercontent.com/einverne/beancount-sample/HEAD/account/securities.bean

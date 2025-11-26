@@ -1,4 +1,234 @@
-# Changelog
+## 0.4.25-alpha
+- Defaulted bare `txn` directives to the `*` flag during parsing to mirror Beancount’s grammar, so Calcite/JDBC now emits `transactions_detail.flag` values identical to bean-sql/SQLite for `txn` entries (e.g., `directives.beancount`).
+
+## 0.4.24-alpha
+- Preserved `balance_detail` diff amounts/currencies from Beancount core so Calcite now surfaces non-zero balance checks and matches bean-sql/SQLite outputs for `diff_number`/`diff_currency`.
+
+## 0.4.23-alpha
+- Ignored legacy pipe (`|`) separators in transaction headers to match Beancount’s parser (no leading `|` in narrations) and honored the `allow_pipe_separator` option by emitting the same deprecation diagnostic unless explicitly enabled.
+
+## 0.4.22-alpha
+- Added a validation layer that mirrors Beancount’s checker and currently enforces the canonical account-name pattern (uppercase/digit components). Loads now fail with the same `Invalid account name` message when ledger accounts are malformed, paving the way for more Beancount parity rules.
+
+## 0.4.21-alpha
+- Fixed tag/link ordering to be deterministic and match bean-sql baselines by default: `PYTHONHASHSEED` is now honored (or defaults to the seed used when our regression SQLite baselines were generated), avoiding per-run randomization and aligning `transactions_detail` tags across JDBC vs bean-sql.
+
+## 0.4.20-alpha
+- Matched bean-sql tag/link ordering by replaying CPython’s frozenset hashing (SipHash-1-3 with the current `PYTHONHASHSEED`) when serializing `transactions_detail`, and added regression coverage that locks the ordering to the same secrets Python uses.
+
+## 0.4.19-alpha
+- Broadened parsing to allow dates and inline comments inside metadata/transaction headers (e.g., `aux-date` and `;` comments) so regression ledgers like `directives.beancount` and budget entries in `abeimler-pymledger-all` load without parse errors.
+
+## 0.4.18-alpha
+- Fixed test resource lookups to use the regression ledger path and skip hidden ledger metadata so parity/integration tests run again; relaxed decimal parser negative test to compare values irrespective of scale.
+
+## 0.4.17-alpha
+- Introduced a shared locale-neutral decimal parser (supports comma or dot decimals) for ledger amounts and option values so Calcite can load ledgers with comma-formatted numbers (e.g., abeimler-pymledger-all) without parse failures while keeping grouping separators rejected.
+
+## 0.4.16-alpha
+- Added JDBC script execution using Calcite's stmt-list parser so semicolon-delimited multi-statement scripts (including trailing semicolons) run in a single execute call, executing intermediate statements and returning the final query's result set.
+
+## 0.4.6-alpha
+- Synthesized the automatic padding transactions that beancount’s `pad` plugin inserts so Calcite’s `entry`, `transactions_*`, and `postings` tables keep the same ids/dates/linenos as the SQLite exporter (no more mismatched IDs after opening balances), and normalized stacked/inline tags to drop the literal `#`.
+- Added `BeanSqlParityCli` plus local posting-number inference so we can diff Calcite vs. bean-sql entirely from the CLI (no Gradle) while iterating on parity fixes.
+
+## 0.4.12-alpha
+- Include directives now support glob patterns (`include "totals/*.bean"`, `archive/*/*.bean`, etc.). Missing matches produce a warning instead of aborting, so large ledgers like lazy-beancount can load through Calcite without “illegal char” errors on Windows.
+
+## 0.4.11-alpha
+- JDBC driver now logs plugin warnings at `WARNING` level and exposes them via `Connection.getWarnings()`, making them visible even during “Test Connection” flows in clients such as DBeaver.
+
+## 0.4.10-alpha
+- Surface loader warnings (e.g., plugin-not-supported notices) via JDBC `SQLWarning`s so tools like DBeaver show them immediately when connections are established.
+
+## 0.4.9-alpha
+- Emit explicit warnings when ledgers declare `plugin` directives (e.g., `beancount.plugins.auto_accounts` in `fava-example.beancount`). Calcite still doesn’t execute plugins, but now SQL clients and tooling immediately see the limitation instead of silently mis-parsing entries.
+- Updated `BeanSqlParityTest` to detect those warnings and skip plugin-ledgers with a visible warning instead of failing the suite, since parity isn’t meaningful until plugin support exists.
+
+## 0.4.8-alpha
+- Parser now accepts multi-line quoted strings (needed for `fava_envelope` JSON blocks in `envelope-example.beancount`), so Calcite can load ledgers that embed structured data inside `custom` directives without throwing “extraneous input” errors.
+
+## 0.4.7-alpha
+- Mirrored Beancount’s booking pipeline by expanding multi-currency auto-postings and improving amount inference/cost aggregation; Calcite’s `postings` table now matches bean-sql for padding transactions and receivable repayments (e.g., `basic.beancount` ids 63 & 126).
+
+## 0.4.5-alpha
+- Reverted the experimental metadata-view SQL exposure: being able to read the raw view definitions from `metadata.TABLES` would be nice-to-have, but Calcite's JDBC metadata contract made the customization brittle, so we're prioritizing stability and table browsing support for now.
+
+## 0.4.4-alpha
+- Added a Calcite `metaTableFactory` plug-in that augments `metadata.TABLES` with `SQL`/`VIEW_DEFINITION` columns so JDBC tools (and `SHOW DDL`) can display the Beancount view definitions verbatim, and hardened the JDBC integration tests to assert that metadata now exposes the `transactions` view SQL.
+
+## 0.4.3-alpha
+- Ensure `DatabaseMetaData#getTables` always surfaces Calcite's `"metadata"."TABLES"` and `"metadata"."COLUMNS"` entries (even when clients filter to TABLE/VIEW types) and codified the behavior with a JDBC integration test so IDE explorers and BI tools can actually discover those system tables.
+
+## 0.4.2-alpha
+- Added bean-sql baselines for every ledger under `jdbc/src/test/resources/regression/ledgers` (official Beancount, Fava, plugin demos, etc.) and taught `BeanSqlParityTest` to auto-discover ledger/baseline pairs so future additions get covered automatically.
+
+## 0.4.1-alpha
+- Generated bean-sql baselines for the `booking_lifo`, `booking_strict`, and `display_context` ledgers using the upstream `experiments/sql/sql.py` exporter and expanded `BeanSqlParityTest` to assert those classpath ledgers alongside the existing fixtures.
+
+## 0.3.44-alpha
+- Preserve original classpath resource names when extracting ledger/baseline files so Calcite parity tests retain their `source_filename` values and the classpath-ledgers load correctly.
+
+## 0.3.43-alpha
+- Pointed `BeanSqlParityTest` at the relocated `regression/ledgers` and `regression/bean_sql` resources so it keeps loading the public ledgers and sqlite baselines after the tree cleanup.
+
+## 0.3.42-alpha
+- Removed the leftover `regression/`, `regression_baselines/`, and `regression_ledgers/` directories now that every ledger/baseline lives under `jdbc/src/test/resources/regression/**`.
+
+## 0.3.41-alpha
+- Normalize `source_filename` column values when fetching bean-sql and Calcite rows so parity comparisons ignore absolute ledger paths on both sides.
+
+## 0.3.40-alpha
+- Normalize `source_filename` when comparing rows in `BeanSqlParityTest` so Calcite’s classpath-based ledgers match the bean-sql baseline even though they live under `jdbc/src/test/resources/` now.
+
+## 0.3.39-alpha
+- Added `TestResources` to locate the repo root / classpath assets, and updated every Calcite + driver integration test (plus `BeanSqlParityTest`/`BeancountLoaderSmokeTest`) to use it, so test runs no longer try to read the now-empty `regression_*` directories.
+
+## 0.3.38-alpha
+- Relocated the regression ledgers/baselines under `src/test/resources/regression/...` and updated `BeanSqlParityTest` to load them from the classpath, keeping the parity suite self-contained after the source-tree shuffle.
+
+## 0.3.37-alpha
+- Pointed Gradle at the renamed `jdbc` module (project path now `:jdbc` instead of `:lib`) so `./gradlew :jdbc:jar` builds cleanly after the directory restructure; also bumped the runtime/version constants to match.
+
+## 0.3.36-alpha
+- Added a lightweight inventory booking pass that tracks per-account lots, stamps purchases with the transaction date by default, and splits reductions so sells inherit the correct `cost_number/cost_currency/cost_date`. Calcite’s `postings` table now matches bean-sql for transactions like the ITOT sale (id 641) and multi-lot trades.
+
+## 0.3.35-alpha
+- Reordered postings within each entry by their bucket currency before assigning ids, mirroring bean-sql’s grouping logic. Payroll transactions now keep the exact same `posting_id` sequence as the sqlite baseline.
+
+## 0.3.34-alpha
+- Re-numbered raw postings immediately after entry ids are reassigned so both the semantic and Calcite paths reuse the bean-sql posting order; Calcite now emits the stored ids directly instead of inventing its own counter.
+
+## 0.3.33-alpha
+- Regenerated `postings.posting_id` when materializing Calcite rows so the JDBC table now counts rows exactly like bean-sql’s SQLite exporter, keeping parity diffs identical.
+
+## 0.3.32-alpha
+- Removed the leftover normalization code path (finalizeState no longer rebuilds postings) and wired Calcite to the rebuilt raw postings list so the `postings` table now mirrors bean-sql end-to-end.
+
+## 0.3.31-alpha
+- Restored the postings `cost_date` serialization to the same epoch-day integers used by `entry.date` while still advertising it as a DATE column, eliminating the `java.sql.Date` cast failure from 0.3.30.
+
+## 0.3.31-alpha
+- Version bump to keep artifacts aligned while iterating on the postings rewrite.
+
+## 0.3.30-alpha
+- Postings table now declares `cost_date` as a proper `DATE` column (just like the entry table), so Calcite exposes it with DATE semantics and comparisons against the bean-sql baseline stop parsing ISO strings as integers.
+
+## 0.3.29-alpha
+- Version bump to track the ongoing postings rewrite (no functional changes vs 0.3.28, just keeping artifacts aligned).
+
+## 0.3.28-alpha
+- Removed the remaining normalization pass (`normalizeTransactionPostings`) so `state.postings` stays in raw bean-sql order; this lets the rebuilt exporter drive Calcite directly without hidden reordering.
+- Serialized `postings.cost_date` as an epoch-day integer (instead of `java.sql.Date`) so Calcite readers no longer blow up with `java.sql.Date cannot be cast to java.lang.Integer`.
+
+## 0.3.27-alpha
+- Removed the inventory-driven postings flow and built a bean-sql-style exporter: transactions are processed in `entry_sortkey` order, raw postings are emitted verbatim with a single `posting_id++`, and the Calcite schema now exposes that sequence exactly.
+
+## 0.3.26-alpha
+- Rebuilt the `postings` table materializer so it now reconstructs bean-sql’s global `posting_id` sequence directly from the ledger order (rather than trusting whatever ids normalization left behind), and tightened the loader’s resequencing loop so raw/normalized postings march through entries in lockstep—parity is much closer, and these ids now stay deterministic across rebuilds.
+
+## 0.3.25-alpha
+- Continued the bean-sql parity work: raw postings are now resequenced first so normalized rows inherit their ids deterministically, extra normalized rows are appended afterward, and the parity test got a small cleanup so future dumps only trigger manually.
+
+## 0.3.24-alpha
+- Matched bean-sql’s entry/posting numbering exactly: directives are sorted solely by `entry_sortkey` (date, type order, line) before IDs are reassigned, and postings are resequenced transaction-by-transaction so `posting_id` follows the same global counter as bean-sql; parity tests now assert on `posting_id` again.
+
+## 0.3.23-alpha
+- Reassigned `posting_id` values after normalization to mirror bean-sql’s simple sequential numbering so parity diffs line up even when postings are split.
+
+## 0.3.22-alpha
+- Entry IDs now follow Beancount’s canonical ordering: every directive (including commodities/customs) is collected, sorted with `entry_sortkey`, and assigned a permanent id before we materialize tables, so Calcite’s `entry`/`transactions_detail` ids match bean-sql exactly.
+
+## 0.3.21-alpha
+- Re-sequenced ledger entries using Beancount’s `entry_sortkey` before materializing tables so Calcite’s `entry` and `transactions_detail` IDs now match the bean-sql baselines; parity tests were tightened to include `id`.
+
+## 0.3.20-alpha
+- Encoded all DATE columns (`entry.date`, `postings.cost_date`) using Calcite’s canonical epoch-day integers so operations like `CAST(date AS VARCHAR)` no longer explode with `java.sql.Date cannot be cast to java.lang.Integer`; added a regression test to keep the `transactions` view casting path healthy.
+
+## 0.3.19-alpha
+- Negative postings are now materialized per inventory lot (and respect explicit `{cost}` annotations), so `postings` rows carry the correct `cost_date`/`cost_number` pairs and the Bean SQL parity suite no longer loses or reorders sells.
+
+## 0.3.16-alpha
+- Normalized numeric serialization in `BeanSqlParityTest` (strip trailing zeros) and ignored surrogate columns like `posting_id`, so parity now compares real business columns instead of auto-generated keys; also removed the configuration-cache-hostile listener hook.
+
+## 0.3.17-alpha
+- Version bump after follow-up fixes so the jar/runtime metadata always reflect the latest code.
+
+## 0.3.18-alpha
+- `postings` table now sources the normalized posting list (with inferred amounts and propagated cost dates) rather than the raw parser output, so row counts/metadata match the bean-sql baselines.
+
+## 0.3.15-alpha
+- Restored the regression assets (`regression_ledgers/`, `regression_baselines/bean_sql/`) and revived `BeanSqlParityTest` so Calcite output can be compared against the old bean-sql baselines again.
+
+## 0.3.14-alpha
+- Reworked the custom SQLite SqlDialect factory to build directly off Calcite's `SqlDialect.EMPTY_CONTEXT`, so the jar compiles on Calcite 1.38.0 while still suppressing `CHARACTER SET …` clauses during pushdown.
+
+## 0.3.13-alpha
+- Added a custom SQLite SqlDialect factory and updated the SQLite attach flow/test so Calcite stops emitting `CHARACTER SET …` clauses; now the `CREATE FOREIGN SCHEMA … TYPE 'jdbc'` command runs cleanly without syntax errors.
+
+## 0.3.12-alpha
+- (Skipped in version history; rolled into 0.3.13-alpha.)
+
+## 0.3.11-alpha
+- Bundled `sqlite-jdbc` with the driver so Calcite's `CREATE FOREIGN SCHEMA … TYPE 'jdbc'` statements work immediately in DBeaver/CLI without adding extra jars; still defaults parserFactory to the server DDL executor so SQLite attaches just work.
+
+## 0.3.10-alpha
+- Default the Calcite parserFactory to `org.apache.calcite.server.ServerDdlExecutor#PARSER_FACTORY` so DBeaver (and other clients) can issue `CREATE FOREIGN SCHEMA` without manually overriding the driver properties; server DDL now works out of the box.
+
+## 0.3.9-alpha
+- Added Calcite server DDL support to the driver path and a regression (`BeancountDriverServerDdlTest`) that issues `CREATE FOREIGN SCHEMA … ( TYPE 'jdbc' ) OPTIONS (…)`, paving the way for SQLite attaches.
+
+## 0.3.8-alpha
+- Version bump to mark the refreshed 0.3.x baseline before adding the custom `sys` schema back in.
+
+## 0.3.7-alpha
+- Reintroduced the `com.beancount.jdbc.BeancountDriver`, Calcite connection factory, and service registration so the jar exposes a loadable JDBC driver again; added a driver integration test to prove we can query the Calcite-backed schema via `jdbc:beancount:`.
+## 0.3.8-alpha
+- Version bump to mark the refreshed 0.3.x baseline before adding the custom `sys` schema back in.
+
+## 0.3.6-alpha
+- Restored the versioned jar packaging (archives now emit `beancount-jdbc-<version>.jar`) and added a `copyRuntimeLibs` sync so DBeaver setups pick up `lib/build/runtime-libs` automatically.
+
+## 0.3.5-alpha
+- Added deterministic Calcite integration tests for `document_detail`, `event_detail`, `query_detail`, `price_detail`, and `postings`, rounding out Stage 3 table coverage.
+
+## 0.3.4-alpha
+- Introduced `CalciteIntegrationTestSupport` plus a dedicated directives ledger, and rewired the `close_detail`, `pad_detail`, and `note_detail` tests to use it so they always have directive rows to assert against.
+
+## 0.3.3-alpha
+- Rebuilt `NoteDetailIntegrationTest` so it compiles again, hits `note_detail`, and enforces double-quoted identifiers end-to-end.
+
+## 0.3.2-alpha
+- Copied `CalciteTypeMapper` back into the Calcite module to restore type mapping for all detail tables and unblock the Stage 3 compilation flow.
+
+## 0.3.1-alpha
+- Rebooted the project on top of a clean Calcite JDBC connection; starting fresh and will reintroduce Beancount features incrementally.
+
+## 0.2.9-alpha
+- Added the `calcite-server` runtime dependency so the built-in `sys.create_schema` procedure (and other server DDL helpers) are available; DDL requests from DBeaver no longer fail with “object sys.create_schema not found”.
+
+## 0.2.8-alpha
+- Force Calcite connections to set `mutable=true` even when clients (e.g., DBeaver) send their own empty `mutable` property, ensuring `SET`, `CREATE SCHEMA`, and other DDL statements succeed without manual toggles.
+
+## 0.2.7-alpha
+- Pre-set Calcite connections to `mutable=true` so DDL (`SET`, `CREATE SCHEMA`, `CALL sys.create_schema`, etc.) works without an explicit toggle; watchers and clients now get the DDL behavior we promised by default.
+
+## 0.2.6-alpha
+- Switched the Calcite schema to feed `postings` from the raw posting rows (matching legacy/bean-sql output) and added a standalone `PostingsDiff` helper script to inspect parity gaps while Gradle’s XML reporter is unstable.
+- Defaulted Calcite connections to `mutable=true`, so DDL statements (e.g., `SET`, `CREATE SCHEMA`) work out of the box without issuing `SET "mutable" = true`.
+
+## 0.2.5-alpha
+- Legacy/`?mode=deprecated` statements now proxy to a real Calcite `Statement`, removing the `SELECT * FROM <table>` guard so all SQL (joins, DDL, session commands) flows through the Calcite engine.
+- Introduced a shared Calcite connection factory so both driver paths consistently enable the Babel parser and Beancount schema wiring.
+
+## 0.2.4-alpha
+- Calcite connections now use the Babel parser factory, so DDL statements like `CREATE SCHEMA … TYPE 'jdbc'` work out of the box when connecting via DBeaver.
+
+## 0.2.3-alpha
+- Parser now accepts multi-line `query` directives with standalone closing quotes, enabling the official example ledger to load under Calcite; bean-sql parity suite includes that ledger.
+
+## 0.2.2-alpha
+- Defaulted `cost_date` only for positive (lot-opening) postings so STRICT booking still matches annotated lots; updated regression tests to cover the scenario.
 
 ## 0.1.40-alpha
 - Initialised `ENTRY_VIEW_COLUMNS` before building the Calcite view SQL so the schema class no longer throws a NullPointerException during static init.
@@ -6,6 +236,7 @@
 
 ## 0.2.0-beta
 - Calcite-backed driver now quotes all identifiers end-to-end, registers distinct view columns, and aligns metadata assertions/tests with the Calcite runtime output so the JDBC surface matches bean-sql expectations.
+- Calcite mode is now the default; specify `?mode=deprecated` to force the legacy driver path.
 
 ## 0.1.41-alpha
 - Quoted every column/table identifier in the generated Calcite view SQL so reserved keywords like `date` parse correctly, and guarded Calcite view registration against re-entry while the schema is still being initialised.
@@ -310,3 +541,9 @@
 
 ## 0.1.21-alpha
 - Trimmed directive type strings in the Calcite integration test to account for CHAR padding.
+## 0.4.13-alpha
+- Relaxed DATE token parsing to accept single-digit months/days (e.g. `2010-1-1`) so legacy ledgers like `monthly-expenses-example.beancount` load without parse errors.
+## 0.4.14-alpha
+- Date parsing now mirrors Beancount’s lexer (accepts `YYYY-M-D` as well as `YYYY-MM-DD`), so ledgers with unpadded month/day tokens ingest cleanly and keep entry ids aligned with the sqlite baselines.
+## 0.4.15-alpha
+- Padding narration now preserves the original amount scale (e.g., `102.10 USD` stays `102.10 USD`), aligning Calcite’s `transactions_detail` output with bean-sql for starter and other ledgers that specify fixed decimal precision.

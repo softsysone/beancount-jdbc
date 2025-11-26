@@ -1,6 +1,0 @@
-2019-01-01 open Assets:Cash USD
-2019-01-01 open Assets:Crypto BTC
-2019-01-02 * "Buy BTC"
-  Assets:Crypto 1 BTC {10000 USD}
-  Assets:Cash -10000 USD
-2019-01-03 price BTC 11000 USD

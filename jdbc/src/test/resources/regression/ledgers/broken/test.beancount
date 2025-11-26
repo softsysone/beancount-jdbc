@@ -1,0 +1,849 @@
+; https://github.com/beancount/beancount/blob/master/beancount/parser/grammar_test.py
+
+2013/05/18 * "Nice dinner at Mermaid Inn"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2013-05-18 * "Mermaid Inn" "Nice dinner"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+;;; EXPECTED ERROR
+2013-05-18 * "Mermaid Inn" "Nice dinner" "With Caroline"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2013-05-18 txn "Nice dinner at Mermaid Inn"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2013-05-18 balance Assets:US:BestBank:Checking  200 USD
+2013-05-18 balance Assets:US:BestBank:Checking  200 ~ 0.002 USD
+
+***
+
+;;; EXPECTED ERROR
+2013-05-18 balance Assets:Investments  10 MSFT {45.30 USD}
+
+***
+
+2013-05-18 open Assets:US:BestBank:Checking
+
+***
+
+2013-05-18 open Assets:US:BestBank:Checking   USD
+
+***
+
+2013-05-18 open Assets:Cash   USD,CAD,EUR
+
+***
+
+2013-05-18 open Assets:US:Vanguard:VIIPX  VIIPX  "STRICT"
+
+***
+
+2013-05-18 open Assets:US:Vanguard:VIIPX    "STRICT"
+
+***
+
+2013-05-18 close Assets:US:BestBank:Checking
+
+***
+
+2013-05-18 commodity MSFT
+
+***
+
+2013-05-18 pad Assets:US:BestBank:Checking  Equity:Opening-Balances
+
+***
+
+2013-05-18 event "location" "New York, USA"
+
+;; Test empty event.
+2013-05-18 event "location" ""
+
+***
+
+2013-05-18 query "cash" "SELECT SUM(position) WHERE currency = 'USD'"
+
+***
+
+2013-05-18 note Assets:US:BestBank  "Blah, di blah."
+2013-05-18 note Assets:US:BestBank  "Blah." ^984446a67382 #something
+
+***
+
+2013-05-18 document Assets:US:BestBank:Checking "/Accounting/statement.pdf"
+
+***
+
+2013-05-18 price USD   1.0290 CAD
+
+***
+
+2013-05-18 custom "budget" "weekly < 1000.00 USD" 2016-02-28 TRUE 43.03 USD 23
+
+***
+
+;;; EXPECTED ERROR
+2020-07-28 open Assets:Foo
+  2020-07-28 open Assets:Bar
+
+***
+
+;;; EXPECTED ERROR
+2020-07-28 open Assets:Foo
+
+  2020-07-28 open Assets:Bar
+
+***
+
+2013-05-18 * "Nice dinner at Mermaid Inn"
+  Expenses:Restaurant         0 USD
+
+***
+
+2013-05-18 * "Nice dinner at Mermaid Inn"
+  Expenses:Restaurant         100 USD
+
+***
+
+;; This is some comment.
+
+***
+
+2013-07-11 note Assets:Cash "test"
+  ;;
+
+***
+
+2013-05-18 * "Nice dinner at Mermaid Inn"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash
+  ;;
+
+***
+
+2013-05-01 open Assets:Cash   USD,CAD,EUR
+2013-05-02 close Assets:US:BestBank:Checking
+2013-05-03 pad Assets:US:BestBank:Checking  Equity:Opening-Balances
+2013-05-04 event "location" "New York, USA"
+2013-05-05 * "Payee" "Narration"
+  Assets:US:BestBank:Checking   100.00 USD
+  Assets:Cash                  -100.00 USD
+2013-05-06 note Assets:US:BestBank:Checking  "Blah, di blah."
+2013-05-07 price USD   1.0290 CAD
+
+***
+
+; Hi
+2015-06-07 *
+  Assets:Cash   1 USD
+  Assets:Cash   -1 USD
+
+***
+
+2015-06-07 *
+  Assets:Cash   1 USD
+  Assets:Cash   -1 USD
+; Hi
+
+***
+
+2015-06-07 *
+  Assets:Cash   1 USD
+  ; Hi
+  Assets:Cash   -1 USD
+
+***
+
+2015-06-07 *
+  Assets:Cash   1 USD    ; Hi
+  Assets:Cash   -1 USD
+
+***
+
+2015-06-07 *     ; Hi
+  Assets:Cash   1 USD
+  Assets:Cash   -1 USD
+
+***
+
+pushtag #trip-to-nowhere
+
+***
+
+poptag #trip-to-nowhere
+
+***
+
+pushmeta location: "Lausanne, Switzerland"
+
+2015-06-07 * "Something"
+  Assets:Something   1 USD
+  Assets:Something  -1 USD
+
+popmeta location:
+
+***
+
+pushmeta location: "Lausanne, Switzerland"
+
+2015-06-07 * "Something"
+  location: "Paris, France"
+  Assets:Something   1 USD
+  Assets:Something  -1 USD
+
+popmeta location:
+
+***
+
+pushmeta location: "Lausanne, Switzerland"
+
+2015-06-01 * "Something"
+  Assets:Something   1 USD
+  Assets:Something  -1 USD
+
+pushmeta location: "Paris, France"
+
+2015-06-02 * "Something"
+  Assets:Something   1 USD
+  Assets:Something  -1 USD
+
+popmeta location:
+popmeta location:
+
+***
+
+2014-07-11 * "Hello one line
+and yet another,
+and why not another!"
+  Expenses:Restaurant         100 USD
+  Assets:Cash                -100 USD
+
+***
+
+;;; EXPECTED ERROR
+Account:*:Bla
+
+***
+
+;;; EXPECTED ERROR
+2013-05-18 * "Nice dinner at Mermaid Inn"
+  Expenses:Resta(urant        100 USD
+  Expenses:Tips                10 USD
+  Assets:US:Cash             -110 USD
+
+2013-05-20 balance Assets:US:Cash  -110 USD
+
+***
+
+option "title" "Super Rich"
+
+***
+
+option "documents" "/path/docs/a"
+option "documents" "/path/docs/b"
+option "documents" "/path/docs/c"
+
+***
+
+include "test/some/absolute/filename.beancount"
+
+***
+
+include "test/test/some/relative/filename.beancount"
+
+***
+
+plugin "beancount.plugin.unrealized"
+
+***
+
+plugin "beancount.plugin.unrealized" "Unrealized"
+
+***
+
+option "plugin" "beancount.plugin.unrealized"
+
+***
+
+2013-05-18 * "Something something" ^38784734873
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2013-05-18 * ""
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2013-05-18 *
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2013-05-18 * "Mermaid Inn"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+;;; EXPECTED ERROR
+2013-05-18 * "A" "B" "C"
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2014-04-20 * "Money from CC" ^610fa7f17e7a #trip
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+;;; EXPECTED ERROR
+2014-04-20 * #trip "Money from CC" ^610fa7f17e7a
+  Expenses:Restaurant         100 USD
+  Assets:US:Cash             -100 USD
+
+***
+
+2014-04-20 * "Like a conversion entry"
+  Equity:Conversions         100 USD @ 0 XFER
+  Equity:Conversions         101 CAD @ 0 XFER
+  Equity:Conversions         102 AUD @ 0 XFER
+
+***
+
+2014-04-20 * "Zero number of units"
+  Assets:Investment         0 HOOL {500.00 USD}
+  Assets:Cash               0 USD
+
+***
+
+2014-04-20 * "Like a conversion entry"
+  Assets:Investment         10 HOOL {0 USD}
+  Assets:Cash                0 USD
+
+***
+
+2014-07-17 * "(JRN) INTRA-ACCOUNT TRANSFER" ^795422780
+
+***
+
+;;; EXPECTED ERROR
+2014-04-20 * "Busted!"
+  Assets:Checking         100 USD
+
+  Assets:Checking         -99 USD
+
+***
+
+2014-04-20 * "Links and tags on subsequent lines" #basetag ^baselink
+  #tag1 #tag2
+  ^link1 #tag3
+  #tag4 ^link2
+  ^link3 ^link4
+  #tag6
+  ^link5
+  Assets:Checking         100 USD
+  Assets:Checking         -99 USD
+
+***
+
+2014-04-20 * "Links and tags on subsequent lines" #basetag ^baselink
+  Assets:Checking         100 USD
+  #tag1 ^link1
+  Assets:Checking         -99 USD
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL   20 AAPL {}
+  Assets:Invest:Cash  -20 AAPL
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL      20 AAPL {45.23 USD}
+  Assets:Invest:Cash  -90.46 USD
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL   20 AAPL {2014-12-26}
+  Assets:Invest:Cash  -20 AAPL
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL   20 AAPL {"d82d55a0dbe8"}
+  Assets:Invest:Cash  -20 AAPL
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL   20 AAPL {*}
+  Assets:Invest:Cash  -20 AAPL
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL    1 AAPL {45.23 USD, 2014-12-26}
+  Assets:Invest:AAPL    1 AAPL {2014-12-26, 45.23 USD}
+  Assets:Invest:AAPL    1 AAPL {45.23 USD, "d82d55a0dbe8"}
+  Assets:Invest:AAPL    1 AAPL {"d82d55a0dbe8", 45.23 USD}
+  Assets:Invest:AAPL    1 AAPL {2014-12-26, "d82d55a0dbe8"}
+  Assets:Invest:AAPL    1 AAPL {"d82d55a0dbe8", 2014-12-26}
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL    1 AAPL {45.23 USD, 2014-12-26, "d82d55a0dbe8"}
+  Assets:Invest:AAPL    1 AAPL {2014-12-26, 45.23 USD, "d82d55a0dbe8"}
+  Assets:Invest:AAPL    1 AAPL {45.23 USD, "d82d55a0dbe8", 2014-12-26}
+  Assets:Invest:AAPL    1 AAPL {2014-12-26, "d82d55a0dbe8", 45.23 USD}
+  Assets:Invest:AAPL    1 AAPL {"d82d55a0dbe8", 45.23 USD, 2014-12-26}
+  Assets:Invest:AAPL    1 AAPL {"d82d55a0dbe8", 2014-12-26, 45.23 USD}
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL       1 AAPL {45.23 USD, 45.24 USD}
+  Assets:Invest:Cash  -45.23 USD
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL    1 AAPL {45.23 USD, 2014-12-26, 2014-12-27}
+  Assets:Invest:Cash   -1 AAPL
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL       1 AAPL {"aaa", "bbb", 45.23 USD}
+  Assets:Invest:Cash  -45.23 USD
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL       1 AAPL {*, *}
+  Assets:Invest:Cash  -45.23 USD
+
+***
+
+2014-01-01 *
+  Assets:Invest:AAPL       10 AAPL {45.23 # 9.95 USD}
+  Assets:Invest:Cash  -110.36 USD
+
+***
+
+;;; EXPECTED ERROR
+2014-01-01 *
+  Assets:Invest:AAPL      10 AAPL {# 9.95 USD}
+  Assets:Invest:Cash  -19.90 USD
+
+***
+
+;;; EXPECTED ERROR
+2014-01-01 *
+  Assets:Invest:AAPL      20 AAPL {45.23 # USD}
+  Assets:Invest:Cash  -45.23 USD
+
+***
+
+;;; EXPECTED ERROR
+2014-01-01 *
+          Assets:Invest:AAPL   20 AAPL {USD}
+          Assets:Invest:AAPL   20 AAPL { # USD}
+          Assets:Invest:Cash    0 USD
+
+***
+
+;;; EXPECTED ERROR
+2014-01-01 *
+          Assets:Invest:AAPL      1.1 AAPL {45.23 USD / 2015-07-16 / "blabla"}
+          Assets:Invest:Cash   -45.23 USD
+
+***
+
+2014-01-19 open Assets:Underscore    DJ_EURO
+2014-01-19 open Assets:Period        DJ.EURO
+2014-01-19 open Assets:Apostrophe    DJ'EURO
+2014-01-19 open Assets:Numbers       EURO123
+2014-01-19 open Assets:Short         V
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT {{2,000 USD}}
+  Assets:Investments:Cash  -20000 USD
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT {{2000 USD, 2014-02-25}}
+  Assets:Investments:Cash  -20000 USD
+
+2013-06-01 * ""
+  Assets:Investments:MSFT      -10 MSFT {{2,000 USD}}
+  Assets:Investments:Cash    20000 USD
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT {{100 # 2,000 USD}}
+  Assets:Investments:Cash  -20000 USD
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      -10 MSFT @ -200.00 USD
+  Assets:Investments:Cash  2000.00 USD
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT        10 MSFT @@ 2000.00 USD
+  Assets:Investments:Cash  -2000.00 USD
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT {{2,000 USD}}
+  Assets:Investments:Cash  -20000 USD
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT {{2000 USD, 2014-02-25}}
+  Assets:Investments:Cash  -20000 USD
+
+***
+
+2013-05-18 * ""
+  test: "Something"
+  Assets:Investments:MSFT      10 MSFT @@ 2000 USD
+  Assets:Investments:Cash  -20000 USD
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT @@ 2000 USD
+  test: "Something"
+  Assets:Investments:Cash  -20000 USD
+
+***
+
+2013-05-18 * ""
+  Assets:Investments:MSFT      10 MSFT @@ 2000 USD
+  Assets:Investments:Cash  -20000 USD
+  test: "Something"
+
+***
+
+2013-05-18 * ""
+  test1: "Something"
+  Assets:Investments:MSFT      10 MSFT @@ 2000 USD
+  test2: "has"
+  test3: "to"
+  Assets:Investments:Cash  -20000 USD
+  test4: "come"
+  test5: "from"
+  test6: "this"
+
+***
+
+2013-05-18 * ""
+    test1: "Something"
+  Assets:Investments:MSFT      10 MSFT @@ 2000 USD
+    test2: "has"
+    test3: "to"
+  Assets:Investments:Cash  -20000 USD
+    test4: "come"
+    test5: "from"
+    test6: "this"
+
+***
+
+2013-05-18 * ""
+  test: "Bananas"
+  test: "Apples"
+  test: "Oranges"
+  Assets:Investments   100 USD
+    test: "Bananas"
+    test: "Apples"
+  Income:Investments  -100 USD
+
+***
+
+2013-05-18 * "blabla"
+  oranges:
+  bananas:
+
+2013-05-19 open Assets:Something
+  apples:
+
+***
+
+2013-01-01 open Equity:Other
+
+2013-01-01 open Assets:Investments
+  test1: "Something"
+  test2: "Something"
+
+2014-01-01 close Assets:Investments
+  test1: "Something"
+
+2013-01-10 note Assets:Investments "Bla"
+  test1: "Something"
+
+2013-01-31 pad Assets:Investments Equity:Other
+  test1: "Something"
+
+2013-02-01 balance Assets:Investments  111.00 USD
+  test1: "Something"
+
+2013-03-01 event "location" "Nowhere"
+  test1: "Something"
+
+2013-03-01 document Assets:Investments "/path/to/something.pdf"
+  test1: "Something"
+
+2013-03-01 price  HOOL  500 USD
+  test1: "Something"
+
+***
+
+2013-05-18 * ""
+  string: "Something"
+  account: Assets:Investments:Cash
+  date: 2012-01-01
+  currency: HOOL
+  tag: #trip-florida
+  number: 345.67
+  amount: 345.67 USD
+  boolt: TRUE
+  boolf: FALSE
+
+***
+
+2013-05-18 * ""
+  nameoncard: "Jim"
+  nameOnCard: "Joe"
+  name-on-card: "Bob"
+  name_on_card: "John"
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something    12 + 3 USD
+  Assets:Something   7.5 + 3.1 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something    12 - 3 USD
+  Assets:Something   7.5 - 3.1 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something    12 * 3 USD
+  Assets:Something   7.5 * 3.1 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something    12 / 3 USD
+  Assets:Something   7.5 / 3 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something    -12 USD
+  Assets:Something   -7.5 USD
+  Assets:Something   - 7.5 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something    +12 USD
+  Assets:Something   -7.5 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something   2 * 3 + 4 USD
+  Assets:Something   2 + 3 * 4 USD
+  Assets:Something   2 + -3 * 4 USD
+  Assets:Something   (2 + -3) * 4 USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something   (2 + -3) * 4 USD
+  Assets:Something   2 * (2 + -3) USD
+
+***
+
+2013-05-18 * "Test"
+  Assets:Something   -(3 * 4) HOOL {120.01 * 2.1 USD} @ 134.02 * 2.1 USD
+  Assets:Something   1000000 USD ;; No balance checks.
+2014-01-01 balance Assets:Something  3 * 4 * 120.01 * 2.1  USD
+  number: -(5662.23 + 22.3)
+
+***
+
+;;; EXPECTED ERROR
+2000-01-01 open ) USD
+
+***
+
+;;; EXPECTED ERROR
+2000-01-01 open ) USD
+2000-01-02 open Assets:Something
+
+***
+
+;;; EXPECTED ERROR
+2000-13-32 open Assets:Something
+
+***
+
+;;; EXPECTED ERROR
+2000-13-32 open Assets:Something
+2000-01-02 open Assets:Working
+
+***
+
+;;; EXPECTED ERROR
+2000-01-02 *
+  Assets:Working  `
+  Assets:Working  11.11 USD
+  Assets:Working  22.22 USD
+
+2000-01-02 *
+  Assets:Working  11.11 USD
+  Assets:Working  `
+  Assets:Working  22.22 USD
+
+2000-01-02 *
+  Assets:Working  11.11 USD
+  Assets:Working  22.22 USD
+  Assets:Working  `
+
+2000-01-02 *
+  Assets:Working  )
+  Assets:Working  11.11 USD
+  Assets:Working  22.22 USD
+
+2000-01-02 *
+  Assets:Working  11.11 USD
+  Assets:Working  )
+  Assets:Working  22.22 USD
+
+2000-01-02 *
+  Assets:Working  11.11 USD
+  Assets:Working  22.22 USD
+  Assets:Working  )
+
+***
+
+;;; EXPECTED ERROR
+2000-01-01 open open
+
+***
+
+;;; EXPECTED ERROR
+2000-01-01 open Assets:Before
+2000-01-02 open open
+2000-01-03 open Assets:After
+
+***
+
+;;; EXPECTED ERROR
+2000-01-01 open open
+2000-01-02 open Assets:Something
+
+***
+
+;;; EXPECTED ERROR
+2000-01-01 open Assets:Before
+2000-01-02 open open
+2000-01-03 open Assets:After
+2000-01-04 close close
+2000-01-05 close Assets:After
+
+***
+
+2010-01-01 close Assets:Before
+2010-01-01 event "location" "New York, NY"
+2000-01-01 open Assets:Before
+
+***
+
+2010-01-01 close Assets:Before
+2010-01-01 price HOOL 20 USD
+2000-01-01 open Assets:Before
+
+***
+
+2010-01-01 close Assets:Before
+2010-01-01 note Assets:Before "Something something"
+2000-01-01 open Assets:Before
+
+***
+
+2010-01-01 close Assets:Before
+2010-01-01 document Assets:Before "/path/to/document.png"
+2000-01-01 open Assets:Before
+
+***
+
+2010-01-01 close Assets:Before
+2010-01-01 commodity HOOL
+  key: "Value"
+2000-01-01 open Assets:Before
+
+***
+
+2017-06-27 * "Bitcoin network fee"
+  ; Account: Pocket money
+  Expenses:Crypto:NetworkFees           0.00082487 BTC
+  Assets:Crypto:Bitcoin                -0.00082487 BTC
+
+***
+
+2017-06-27 * "Bitcoin network fee"
+  Expenses:Crypto:NetworkFees           0.00082487 BTC
+; Account: Pocket money
+  Assets:Crypto:Bitcoin                -0.00082487 BTC
+
+***
+
+2013-05-18 document Assets:US:BestBank:Checking "/Accounting/statement.pdf"
+
+***
+
+pushtag #something
+2013-05-18 document Assets:US:BestBank:Checking "/Accounting/statement.pdf" #else
+poptag #something
+
+***
+
+2013-05-18 document Assets:US:BestBank:Checking "/statement.pdf" ^something
+
+***
+
+; Source: https://raw.githubusercontent.com/michaellenaghan/sublime-beancount/f8acadc35ac0dd4f576f75bc8b883ea3d7f20af4/test/test.beancount
